@@ -6,3 +6,4 @@ Busca **evitar repeticiones** de un arbol de llamadas recursivas **que resuelve 
 	- Guarda el resultado de cada llamada recursiva en una _estructura de datos_ -> **memorizacion**
 - Enfoque **bottom-up**:
 	- Resuelve primero los **subproblemas mas pequenos** y _guarda todos los resultados_
+	- Solo necesita _almacenar la fila anterior_ de la que estamos calculando -> **No es posible con top-down**
