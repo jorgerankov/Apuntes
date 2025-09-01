@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "PLP/Teoricas/Clase 2.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "Clase 2"
             }
           }
         ]
@@ -172,6 +172,7 @@
   },
   "active": "a55e123be6142416",
   "lastOpenFiles": [
+    "README.md",
     "vault prueba.md",
     "PLP/Teoricas/Clase 2.md",
     "PLP/Teoricas/Clase 1 - Programacion Funcional.md",
@@ -204,7 +205,6 @@
     "SQL",
     "PLP/Teorica/Clase 2.md",
     "PLP/Teorica/Clase 1 - Programacion Funcional.md",
-    "PLP/Teorica/Clase 0 - Intro Haskell.md",
     "PLP/Teorica",
     "PLP",
     "Algo-III/Teorica"
