@@ -101,7 +101,7 @@
 
 ## 5 - _PotenciaLogaritmica_
 si _b es par_ -> tomo b = 2k -> a$^b$ = a$^{2k}$ = a$^k$ . a$^k$
-si _b es impar_ -> b = 2k + 1 -> a -> a$^b$ = a$^{2k + 1}$ = a . a$^k$ . a$^k$
+si _b es impar_ -> b = 2k + 1 -> a$^b$ = a$^{2k + 1}$ = a . a$^k$ . a$^k$
 ```
 potenciaLog(a, b):
 	si b == 0:
@@ -186,3 +186,8 @@ Como log$_b$ a = 0, c = 1 -> _log$_b$ a < c_ -> **Caso 1 del TM**
 **T(n) = O(n$^1$) = O(n)**
 
 **7) T(n) = T(n/2) + $\sqrt{n}$**
+
+**8) T(n) = T(n/2) + n$^2$**
+a = 1, b = 2, c = 2
+log$_b$ a = log$_2$ 1 = 0 
+log$_b$ a = 0
