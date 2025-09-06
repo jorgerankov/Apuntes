@@ -186,8 +186,11 @@ Como log$_b$ a = 0, c = 1 -> _log$_b$ a < c_ -> **Caso 1 del TM**
 **T(n) = O(n$^1$) = O(n)**
 
 **7) T(n) = T(n/2) + $\sqrt{n}$**
+(hacer)
 
 **8) T(n) = T(n/2) + n$^2$**
 a = 1, b = 2, c = 2
 log$_b$ a = log$_2$ 1 = 0 
-log$_b$ a = 0
+log$_b$ a = 0, c = 2 -> **Caso 1 del TM**
+**T(n) = O(n$^1$) = O(n)**
+

@@ -1,6 +1,6 @@
 
 # <u>Apuntes de Ciencias de la Computacion (UBA)</u>
-En este repo se encuentran todos mis apuntes de la carrera (hasta la fecha)
+En este repo se encuentran todos mis apuntes de la carrera hasta la fecha
 (Teoricas, Practicas y algunos Laboratorios).
 
 ##### _En caso de querer ver TPs, Talleres y/u otros ejercicios de codigo, ver las carpetas especificas de cada Repo_ ([aca](https://github.com/jorgerankov)) 
