@@ -196,3 +196,30 @@ log$_b$ a = log$_2$ 1 = 0
 log$_b$ a = 0, c = 2 -> **Caso 1 del TM**
 **T(n) = O(n$^1$) = O(n)**
 
+
+#  _10 - DistanciaMaxima_
+
+```
+int distanciaMax(Nodo nodo, int altura) { 
+
+	// Caso base: un nodo nulo (altura 0) 
+    if (nodo == NULL) { 
+        altura = 0; 
+        return 0; // La máxima distancia en un árbol vacío es 0 
+    }
+    
+    // Inicializar alturas de subárboles
+    int altIzq, altDer = 0, altDer = 0;
+    int distMaxIzq = distanciaMax(nodo->izq, altIzq);
+    int distMaxDer = distanciaMax(nodo->der, altDer);
+
+    // Actualiza la altura del nodo actual
+    altura = 1 + max(altIzq, altDer);
+
+    int distMaxActual = altIzq + altDer; 
+    // Calcula la distancia máxima a través del nodo actual
+
+    // Retorna el máximo entre las tres posibles distancias
+    return max(distMaxActual, max(distMaxIzq, distMaxDer));
+}
+```
