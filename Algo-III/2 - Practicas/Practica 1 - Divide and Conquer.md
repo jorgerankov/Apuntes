@@ -177,7 +177,7 @@ T(n) = T(n − 1) + n = T(n - 2) + (n - 1) + n = ...
 
 **5) T(n) = 2T(n − 1)**
 T(n) = 2T(n - 1) = 2$^2$T(n - 2) = 2$^3$T(n - 3) = ... = 2$^n$T(0)
-= **n veces multiplicar por 2 = O(n$^2$)**
+= **n veces multiplicar por 2 = O(2$^n$)**
 
 **6) T(n) = T(n/2) + n**
 a = 1, b = 2, c = 1 
@@ -186,7 +186,9 @@ Como log$_b$ a = 0, c = 1 -> _log$_b$ a < c_ -> **Caso 1 del TM**
 **T(n) = O(n$^1$) = O(n)**
 
 **7) T(n) = T(n/2) + $\sqrt{n}$**
-(hacer)
+a = 1, b = 2, c = 1/2
+log$_b$ a = log$_2$ 1 = 0
+
 
 **8) T(n) = T(n/2) + n$^2$**
 a = 1, b = 2, c = 2

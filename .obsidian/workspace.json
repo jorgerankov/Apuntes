@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "cdd57a9249d41280",
+        "id": "ab6a9cb4581cbadf",
         "type": "tabs",
         "children": [
           {
-            "id": "4e605f2c5c3fea0c",
+            "id": "3f8490458a1165e3",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -170,11 +170,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "4e605f2c5c3fea0c",
+  "active": "3f8490458a1165e3",
   "lastOpenFiles": [
+    "Algo-III/1 - Teoricas/Clase 1 - Complejidad computacional.md",
+    "Algo-III/2 - Practicas/Practica 1 - Divide and Conquer.md",
     "README.md",
     "Algo-III/2 - Practicas/Practica 2 - Backtracking.md",
-    "Algo-III/2 - Practicas/Practica 1 - Divide and Conquer.md",
     "Algo-III/2 - Practicas/Clase 1.md",
     "PLP/Teoricas/Clase 2.md",
     "Algo-III/1 - Teoricas/Clase 3 - Programacion Dinamica.md",
@@ -184,7 +185,6 @@
     "PLP/Teoricas",
     "Algo-III/2 - Practicas",
     "Algo-III/1 - Teoricas/Clase 2 - Fuerza bruta y Backtracking.md",
-    "Algo-III/1 - Teoricas/Clase 1 - Complejidad computacional.md",
     "Algo-III/1 - Teoricas",
     "Algo-II/2 - Laboratorios/3 - POO, Aliasing y Memoria dinámica.md",
     "Algo-II/2 - Laboratorios",
