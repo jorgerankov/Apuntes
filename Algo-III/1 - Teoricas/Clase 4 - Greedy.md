@@ -38,6 +38,20 @@ mochila(pesos, beneficios, 20)
 
 ### Problema de la mochila (Greedy):
 ```
-import numpy
-
+import numpy as np
+pesos = np.array(pesos)
+beneficios = np.array(beneficios)
+	
+def mochila_greedy(pesos, beneficios, capacidad)
+	orden = np.argsort(pesos)
+	beneficio_acumulado = 0
+	
+	for i in range(0, len(pesos)):
+		if pesos[orden[i]] > capacidad:
+			return int(beneficio_acumulado)
+		else:
+		capacidad = capacidad - pesos[orden[ind]]
+		beneficio_acumulado += beneficios[orden[i]]
+	
+	return int(beneficio_acumulado)
 ```
