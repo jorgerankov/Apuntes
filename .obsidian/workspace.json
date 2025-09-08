@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "ab6a9cb4581cbadf",
+        "id": "7ff562899aa42429",
         "type": "tabs",
         "children": [
           {
-            "id": "0881edad2c909fbc",
+            "id": "9e6a264b0bc1fa57",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 229.5,
-    "collapsed": true
+    "width": 229.5
   },
   "right": {
     "id": "0c0f80407ec2ad3f",
@@ -171,22 +170,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0881edad2c909fbc",
+  "active": "9e6a264b0bc1fa57",
   "lastOpenFiles": [
-    "Algo-III/2 - Practicas/Practica 1 - Divide and Conquer.md",
+    "Algo-III/1 - Teoricas/Clase 3 - Programacion Dinamica.md",
+    "Algo-III/1 - Teoricas/Clase 2 - Fuerza bruta y Backtracking.md",
     "Algo-III/1 - Teoricas/Clase 4 - Greedy.md",
+    "Algo-III/2 - Practicas/Practica 1 - Divide and Conquer.md",
     "Algo-III/1 - Teoricas/Clase 1 - Complejidad computacional.md",
     "README.md",
     "Algo-III/2 - Practicas/Practica 2 - Backtracking.md",
     "Algo-III/2 - Practicas/Clase 1.md",
     "PLP/Teoricas/Clase 2.md",
-    "Algo-III/1 - Teoricas/Clase 3 - Programacion Dinamica.md",
     "vault prueba.md",
     "PLP/Teoricas/Clase 1 - Programacion Funcional.md",
     "PLP/Teoricas/Clase 0 - Intro Haskell.md",
     "PLP/Teoricas",
     "Algo-III/2 - Practicas",
-    "Algo-III/1 - Teoricas/Clase 2 - Fuerza bruta y Backtracking.md",
     "Algo-III/1 - Teoricas",
     "Algo-II/2 - Laboratorios/3 - POO, Aliasing y Memoria dinámica.md",
     "Algo-II/2 - Laboratorios",

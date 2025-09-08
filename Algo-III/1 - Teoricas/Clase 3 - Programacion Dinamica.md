@@ -7,3 +7,7 @@ Busca **evitar repeticiones** de un arbol de llamadas recursivas **que resuelve 
 - Enfoque **bottom-up**:
 	- Resuelve primero los **subproblemas mas pequenos** y _guarda todos los resultados_
 	- Solo necesita _almacenar la fila anterior_ de la que estamos calculando -> **No es posible con top-down**
+
+
+#### n$_p$ completo
+Recursividad de conjunto de problemas que se pueden subdividir en otro conjunto de problemas
