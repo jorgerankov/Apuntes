@@ -13,3 +13,14 @@ Donde $X$ es la condicion por la que estoy evaluando (_ej: tiempo de ejecucion d
 - Se dan heuristicas sencillas para problemas de optimizacion
 - En general permiten construir soluciones razonables
 
+#### Problema de la mochila:
+```
+def mochila(pesos, beneficios, capacidad):
+	if len(pesos) == 0 or capacidad == 0:
+		return 0;
+
+	
+pesos = [5, 3, 2, 5, 3, 1, 10]
+beneficios = []		
+			
+```
