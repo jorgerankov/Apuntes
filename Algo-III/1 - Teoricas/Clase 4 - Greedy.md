@@ -13,14 +13,31 @@ Donde $X$ es la condicion por la que estoy evaluando (_ej: tiempo de ejecucion d
 - Se dan heuristicas sencillas para problemas de optimizacion
 - En general permiten construir soluciones razonables
 
-#### Problema de la mochila:
+#### Problema de la mochila (BT):
 ```
 def mochila(pesos, beneficios, capacidad):
 	if len(pesos) == 0 or capacidad == 0:
 		return 0;
 
+	if pesos[0]	> capacidad[0]:
+		return mochila(pesos[1:], beneficios[1:], capacidad)
 	
+	lo_pongo = beneficios[0] + mochila(pesos[1:], beneficios[1:], capacidad - pesos[0])
+	
+	no_lo_pongo = mochila(pesos[1:], beneficios[1:], capacidad)
+	
+	lo_mejor = max(lo_pongo, no_lo_pongo)
+	
+	return lo_mejor
+		
 pesos = [5, 3, 2, 5, 3, 1, 10]
-beneficios = []		
-			
+beneficios = [15, 5, 6, 2, 5, 2, 12]
+		
+mochila(pesos, beneficios, 20)
+```
+
+### Problema de la mochila (Greedy):
+```
+import numpy
+
 ```
