@@ -1,4 +1,4 @@
-### Conceptos
+## <u>Conceptos</u>
 ##### Definicion
 - Es la forma de introducir notacion nueva para algun objeto matematico
 	- _Ejemplo_: ”Un numero racional es un par de la forma (a, b) donde a y b son numeros enteros.”
@@ -9,9 +9,14 @@
 - Afirmaciones demostradas
 	- _Ejemplo_: 2 + 3 = 5
 
-### Estrategias de demostracion
-- **_Demostracion directa_**:
-	- Secuencia de implicaciones
+### <u>Estrategias de demostracion</u>
+- ##### Demostracion directa:
+	- _Secuencia de implicaciones_
 		- A => B ⇒ C ⇒ · · · ⇒ Z
-- **_Por casos_**:
-	- Demuestra que P ⇒ Q, as´ı que partimos P en P1, . . . , Pq y probamos Pi =⇒ Q para todo i entre 1 y q.
+- ##### Por casos:
+	- _Demuestra que P ⇒ Q_
+		- Parte P en P$_1$, . . . , P$q$ y probamos P$_i$ ⇒ Q para todo i entre 1 y q.
+- ##### Contradiccion/Absurdo:
+	- _Asume que lo que queremos demostrar_ **no se cumple** _y llegamos a algo falso_
+- ##### Contrarreciproco
+	- La expresion P ⇒ Q es equivalente a ¬Q ⇒ ¬P, asi que podemos probar la segunda para probar la primera
