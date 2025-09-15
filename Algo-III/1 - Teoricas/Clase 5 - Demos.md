@@ -19,4 +19,7 @@
 - ##### Contradiccion/Absurdo:
 	- _Asume que lo que queremos demostrar_ **no se cumple** _y llegamos a algo falso_
 - ##### Contrarreciproco
-	- La expresion P ⇒ Q es equivalente a ¬Q ⇒ ¬P, asi que podemos probar la segunda para probar la primera
+	- _La expresion P ⇒ Q es equivalente a ¬Q ⇒ ¬P, asi que podemos _**probar la segunda para probar la primera**
+- ##### Por Construccion
+	- _Para el caso particular en que la proposicion hable de_ **existencia de un elemento**, _basta con mostrar uno_
+- 
