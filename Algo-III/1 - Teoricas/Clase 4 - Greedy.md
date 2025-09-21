@@ -8,11 +8,18 @@
 **A es un algoritmo $\epsilon$-aproximado** para un problema si:
 $X_A − X_{OPT} \le \epsilon$ 
 Donde $X$ es la condicion por la que estoy evaluando (_ej: tiempo de ejecucion de un algoritmo_)
-#### Algoritmos Golosos
+## Algoritmos Golosos
 - Busca **construir una solucion** seleccionando en cada paso _la mejor alternativa_
 - Se dan heuristicas sencillas para problemas de optimizacion
 - En general permiten construir soluciones razonables
 
+## Principio de Intercambio
+**(_exchange argument_)**
+- **_Tecnica para demostrar la optimalidad de algoritmos greedy_**
+- **Comparamos** la _solucion greedy_ con _una solucion optima arbitraria_
+- **Transformamos gradualmente** _la solucion optima en la greedy_
+- Demostramos que cada transformacion **no empeora** la solucion
+- Concluimos que la solucion greedy es **tan buena** como la optima
 #### Problema de la mochila (BT):
 ```
 def mochila(pesos, beneficios, capacidad):
