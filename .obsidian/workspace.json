@@ -8,20 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "a04848b440d0faec",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algo-III/1 - Teoricas/Clase 4 - Greedy.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Clase 4 - Greedy"
-            }
-          },
-          {
             "id": "500628f44cbbb9d5",
             "type": "leaf",
             "state": {
@@ -35,8 +21,7 @@
               "title": "Clase 5 - Demos"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
