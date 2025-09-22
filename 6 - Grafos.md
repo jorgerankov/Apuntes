@@ -1,0 +1,4 @@
+ - Modelan relaciones entre vertices
+ - Consideran una red como estructura 
+	 - Modela relaciones abstractas 
+- 
