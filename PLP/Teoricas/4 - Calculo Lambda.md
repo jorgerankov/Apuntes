@@ -1,6 +1,6 @@
 Lenguaje definido solo en **dos operaciones**: _construir funciones y aplicarlas_
-### λ$^b$ - Lambda simplemente tipado con booleanos
-##### Sintaxis de los tipos
+## λ$^b$ - Lambda simplemente tipado con booleanos
+#### Sintaxis de los tipos
 - τ , σ, ρ, . . . ::= bool
 	- | τ → σ
 - “→” es _asociativo a derecha_ 
@@ -10,4 +10,6 @@ Lenguaje definido solo en **dos operaciones**: _construir funciones y aplicarlas
 - **if M then N else P**: Si M es un termino entonces N, sino P
 	- Al aplicar esto creo un nuevo termino
 - Su aplicacion es _asociativa a izquierda_
-- 
+### Sistema de tipos
+Se formaliza con un _sistema deductivo_
+#### Contextos de tipado
