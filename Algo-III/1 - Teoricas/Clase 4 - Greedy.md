@@ -1,4 +1,3 @@
-
 # Heuristicas
 - Procedimiento para obtener soluciones de **buena calidad** para un problema
 - Con comportamiento **lo mas preciso posible**
