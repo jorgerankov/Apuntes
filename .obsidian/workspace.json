@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PLP/Teoricas/4 - Calculo Lambda.md",
+                "file": "Algo-III/1 - Teoricas/Clase 3 - Programacion Dinamica.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "4 - Calculo Lambda"
+              "title": "Clase 3 - Programacion Dinamica"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 229.5,
-    "collapsed": true
+    "width": 203.5
   },
   "right": {
     "id": "0c0f80407ec2ad3f",
@@ -173,8 +172,8 @@
   },
   "active": "bf1b6833a912809d",
   "lastOpenFiles": [
-    "Algo-III/2 - Practicas/Practica 2 - Backtracking.md",
     "PLP/Teoricas/4 - Calculo Lambda.md",
+    "Algo-III/2 - Practicas/Practica 2 - Backtracking.md",
     "Algo-III/2 - Practicas/Clase 1.md",
     "Algo-III/1 - Teoricas/6 - Grafos.md",
     "Algo-III/1 - Teoricas/Clase 4 - Greedy.md",
