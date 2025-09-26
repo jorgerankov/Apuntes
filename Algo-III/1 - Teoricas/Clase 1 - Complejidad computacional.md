@@ -37,9 +37,9 @@ Permite resolver relaciones de recurrencia de la forma ***T(n)***:
 * ***T(n) = 1*** si _n = 1_ (caso base)
 
 ### Casos de log$_c$ (a)
-- Si log$_b$ a $<$ c $\rightarrow$ **T(n) = O(n$^c$) (Primer caso)**
+- Si log$_b$ a $>$ c $\rightarrow$ **T(n) = O(n$^{log_b \space a}$) (Primer caso)** 
 - Si log$_b$ a $=$ c  **T(n) = O(n$^c$ log(n)) (Segundo caso)**
-- Si log$_b$ a $>$ c $\rightarrow$ **T(n) = O(n$^{log_b \space a}$) (Tercer caso)** 
+- Si log$_b$ a $<$ c $\rightarrow$ **T(n) = O(n$^c$) (Tercer caso)**
 ## Casos de f(n)
 * Si f(n) = $O$(n$^{log_c \space a-\epsilon}$) para $\epsilon$ > 0 $\rightarrow$ ***T(n) = $\Theta$(n$^{log_c \space a}$)***
 * Si f(n) = $\Theta$(n$^{log_c \space a}$ log$^k$n) para algun k $\geq$ 0 $\rightarrow$ ***T(n) =  $\Theta$(n$^{log_c \space a}$ log n)***
