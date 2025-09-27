@@ -33,7 +33,7 @@
 	- Descarta ramas que pueden llevar a una solución válida, pero **seguro que no pueden mejorar la mejor solución encontrada hasta el momento**
 	- No pueden ser **mas óptimas** que _la mejor solucion que tenemos_
 	- **= Eliminar caminos que no mejoran la solución óptima**
-<br>
+	
 
 ### Tipos de soluciones
 - Usa un vector a = (a$_1$, a$_2$, . . . , a$_n$) para _representar una solucion candidata_
