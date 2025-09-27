@@ -25,6 +25,10 @@
 - Permite **descartar configuraciones antes de explorarlas**
 - Analiza todas las posibles “configuraciones”, lo cual habitualmente **implica una complejidad exponencial**
 <br>
+### Podas
+- #### Por factibilidad
+	- 
+- #### Por optimalidad
 - Usa un vector a = (a$_1$, a$_2$, . . . , a$_n$) para _representar una solucion candidata_
 - Cada a$_i$ pertenece un conjunto ordenado y finito A$_i$
 - En cada paso se _extienden las soluciones parciales agregando un elemento mas_
