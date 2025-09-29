@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algo-III/1 - Teoricas/Clase 3 - Programacion Dinamica.md",
+                "file": "Algo-III/1 - Teoricas/Clase 4 - Greedy.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Clase 3 - Programacion Dinamica"
+              "title": "Clase 4 - Greedy"
             }
           }
         ]
@@ -172,8 +172,8 @@
   },
   "active": "bf1b6833a912809d",
   "lastOpenFiles": [
-    "Algo-III/1 - Teoricas/Clase 1 - Complejidad computacional.md",
     "Algo-III/1 - Teoricas/Clase 3 - Programacion Dinamica.md",
+    "Algo-III/1 - Teoricas/Clase 1 - Complejidad computacional.md",
     "Algo-III/1 - Teoricas/Clase 2 - Fuerza bruta y Backtracking.md",
     "Algo-III/1 - Teoricas/Clase 4 - Greedy.md",
     "PLP/Teoricas/Clase 4 - Calculo Lambda.md",
