@@ -37,4 +37,13 @@ Se formaliza con un _sistema deductivo_
 		- Establece _relaciones logicas_ entre el estado del programa _antes y despues de la ejecucion_
 - #### Semantica op. small-step
 	- **Programas**
-		- 
+		- es un _termino M tipable y cerrado_ (fv(M) = ∅)
+		- El juicio de tipado ⊢ M:τ debe ser derivable para algun τ
+	- **Juicios de evaluacion**
+		- hace _afirmaciones sobre juicios de evaluacion_ **M → N** (M y N son programas)
+	- **Valores**
+		- son los posibles resultados de **evaluar programas**:
+			- V ::= true | false | λx : τ. M
+	- **Ver Reglas de evaluacion para expresiones booleanas**
+	- **Ver Reglas de evaluacion para funciones (abstraccion y aplicacion)**
+- 
