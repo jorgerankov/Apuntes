@@ -10,7 +10,7 @@ Lenguaje definido solo en **dos operaciones**: _construir funciones y aplicarlas
 - **if M then N else P**: Si M es un termino entonces N, sino P
 	- Al aplicar esto creo un nuevo termino
 - Su aplicacion es _asociativa a izquierda_
-### α-equivalencia
+#### α-equivalencia
 - Son dos terminos M y N que **difieren** solamente en **el nombre de sus variables ligadas**
 - Es una _relacion de equivalencia_
 ## Sistema de tipos
@@ -35,18 +35,19 @@ Se formaliza con un _sistema deductivo_
 		- Interpreta los _programas como objetos matematicos_
 - **Semantica axiomatica**
 		- Establece _relaciones logicas_ entre el estado del programa _antes y despues de la ejecucion_
-- ### Semantica op. small-step
-	- **Programas**
-		- es un _termino M tipable y cerrado_ (fv(M) = ∅)
-		- El juicio de tipado ⊢ M:τ debe ser derivable para algun τ
-	- **Juicios de evaluacion**
-		- hace _afirmaciones sobre juicios de evaluacion_ **M → N** (M y N son programas)
-	- **Valores**
-		- son los posibles resultados de **evaluar programas**:
+### Semantica op. small-step
+- **Programas**
+	- es un _termino M tipable y cerrado_ (fv(M) = ∅)
+	- El juicio de tipado ⊢ M:τ debe ser derivable para algun τ
+- **Juicios de evaluacion**
+	- hace _afirmaciones sobre juicios de evaluacion_ **M → N** (M y N son programas)
+- **Valores**
+	- son los posibles resultados de **evaluar programas**:
 			- V ::= true | false | λx : τ. M
-	- **Ver Reglas de evaluacion para expresiones booleanas**
-	- **Ver Reglas de evaluacion para funciones (abstraccion y aplicacion)**
- ### Sustitucion
+- **Ver Reglas de evaluacion para expresiones booleanas**
+- **Ver Reglas de evaluacion para funciones (abstraccion y aplicacion)**
+ 
+ **Sustitucion**
 - **M{x := N}** reemplaza todas las ocurrencias libres de x en M por N
 ## Propiedades de evaluacion
 - **Determinismo**
@@ -62,10 +63,29 @@ Se formaliza con un _sistema deductivo_
 - **Canonicidad**
 	- Si ⊢ M : bool es derivable, entonces la evaluacion de M termina y el resultado es true o false
 	- Si ⊢ M : τ → σ es derivable, entonces la evaluacion de M termina y el resultado es una abstraccion
-- ### Forma normal
-	- Es un termino que no puede evaluarse mas
+### Forma normal
+- Es un termino que no puede evaluarse mas
 	- **Lema**: Todo valor esta en forma normal
-	- **Estado de error**: 
-		- Evaluacion donde el termino esta en **forma normal**, pero **no es un valor**
-		- El sistema de runtime en una implementacion real generaria una excepcion
-- 
+- **Estado de error**: 
+	- Evaluacion donde el termino esta en **forma normal**, pero **no es un valor**
+	- El sistema de runtime en una implementacion real generaria una excepcion
+### Evaluacion en muchos pasos
+-  **Juicio en muchos pasos**
+	- Es la clausura reflexiva-transitiva de →. Es la menor relacion tal que
+		- Si M → M′ , entonces M ↠ M′
+		- M ↠ M para todo M
+		- Si M ↠ M′ y M′ ↠ M′′, entonces M ↠ M′′
+- #### Propiedades
+	- **Unicidad de formas normales**
+		- Si M ↠ U y M ↠ V con U, V formas normales, entonces U = V
+	- **Terminacion**
+		- Para todo M existe una forma normal N tal que M ↠ N
+## Calculo λ$^{bn}$
+#### Tipos
+- τ, σ, ... ::= ... | nat
+#### Semantica informal
+```
+M ::= ... 
+	| zero
+	| succ(M) el sucesor del numero que representa M | pred(M) el predecesor del n´umero que representa M | isZero(M) representa un booleano true/false, dependiendo de si M representa al cero o no
+```
