@@ -99,3 +99,14 @@ M ::= ...
 #### Forma normal
 - Un programa M es una _f.n._ si no existe M′ tal que M → M'
 - Las f.n.'s que no son valores se llaman **terminos de error**
+#### Propiedades
+- **Determinismo**
+	- Si M → N1 y M → N2 entonces N1 = N2
+- **Preservacion de tipos**
+	- Si ⊢ M : τ y M → N entonces ⊢ N : τ
+- **Progreso**
+	- Si ⊢ M : τ entonces:
+		- O bien M es un valor, 
+		- O bien existe N tal que M → N
+- **Terminacion**
+	- Si ⊢ M : τ , entonces no hay una cadena infinita de pasos
