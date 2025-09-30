@@ -87,5 +87,15 @@ Se formaliza con un _sistema deductivo_
 ```
 M ::= ... 
 	| zero
-	| succ(M) el sucesor del numero que representa M | pred(M) el predecesor del n´umero que representa M | isZero(M) representa un booleano true/false, dependiendo de si M representa al cero o no
+	| succ(M) el sucesor de M 
+	| pred(M) el predecesor de M 
+	| isZero(M) true/false, si M == cero o no
 ```
+#### Ver reglas de tipado
+
+#### Conjunto de valores
+- **V** ::= ... | zero | succ(**V**)
+- **_Ver semantica operacional_**
+#### Forma normal
+- Un programa M es una _f.n._ si no existe M′ tal que M → M'
+- Las f.n.'s que no son valores se llaman **terminos de error**
