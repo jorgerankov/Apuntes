@@ -21,4 +21,20 @@ Se formaliza con un _sistema deductivo_
 	- Se nota con letras griegas mayusculas
 - #### Juicios de tipado
 	- Predica sobre juicios de la forma Γ ⊢ M : τ
-	- 
+	- ***Ver reglas de tipado***
+	- #### Propiedades
+		- **Unicidad de tipos**
+			- Si Γ ⊢ M : τ y Γ ⊢ M : σ son derivables, entonces τ = σ
+		- **Weakening + Strengthening**
+			- Si Γ ⊢ M : τ es derivable y fv(M) ⊆ dom(Γ ∩ Γ′ ) entonces Γ ′ ⊢ M : τ es derivable
+- #### Semantica formal
+	- **Semantica operacional**
+		- Indica como se ejecuta el programa _hasta llegar a un resultado_
+		- _small-step_ (paso a paso) / _big-step_ (directa al resultado)
+	- **Semantica denotacional**
+		- Interpreta los _programas como objetos matematicos_
+	- **Semantica axiomatica**
+		- Establece _relaciones logicas_ entre el estado del programa _antes y despues de la ejecucion_
+- #### Semantica op. small-step
+	- **Programas**
+		- 
