@@ -46,4 +46,16 @@ Se formaliza con un _sistema deductivo_
 			- V ::= true | false | λx : τ. M
 	- **Ver Reglas de evaluacion para expresiones booleanas**
 	- **Ver Reglas de evaluacion para funciones (abstraccion y aplicacion)**
-- 
+- #### Sustitucion
+	- **M{x := N}** reemplaza todas las ocurrencias libres de x en M por N
+	- #### Propiedades
+		- **Determinismo**
+			- Si M → N1 y M → N2 entonces N1 = N2
+		- **Preservacion de tipos**
+			- Si ⊢ M : τ y M → N entonces ⊢ N : τ
+		- **Progreso**
+			- Si ⊢ M : τ entonces
+				- O bien M es un valor, 
+				- O bien existe N tal que M → N
+		- **Terminacion**
+			- Si ⊢ M : τ , entonces no hay una cadena infinita de pasos
