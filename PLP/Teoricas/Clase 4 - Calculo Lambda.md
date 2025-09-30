@@ -27,15 +27,15 @@ Se formaliza con un _sistema deductivo_
 			- Si Γ ⊢ M : τ y Γ ⊢ M : σ son derivables, entonces τ = σ
 		- **Weakening + Strengthening**
 			- Si Γ ⊢ M : τ es derivable y fv(M) ⊆ dom(Γ ∩ Γ′ ) entonces Γ ′ ⊢ M : τ es derivable
-- #### Semantica formal
-	- **Semantica operacional**
-		- Indica como se ejecuta el programa _hasta llegar a un resultado_
-		- _small-step_ (paso a paso) / _big-step_ (directa al resultado)
-	- **Semantica denotacional**
+## Semantica formal
+- **Semantica operacional**
+	- Indica como se ejecuta el programa _hasta llegar a un resultado_
+	- _small-step_ (paso a paso) / _big-step_ (directa al resultado)
+- **Semantica denotacional**
 		- Interpreta los _programas como objetos matematicos_
-	- **Semantica axiomatica**
+- **Semantica axiomatica**
 		- Establece _relaciones logicas_ entre el estado del programa _antes y despues de la ejecucion_
-- #### Semantica op. small-step
+- ### Semantica op. small-step
 	- **Programas**
 		- es un _termino M tipable y cerrado_ (fv(M) = ∅)
 		- El juicio de tipado ⊢ M:τ debe ser derivable para algun τ
@@ -46,16 +46,26 @@ Se formaliza con un _sistema deductivo_
 			- V ::= true | false | λx : τ. M
 	- **Ver Reglas de evaluacion para expresiones booleanas**
 	- **Ver Reglas de evaluacion para funciones (abstraccion y aplicacion)**
-- #### Sustitucion
-	- **M{x := N}** reemplaza todas las ocurrencias libres de x en M por N
-	- #### Propiedades
-		- **Determinismo**
-			- Si M → N1 y M → N2 entonces N1 = N2
-		- **Preservacion de tipos**
-			- Si ⊢ M : τ y M → N entonces ⊢ N : τ
-		- **Progreso**
-			- Si ⊢ M : τ entonces
-				- O bien M es un valor, 
-				- O bien existe N tal que M → N
-		- **Terminacion**
-			- Si ⊢ M : τ , entonces no hay una cadena infinita de pasos
+ ### Sustitucion
+- **M{x := N}** reemplaza todas las ocurrencias libres de x en M por N
+## Propiedades de evaluacion
+- **Determinismo**
+	- Si M → N1 y M → N2 entonces N1 = N2
+- **Preservacion de tipos**
+	- Si ⊢ M : τ y M → N entonces ⊢ N : τ
+- **Progreso**
+	- Si ⊢ M : τ entonces
+		- O bien M es un valor, 
+		- O bien existe N tal que M → N
+- **Terminacion**
+	- Si ⊢ M : τ , entonces no hay una cadena infinita de pasos
+- **Canonicidad**
+	- Si ⊢ M : bool es derivable, entonces la evaluacion de M termina y el resultado es true o false
+	- Si ⊢ M : τ → σ es derivable, entonces la evaluacion de M termina y el resultado es una abstraccion
+- ### Forma normal
+	- Es un termino que no puede evaluarse mas
+	- **Lema**: Todo valor esta en forma normal
+	- **Estado de error**: 
+		- Evaluacion donde el termino esta en **forma normal**, pero **no es un valor**
+		- El sistema de runtime en una implementacion real generaria una excepcion
+- 
