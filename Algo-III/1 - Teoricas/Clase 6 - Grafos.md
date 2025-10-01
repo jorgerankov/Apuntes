@@ -75,3 +75,13 @@ Dados dos grafos G = (V, X) y G' = (V' , X') son **isomorfos**:
 - Si  existe una **funcion biyectiva f : V → V'** tal que $\forall$ v,w ∈ V: ***(v,w) ∈ X <-> (f(v), f(w)) ∈ X'***
 - La **funcion f** es llamada **funcion de isomorfismo**
 - Cuando G y G' son isomorfos --> se denota **G = G'**
+##### Si dos grafos G = (V, X) y G' = (V', X') son isomorfos
+- Tienen el mismo numero de vertices
+- Tienen el mismo numero de aristas
+- Tienen el mismo numero de componentes conexas
+### <u>Representacion de grafos</u>
+- ##### Matrices
+	- la respresentacion de grafos mediante matrices **es util conceptual y teoricamente**
+- ##### Listas
+	- Estructuras **mas eficientes en espacio**
+- 
