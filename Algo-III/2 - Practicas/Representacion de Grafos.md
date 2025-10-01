@@ -1,9 +1,10 @@
-### Notacion
+## <u>Notacion</u>
 - **n := | V |** := cantidad de nodos de G
 - **m := | E |** := cantidad de aristas de G
 - **N(v)** := vecindario del nodo v
 - **d(v) := | N(v) |** = grado del nodo v
-### Definicion
+## <u>Matriz de adyacencia</u>
+#### Definicion
 Grafo G = (V, E) definido como una **matriz M de n × n**
 Si **i, j ∈ V**, entonces:
 - M$[i][j]$ = M$[j][i]$ = $0$ si (i, j) $\notin$ E
@@ -36,3 +37,23 @@ eliminarArista(G, (v,w))
 	return G
 ```
 **Complejidad: Θ(1)**
+### Vecindario
+El **vecindario de un vértice v** es el conjunto de todos los vértices _u_ tales que _existe una arista entre v y u_
+```
+vecindario(G, v):
+	res ← {}
+	for u ∈ V do
+		if G[v][u] = 1 then
+			res ← res ∪ {u}
+		end if
+	end for
+	return res
+```
+**Complejidad: Θ(n)**
+## <u>Lista de adyacencia</u>
+#### Definicion
+Grafo **G = (V, E)** definido como un vector donde en la posicion correspondiente a cada nodo **va a almacenar un puntero a su conjunto de vecinos**
+
+Si v,w ∈ V, entonces:
+- w ∈ N$[v]$ y v ∈ N$[w]$ si (v,w) ∈ E
+- w $\$ N[v] y v ∈/ N[w] si (v,w) ∈/ E
