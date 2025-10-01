@@ -90,3 +90,4 @@ Dados dos grafos G = (V, X) y G' = (V' , X') son **isomorfos**:
 		- **0 si no**
 	- La suma de los elementos de la columna o fila i de A **es igual a d(v$_i$)**
 ### Digrafos
+es una estructura de grafo en la que **las aristas tienen una dirección**. Es decir, cada arista va de un vértice (nodo) a otro, formando un par ordenado
