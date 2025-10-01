@@ -32,3 +32,5 @@ La **suma de los grados** de los vertices de un grafo = _2 veces el numero de ar
 - Todos los vertices son **adyacentes entre si**
 - K$_n$ es el **grafo completo** de n vertices
 
+### Complemento de un Grafo G$^c$ = (V, X)
+
