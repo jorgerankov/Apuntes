@@ -21,7 +21,7 @@ init(cantidad de nodos, lista de aristas):
 ```
 **Complejidad: Θ(n$^2$)**
 
-### Chequear/agregar/eliminar arista
+### Chequear/agregar/eliminar Aristas
 ```
 tieneArista(G, (v,w)):
 	return G[v][w] == 1
@@ -62,5 +62,41 @@ Si v,w ∈ V, entonces:
 init(cantidad de nodos, lista de aristas):
 	N ← arreglo de largo n
 	for v ∈ 1 ... n do
+		L ← lista vacia
+		N[v] ← puntero a L
+	end for
 	
+	for (v,w) ∈ E do
+		A la lista en N[v] le agregamos w
+		A la lista en N[w] le agregamos v
+	end for
+	return N
 ```
+**Complejidad: Θ(n + m)**
+
+### Chequear/agregar/eliminar Aristas
+```
+tieneArista(G, (v,w)):
+	return pertenece(G[v],w)
+
+agregarArista(G, (v,w)):
+	agregar(G[v],w)
+	agregar(G[w],v)
+	return G
+	
+eliminarArista(G, (v,w)):
+	eliminar(G[v],w)
+	eliminar(G[w],v)
+	return G
+```
+**Complejidad pertenece: O(d(v)) ∈ O(n)**
+**Complejidad agregarArista: O(1)**
+**Complejidad eliminarArista: O(d(v)) ∈ O(n)**
+### Vecindario
+```
+vecindario(G, v):
+	return G[v]
+```
+**Complejidad:** 
+- **Θ(1)** si devuelvo una referencia
+- **O(grado(v))** si devuelvo una copia
