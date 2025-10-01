@@ -6,4 +6,6 @@
 ### Definicion
 Grafo G = (V, E) definido como una **matriz M de n × n**
 Si **i, j ∈ V**, entonces:
-- $M[i][j]$ = M$[j][i]$ = 0 si (i, j) ∈/ E
+- M$[i][j]$ = M$[j][i]$ = $0$ si (i, j) $\notin$ E
+- M$[i][j]$ = M$[j][i]$ = $1$ si (i, j) $\in$ E
+
