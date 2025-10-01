@@ -56,4 +56,11 @@ Grafo **G = (V, E)** definido como un vector donde en la posicion correspondient
 
 Si v,w ∈ V, entonces:
 - w ∈ N$[v]$ y v ∈ N$[w]$ si (v,w) ∈ E
-- w $\$ N[v] y v ∈/ N[w] si (v,w) ∈/ E
+- w $\notin$ N$[v]$ y v $\notin$ N$[w]$ si (v,w) $\notin$ E
+### Inicializar una Lista de adyacencia
+```
+init(cantidad de nodos, lista de aristas):
+	N ← arreglo de largo n
+	for v ∈ 1 ... n do
+	
+```
