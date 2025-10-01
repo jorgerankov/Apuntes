@@ -99,4 +99,7 @@ vecindario(G, v):
 ```
 **Complejidad:** 
 - **Θ(1)** si devuelvo una referencia
-- **O(grado(v))** si devuelvo una copia
+- **O(grado(v))** si devuelvo una copia, siendo grado(v) el número de vecinos de (v) => **O(n) en el peor caso**
+## Grafos implicitos
+- Se pueden pensar problemas con teoria de grafos _sin representarlos explicitamente en memoria_
+- Mientras _podamos definir el conjunto de nodos y, dado alguno de ellos, podamos definir su vecindad_, funciona
