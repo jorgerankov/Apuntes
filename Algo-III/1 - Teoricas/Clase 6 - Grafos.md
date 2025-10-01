@@ -34,11 +34,11 @@ La **suma de los grados** de los vertices de un grafo = _2 veces el numero de ar
 - Tiene el **mismo conjunto de vertices** que G
 - Tiene todos los vertices que **no son adyacentes en G**
 ### <u>Recorridos, caminos, circuitos y ciclos</u>
-- ***Recorrido***: 
-- ***Camino***: Un recorrido que **no pasa dos veces por el mismo vertice**
+- ***Recorrido***: Es una **sucesión de vértices conectados por aristas** donde **cada arista une dos vértices consecutivos** del recorrido
+- ***Camino***: Es un recorrido que **no pasa dos veces por el mismo vertice**
 - ***Seccion***: 
-- ***Circuito***: Un recorrido que **empieza y termina en el mismo vertice**
-- ***Ciclo***: Un circuito de **3 o mas vertices que no pasa dos veces por el mismo vertice**
+- ***Circuito***: Es un recorrido que **empieza y termina en el mismo vertice**
+- ***Ciclo***: Es un circuito de **3 o mas vertices que no pasa dos veces por el mismo vertice**
 ### <u>Longitud: l(P)</u>
 Es la **cantidad de aristas que tiene** un _recorrido P_
 ### <u>Distancia d(v,w)</u>
@@ -51,5 +51,7 @@ Es la **cantidad de aristas que tiene** un _recorrido P_
 	- d(u, v) = d(v, u)
 	- d(u,w) $\leq$ d(u, v) + d(v,w)
 ### <u>Subgrafos</u>
+Es un grafo formado **a partir de un subconjunto de los vértices y aristas de otro grafo**
+- Si H ⊆ G y H $\neq$ G -> H es **subgrafo propio de G**, H ⊂ G
 - H es un **subgrafo generador de G** si H ⊆ G y V$_G$ = V$_H$
 - **Subgrafo inducido**: 
