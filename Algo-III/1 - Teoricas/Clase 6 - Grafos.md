@@ -15,12 +15,12 @@
 	- n$_G$ = |V|
 	- m$_G$ = |X|
 
-### Multigrafos
+### <u>Multigrafos</u>
 Grafos en el que **puede haber varias aristas** entre **el mismo par de vertices distintos**
-### Pseudografo
+### <u>Pseudografo</u>
 Grafos en el que **puede haber varias aristas entre cada par de vertices** y tambien **puede haber aristas** _(loops)_ que **unan a un vertice con si mismo**
 
-### Grado de un vertice v en el grafo G
+### <u>Grado de un vertice v en el grafo G</u>
 - **d$_G$ (v)**: es la cantidad de _aristas incidentes a v en G_
 - **∆(G)**: El **maximo grado de los vertices** de G
 - **δ(G)**: El **minimo grado de los vertices** de G
@@ -39,9 +39,17 @@ La **suma de los grados** de los vertices de un grafo = _2 veces el numero de ar
 - ***Seccion***: 
 - ***Circuito***: Un recorrido que **empieza y termina en el mismo vertice**
 - ***Ciclo***: Un circuito de **3 o mas vertices que no pasa dos veces por el mismo vertice**
-### Longitud: **l(P)**
+### <u>Longitud: l(P)</u>
 Es la **cantidad de aristas que tiene** un _recorrido P_
-### Distancia **d(v,w)**
+### <u>Distancia d(v,w)</u>
 - Es la **longitud del recorrido mas corto** entre _dos vertices v y w_
 - **d(v,w) = ∞** si _no existe recorrido entre v y w_
 - $\forall$ vertice v, **d(v, v) = 0**
+- Si un _recorrido P entre v y w_ tiene **longitud d(v,w), P debe ser un camino**
+- #### Propiedades ($\forall$ u, v, w pertenecientes a V)
+	- d(u, v) $\geq$ 0 y d(u, v) = 0 si y solo si u = v
+	- d(u, v) = d(v, u)
+	- d(u,w) $\leq$ d(u, v) + d(v,w)
+### <u>Subgrafos</u>
+- H es un **subgrafo generador de G** si H ⊆ G y V$_G$ = V$_H$
+- **Subgrafo inducido**: 
