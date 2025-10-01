@@ -84,4 +84,9 @@ Dados dos grafos G = (V, X) y G' = (V' , X') son **isomorfos**:
 	- la respresentacion de grafos mediante matrices **es util conceptual y teoricamente**
 - ##### Listas
 	- Estructuras **mas eficientes en espacio**
-- 
+- ##### Matriz de adyacencia
+	- A ∈ {0, 1}$^{n×n}$, donde los elementos a$_{ij}$ de A se definen como:
+		- **1** si G **tiene una arista** entre los vertices v$_i$ y v$_j$
+		- **0 si no**
+	- La suma de los elementos de la columna o fila i de A **es igual a d(v$_i$)**
+### Digrafos
