@@ -56,4 +56,7 @@ Es un grafo formado **a partir de un subconjunto de los vértices y aristas de o
 - H es un **subgrafo generador de G** si H ⊆ G y V$_G$ = V$_H$
 - #### Subgrafo inducido 
 	- Un subgrafo H = (V$_H$, X$_H$) de G = (V$_G$ , X$_G$) es **inducido** si **todo par u, v** ∈ V$_H$ con (u, v) ∈ X$_G$ entonces tambien (u, v) ∈ X$_H$
-	- 
+### <u>Grafo Conexo</u>
+- Un grafo es **conexo** si **existe camino entre todo par de vertices**
+- Una **componente conexa** de un grafo G **es un subgrafo conexo maximal de G**
+### <u>Grafos bipartitos</u>
