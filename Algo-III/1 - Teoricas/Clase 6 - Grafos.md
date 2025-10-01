@@ -95,3 +95,6 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 - El ***grado de entrada*** d$_{in}$(v) de un vertice v de un digrafo es **la cantidad de arcos que llegan a v**
 - El ***grado de salida*** d$_{out}$(v) de un vertice v de un digrafo es la **cantidad de arcos que salen de v** == _la cantidad de arcos que tienen a v como cola_
 - El ***grafo subyacente*** de un digrafo G es el grafo G$^s$ que resulta de remover las direcciones de sus arcos
+- ##### Recorrido/Camino orientado
+- ##### Circuito/Ciclo orientado
+- Un digrafo se dice ***fuertemente conexo*** si _para todo par de vertices u, v_ **existen caminos orientados de u a v y de v a u**
