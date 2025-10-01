@@ -69,4 +69,9 @@ Si el conjunto de vértices es V, **existen _dos subconjuntos U y W_ tales 
 - _U_ ∩ _W_ = ∅
 - Cada arista conecta un vértice de _U_ con uno de _W_
 
-Un _grafo bipartito con subconjuntos V1, V2_, es **bipartito completo** si **todo vertice en V1 es adyacente a todo vertice en V2**.
+Un _grafo bipartito con subconjuntos V1, V2_, es **bipartito completo** si **todo vertice en V1 es adyacente a todo vertice en V2**
+### <u>Isomorfismo de grafos</u>
+Dados dos grafos G = (V, X) y G' = (V' , X') son **isomorfos**:
+- Si  existe una **funcion biyectiva f : V → V'** tal que $\forall$ v,w ∈ V: ***(v,w) ∈ X <-> (f(v), f(w)) ∈ X'***
+- La **funcion f** es llamada **funcion de isomorfismo**
+- Cuando G y G' son isomorfos --> se denota **G = G'**
