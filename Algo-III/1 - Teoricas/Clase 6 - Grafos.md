@@ -54,4 +54,6 @@ Es la **cantidad de aristas que tiene** un _recorrido P_
 Es un grafo formado **a partir de un subconjunto de los vértices y aristas de otro grafo**
 - Si H ⊆ G y H $\neq$ G -> H es **subgrafo propio de G**, H ⊂ G
 - H es un **subgrafo generador de G** si H ⊆ G y V$_G$ = V$_H$
-- **Subgrafo inducido**: 
+- #### Subgrafo inducido 
+	- Un subgrafo H = (V$_H$, X$_H$) de G = (V$_G$ , X$_G$) es **inducido** si **todo par u, v** ∈ V$_H$ con (u, v) ∈ X$_G$ entonces tambien (u, v) ∈ X$_H$
+	- 
