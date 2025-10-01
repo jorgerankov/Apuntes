@@ -39,6 +39,9 @@ La **suma de los grados** de los vertices de un grafo = _2 veces el numero de ar
 - ***Seccion***: 
 - ***Circuito***: Un recorrido que **empieza y termina en el mismo vertice**
 - ***Ciclo***: Un circuito de **3 o mas vertices que no pasa dos veces por el mismo vertice**
-### Distancia
-**Longitud** de un _recorrido P_ (**l(P)**) es la **cantidad de aristas que tiene**
-distancia entre dos v´ertices v y w, d(v,w), se define como la longitud del recorrido m´as corto entre v y w
+### Longitud: **l(P)**
+Es la **cantidad de aristas que tiene** un _recorrido P_
+### Distancia **d(v,w)**
+- Es la **longitud del recorrido mas corto** entre _dos vertices v y w_
+- **d(v,w) = ∞** si _no existe recorrido entre v y w_
+- $\forall$ vertice v, **d(v, v) = 0**
