@@ -23,4 +23,12 @@ Grafos en el que **puede haber varias aristas entre cada par de vertices** y tam
 ### Grado de un vertice v en el grafo G
 - **d$_G$ (v)**: es la cantidad de _aristas incidentes a v en G_
 - **∆(G)**: El **maximo grado de los vertices** de G
-- δ(G) El minimo
+- **δ(G)**: El **minimo grado de los vertices** de G
+
+La **suma de los grados** de los vertices de un grafo = _2 veces el numero de aristas_: $\sum^{n}_{i = 1}$d(v$_i$) = 2m
+- Para todo grafo, la cantidad de vertices que tienen grado impar es par
+
+### Grafo Completo
+- Todos los vertices son **adyacentes entre si**
+- K$_n$ es el **grafo completo** de n vertices
+
