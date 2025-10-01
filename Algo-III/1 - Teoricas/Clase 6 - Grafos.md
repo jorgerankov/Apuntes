@@ -60,3 +60,13 @@ Es un grafo formado **a partir de un subconjunto de los vértices y aristas de o
 - Un grafo es **conexo** si **existe camino entre todo par de vertices**
 - Una **componente conexa** de un grafo G **es un subgrafo conexo maximal de G**
 ### <u>Grafos bipartitos</u>
+Es un tipo de grafo en el que el **conjunto de vértices puede dividirse en dos grupos** (conjuntos) **disjuntos**
+- **Ningún vértice** dentro de un mismo grupo **está conectado entre sí**
+- Todas las aristas **unen un vértice de un grupo con un vértice del otro grupo**
+
+Si el conjunto de vértices es V, **existen _dos subconjuntos U y W_ tales que**:
+- _U_ ∪ _W_ = V
+- _U_ ∩ _W_ = ∅
+- Cada arista conecta un vértice de _U_ con uno de _W_
+
+Un _grafo bipartito con subconjuntos V1, V2_, es **bipartito completo** si **todo vertice en V1 es adyacente a todo vertice en V2**.
