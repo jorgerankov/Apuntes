@@ -90,4 +90,8 @@ Dados dos grafos G = (V, X) y G' = (V' , X') son **isomorfos**:
 		- **0 si no**
 	- La suma de los elementos de la columna o fila i de A **es igual a d(v$_i$)**
 ### Digrafos
-es una estructura de grafo en la que **las aristas tienen una dirección**. Es decir, cada arista va de un vértice (nodo) a otro, formando un par ordenado
+Es una estructura en la que **las aristas tienen una dirección**. Es decir, **cada arista va de un vértice** (nodo) **a otro**, formando un **par ordenado**
+- Dado un _arco e = (u,w)_ llamaremos al primer elemento (u) ***cola*** de e y al segundo elemento (w), ***cabeza*** de e
+- El ***grado de entrada*** d$_{in}$(v) de un vertice v de un digrafo es **la cantidad de arcos que llegan a v**
+- El ***grado de salida*** d$_{out}$(v) de un vertice v de un digrafo es la **cantidad de arcos que salen de v** == _la cantidad de arcos que tienen a v como cola_
+- El ***grafo subyacente*** de un digrafo G es el grafo G$^s$ que resulta de remover las direcciones de sus arcos
