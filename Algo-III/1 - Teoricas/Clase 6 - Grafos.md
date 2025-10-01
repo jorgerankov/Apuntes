@@ -1,4 +1,5 @@
- - Modelan relaciones entre vertices
+ - Modelan **relaciones entre vertices**
+ - Representa **problemas de la vida real** que consideran una red como _estructura subyacente_
  - Consideran una red como estructura 
 	 - Modela relaciones abstractas 
 - 
