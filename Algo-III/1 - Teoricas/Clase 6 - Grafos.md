@@ -27,10 +27,14 @@ Grafos en el que **puede haber varias aristas entre cada par de vertices** y tam
 
 La **suma de los grados** de los vertices de un grafo = _2 veces el numero de aristas_: $\sum^{n}_{i = 1}$d(v$_i$) = 2m
 - Para todo grafo, la cantidad de vertices que tienen grado impar es par
-
-### Grafo Completo
+### <u>Grafo Completo</u>
 - Todos los vertices son **adyacentes entre si**
 - K$_n$ es el **grafo completo** de n vertices
-
-### Complemento de un Grafo G$^c$ = (V, X)
-
+### <u>Complemento de un Grafo G$^c$ = (V, X)</u>
+- Tiene el **mismo conjunto de vertices** que G
+- Tiene todos los vertices que **no son adyacentes en G**
+### <u>Recorridos, caminos, circuitos y ciclos</u>
+- ***Recorrido***: 
+- ***Camino***: Un recorrido que **no pasa dos veces por el mismo vertice**
+- ***Circuito***: Un recorrido que **empieza y termina en el mismo vertice**
+- ***Ciclo***: Un circuito de **3 o mas vertices que no pasa dos veces por el mismo vertice**
