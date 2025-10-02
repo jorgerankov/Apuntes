@@ -25,9 +25,10 @@ Una **expresion** puede ser:
 - Se asocia de _derecha a izquierda_
 - Ejemplos: 
 	- $\lambda \space x.\space x$ devuelve lo que reciba de $x.$ y el resultado es una nueva expresion que es solamente $x$ (funcion Identidad)
-	- $\lambda \space x.\space y$
-	- $\lambda \space x.\space yz$ 
-	- 
+	- $\lambda x.\space y$ == (x) => y --> Toma $x$, devuelve $y$
+	- $\lambda x.\space yz$ == (x) => y(z) --> Toma $x$, devuelve la aplicacion de $z$ en $y$
+	- $(\lambda x.\space y)z$ == ((x) => y) (z) --> Funcion que toma $x$, devuelve $y$, y todo esto lo valuo en $z$
+	- $\lambda x.\space \lambda y.\space x$ == (x) => (y) => x
 ## λ$^b$Lambda simplemente tipado
 #### Sintaxis de los tipos
 - τ , σ, ρ, . . . ::= bool
