@@ -15,7 +15,19 @@ Una **expresion** puede ser:
 ### Aplicacion
 - Representa la **aplicacion de una funcion a un det. parametro**
 - Tanto la funcion como el param. **son expresiones lambda**
-- 
+- Ejemplos (_se asocia de izquierda a derecha_): 
+	- $f\space x$ == f(x)
+	- $f\space x\space y$ == f(x) (y)
+	- $f(x\space y)$ == f(x(y))
+### Abstraccion
+- Representacion de una **funcion pura**, con su parametro y funcion de retorno
+- Usa $\lambda$ para _representar una funcion_ y el punto para _separar el param. de la expresion de retorno_
+- Se asocia de _derecha a izquierda_
+- Ejemplos: 
+	- $\lambda \space x.\space x$ devuelve lo que reciba de $x.$ y el resultado es una nueva expresion que es solamente $x$ (funcion Identidad)
+	- $\lambda \space x.\space y$
+	- $\lambda \space x.\space yz$ 
+	- 
 ## λ$^b$Lambda simplemente tipado
 #### Sintaxis de los tipos
 - τ , σ, ρ, . . . ::= bool
