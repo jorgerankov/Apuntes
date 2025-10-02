@@ -29,6 +29,11 @@ Una **expresion** puede ser:
 	- $\lambda x.\space yz$ == (x) => y(z) --> Toma $x$, devuelve la aplicacion de $z$ en $y$
 	- $(\lambda x.\space y)z$ == ((x) => y) (z) --> Funcion que toma $x$, devuelve $y$, y todo esto lo valuo en $z$
 	- $\lambda x.\space \lambda y.\space x$ == (x) => (y) => x
+## Notacion reducida (parentesis)
+- Omite parentesis exteriores: $(\lambda x.\space (M)) \equiv\space \lambda x.M$ 
+- La **aplicacion** es **asociativa a izquierda**: $(M\space N)\space L \equiv\space M\space N\space L$ 
+- Las **abstracciones** son **asociativas a derecha**: $\lambda x.\space (\lambda y.M) \equiv \lambda x.\lambda y.M$ 
+- La **aplicacion** tiene **precedencia** (_prioridad_) **sobre la abstraccion**: $\lambda x.(M N) \equiv \lambda x.MN$ 
 ## λ$^b$Lambda simplemente tipado
 #### Sintaxis de los tipos
 - τ , σ, ρ, . . . ::= bool
