@@ -50,6 +50,11 @@ Una **expresion** puede ser:
 - Se basa en **sustituir variables**, **tomar una funcion** y **evaluarla con sus argumentos**
 	- Ejemplo: $(\lambda x.E_1)E_2\space$ -->$_\beta\space$ $E_1\space [ x:=\space E_2]$  
 _Para reducir la expresion de la izq, se debe reemplazar en $E_1$ todas las ocurrencias del parametro $x$ por el argumento $E_2$_ 
+## Redex
+- Una expresion lambda es una **redex** si **puede ser reducida usando Reduccion-$\beta$**
+- Una expresion lambda puede tener multiples redex o ninguno
+- Una expresion esta en **forma normal** si **no puede ser reducida por Reduccion-$\beta$** ==> **No tiene redex**
+- 
 ## λ$^b$Lambda simplemente tipado
 #### Sintaxis de los tipos
 - τ , σ, ρ, . . . ::= bool
