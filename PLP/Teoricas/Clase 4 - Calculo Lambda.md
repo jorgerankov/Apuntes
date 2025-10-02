@@ -12,6 +12,12 @@ Una **expresion** puede ser:
 	- **Libres**: no dependen de un parametro de la funcion
 	- **Ligadas**: dependen de un parametro de la funcion
 	- **Ej**: $x$ es una var. _ligada_ e $y$ es una _libre_: (x) => x + y
+### Variables libres y ligadas
+**Definicion formal de variables libres**:
+- Variables **libre de una variable**: $FV(x)\space =\space \{ x\}$
+- Variables **libre de una aplicacion**: $FV(M\space N)\space =\space FV(M) \cup FV(N)$
+- Variables **libre de una abstraccion**: $FV(\lambda x.M)\space =\space FV(M) - \{ x\}$
+- 
 ### Aplicacion
 - Representa la **aplicacion de una funcion a un det. parametro**
 - Tanto la funcion como el param. **son expresiones lambda**
@@ -34,8 +40,7 @@ Una **expresion** puede ser:
 - La **aplicacion** es **asociativa a izquierda**: $(M\space N)\space L \equiv\space M\space N\space L$ 
 - Las **abstracciones** son **asociativas a derecha**: $\lambda x.\space (\lambda y.M) \equiv \lambda x.\lambda y.M$ 
 - La **aplicacion** tiene **precedencia** (_prioridad_) **sobre la abstraccion**: $\lambda x.(M N) \equiv \lambda x.MN$ 
-### Variables libres y ligadas
-- 
+ 
 ## λ$^b$Lambda simplemente tipado
 #### Sintaxis de los tipos
 - τ , σ, ρ, . . . ::= bool
