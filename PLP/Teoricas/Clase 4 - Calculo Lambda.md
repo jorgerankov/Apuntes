@@ -54,7 +54,7 @@ _Para reducir la expresion de la izq, se debe reemplazar en $E_1$ todas las ocur
 - Una expresion lambda es una **redex** si **puede ser reducida usando Reduccion-$\beta$**
 - Una expresion lambda puede tener multiples redex o ninguno
 - Una expresion esta en **forma normal** si **no puede ser reducida por Reduccion-$\beta$** ==> **No tiene redex**
-- 
+
 ## λ$^b$Lambda simplemente tipado
 #### Sintaxis de los tipos
 - τ , σ, ρ, . . . ::= bool
