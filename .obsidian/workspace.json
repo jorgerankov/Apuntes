@@ -20,8 +20,21 @@
               "icon": "lucide-file",
               "title": "Representacion de Grafos"
             }
+          },
+          {
+            "id": "951cffaf190ca2e0",
+            "type": "leaf",
+            "state": {
+              "type": "release-notes",
+              "state": {
+                "currentVersion": "1.9.14"
+              },
+              "icon": "lucide-book-up",
+              "title": "Release Notes 1.9.14"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -170,7 +183,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "46e0e1f836d658ac",
+  "active": "951cffaf190ca2e0",
   "lastOpenFiles": [
     "Algo-III/2 - Practicas/Clase 1.md",
     "Algo-III/2 - Practicas/Representacion de Grafos.md",
