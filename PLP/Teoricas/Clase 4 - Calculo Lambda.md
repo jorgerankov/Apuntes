@@ -1,5 +1,22 @@
 Lenguaje definido solo en **dos operaciones**: _construir funciones y aplicarlas_
-## λ$^b$ - Lambda simplemente tipado con booleanos
+
+## Expresiones
+### $E ::= x | E E | \lambda x.E$ 
+Una **expresion** puede ser:
+- Una **variable** ($x$)
+- Una **aplicacion** de una funcion a un determinado parametro ($E E$ aplica una funcion a otra funcion)
+- Una **abstraccion lambda**, con un parametro y un cuerpo ($\lambda x.E$)
+### Variable
+- Identificador asociado a cualquier letra a,b,c...
+- **Dos tipos** de variables:
+	- **Libres**: no dependen de un parametro de la funcion
+	- **Ligadas**: dependen de un parametro de la funcion
+	- **Ej**: $x$ es una var. _ligada_ e $y$ es una _libre_: (x) => x + y
+### Aplicacion
+- Representa la **aplicacion de una funcion a un det. parametro**
+- Tanto la funcion como el param. **son expresiones lambda**
+- 
+## λ$^b$Lambda simplemente tipado
 #### Sintaxis de los tipos
 - τ , σ, ρ, . . . ::= bool
 	- | τ → σ
