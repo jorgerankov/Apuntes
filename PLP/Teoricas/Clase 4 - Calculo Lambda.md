@@ -42,9 +42,13 @@ Una **expresion** puede ser:
 - La **aplicacion** tiene **precedencia** (_prioridad_) **sobre la abstraccion**: $\lambda x.(M N) \equiv \lambda x.MN$ 
 ## Conversion-$\alpha$ 
 - Metodo para **renombrar argumentos**
-- Permite _desambiguar variables_: $x\space(\lambda x.xy)$ ->$_\alpha$ $x\space (\alpha z.zy)$
+- Permite _desambiguar variables_: $x\space(\lambda x.xy)$ -->$_\alpha$ $x\space (\alpha z.zy)$
 - Dos expresiones lambda son **equivalentes** sii difieren unicamente en el nombre de sus variables
 	- Ejemplo: $x\space(\lambda x.xy) \equiv x\space (\lambda z.zy)$ 
+## Reduccion-$\beta$ 
+- Reduce expresiones lambda
+- Se basa en sustituir variables, tomar una funcion y evaluarla con sus argumentos
+- Ejemplo: $(\lambda x.E_1)E_2\space$ -->$_\beta\space$ $E_1\space [ x:=\space E_2]$  
 ## λ$^b$Lambda simplemente tipado
 #### Sintaxis de los tipos
 - τ , σ, ρ, . . . ::= bool
