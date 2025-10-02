@@ -17,7 +17,7 @@ Una **expresion** puede ser:
 - Variables **libre de una variable**: $FV(x)\space =\space \{ x\}$
 - Variables **libre de una aplicacion**: $FV(M\space N)\space =\space FV(M) \cup FV(N)$
 - Variables **libre de una abstraccion**: $FV(\lambda x.M)\space =\space FV(M) - \{ x\}$
-- 
+
 ### Aplicacion
 - Representa la **aplicacion de una funcion a un det. parametro**
 - Tanto la funcion como el param. **son expresiones lambda**
