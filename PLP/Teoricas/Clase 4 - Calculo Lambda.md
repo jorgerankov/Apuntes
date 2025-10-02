@@ -6,9 +6,9 @@ Una **expresion** puede ser:
 - Una **variable** ($x$)
 - Una **aplicacion** de una funcion a un determinado parametro ($E E$ aplica una funcion a otra funcion)
 - Una **abstraccion lambda**, con un parametro y un cuerpo ($\lambda x.E$)
-### Variable
-- Identificador asociado a cualquier letra a,b,c...
-- **Dos tipos** de variables:
+### Variables
+- Identificadores asociados a cualquier letra a,b,c...
+- **Dos tipos**:
 	- **Libres**: no dependen de un parametro de la funcion
 	- **Ligadas**: dependen de un parametro de la funcion
 	- **Ej**: $x$ es una var. _ligada_ e $y$ es una _libre_: (x) => x + y
@@ -34,6 +34,8 @@ Una **expresion** puede ser:
 - La **aplicacion** es **asociativa a izquierda**: $(M\space N)\space L \equiv\space M\space N\space L$ 
 - Las **abstracciones** son **asociativas a derecha**: $\lambda x.\space (\lambda y.M) \equiv \lambda x.\lambda y.M$ 
 - La **aplicacion** tiene **precedencia** (_prioridad_) **sobre la abstraccion**: $\lambda x.(M N) \equiv \lambda x.MN$ 
+### Variables libres y ligadas
+- 
 ## λ$^b$Lambda simplemente tipado
 #### Sintaxis de los tipos
 - τ , σ, ρ, . . . ::= bool
