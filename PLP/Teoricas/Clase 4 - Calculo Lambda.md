@@ -6,7 +6,7 @@ Una **expresion** puede ser:
 - Una **variable** ($x$)
 - Una **aplicacion** de una funcion a un determinado parametro ($E E$ aplica una funcion a otra funcion)
 - Una **abstraccion lambda**, con un parametro y un cuerpo ($\lambda x.E$)
-### Variables
+## Variables
 - Identificadores asociados a cualquier letra a,b,c...
 - **Dos tipos**:
 	- **Libres**: no dependen de un parametro de la funcion
@@ -18,14 +18,14 @@ Una **expresion** puede ser:
 - Variables **libre de una aplicacion**: $FV(M\space N)\space =\space FV(M) \cup FV(N)$
 - Variables **libre de una abstraccion**: $FV(\lambda x.M)\space =\space FV(M) - \{ x\}$
 
-### Aplicacion
+## Aplicacion
 - Representa la **aplicacion de una funcion a un det. parametro**
 - Tanto la funcion como el param. **son expresiones lambda**
 - Ejemplos (_se asocia de izquierda a derecha_): 
 	- $f\space x$ == f(x)
 	- $f\space x\space y$ == f(x) (y)
 	- $f(x\space y)$ == f(x(y))
-### Abstraccion
+## Abstraccion
 - Representacion de una **funcion pura**, con su parametro y funcion de retorno
 - Usa $\lambda$ para _representar una funcion_ y el punto para _separar el param. de la expresion de retorno_
 - Se asocia de _derecha a izquierda_
@@ -40,7 +40,10 @@ Una **expresion** puede ser:
 - La **aplicacion** es **asociativa a izquierda**: $(M\space N)\space L \equiv\space M\space N\space L$ 
 - Las **abstracciones** son **asociativas a derecha**: $\lambda x.\space (\lambda y.M) \equiv \lambda x.\lambda y.M$ 
 - La **aplicacion** tiene **precedencia** (_prioridad_) **sobre la abstraccion**: $\lambda x.(M N) \equiv \lambda x.MN$ 
- 
+## Conversion-$\alpha$ 
+- Metodo para **renombrar argumentos**
+- Permite _desambiguar variables_: $x\space(\lambda x.xy)$ ->$_\alpha$ $x\space (\alpha z.zy)$
+- Dos expresiones lambda son **equivalentes** sii difieren unicamente en el nombre de sus variables. Ej:
 ## λ$^b$Lambda simplemente tipado
 #### Sintaxis de los tipos
 - τ , σ, ρ, . . . ::= bool
