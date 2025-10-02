@@ -46,9 +46,10 @@ Una **expresion** puede ser:
 - Dos expresiones lambda son **equivalentes** sii difieren unicamente en el nombre de sus variables
 	- Ejemplo: $x\space(\lambda x.xy) \equiv x\space (\lambda z.zy)$ 
 ## Reduccion-$\beta$ 
-- Reduce expresiones lambda
-- Se basa en sustituir variables, tomar una funcion y evaluarla con sus argumentos
-- Ejemplo: $(\lambda x.E_1)E_2\space$ -->$_\beta\space$ $E_1\space [ x:=\space E_2]$  
+- _Reduce expresiones lambda_
+- Se basa en **sustituir variables**, **tomar una funcion** y **evaluarla con sus argumentos**
+	- Ejemplo: $(\lambda x.E_1)E_2\space$ -->$_\beta\space$ $E_1\space [ x:=\space E_2]$  
+_Para reducir la expresion de la izq, se debe reemplazar en $E_1$ todas las ocurrencias del parametro $x$ por el argumento $E_2$_ 
 ## λ$^b$Lambda simplemente tipado
 #### Sintaxis de los tipos
 - τ , σ, ρ, . . . ::= bool
