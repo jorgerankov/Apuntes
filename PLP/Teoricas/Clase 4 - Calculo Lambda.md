@@ -44,6 +44,7 @@ Una **expresion** puede ser:
 - Metodo para **renombrar argumentos**
 - Permite _desambiguar variables_: $x\space(\lambda x.xy)$ ->$_\alpha$ $x\space (\alpha z.zy)$
 - Dos expresiones lambda son **equivalentes** sii difieren unicamente en el nombre de sus variables. Ej:
+	- $x\space(\lambda x.xy) \equiv x\space (\lambda z.zy)$ 
 ## λ$^b$Lambda simplemente tipado
 #### Sintaxis de los tipos
 - τ , σ, ρ, . . . ::= bool
