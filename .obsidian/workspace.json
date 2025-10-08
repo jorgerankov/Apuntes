@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PLP/Teoricas/Clase 4 - Calculo Lambda.md",
+                "file": "Algo-III/1 - Teoricas/Clase 6 - Grafos.md",
                 "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Clase 4 - Calculo Lambda"
+              "title": "Clase 6 - Grafos"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.5
+    "width": 347.5,
+    "collapsed": true
   },
   "right": {
     "id": "0c0f80407ec2ad3f",
@@ -172,10 +173,10 @@
   },
   "active": "46e0e1f836d658ac",
   "lastOpenFiles": [
+    "PLP/Teoricas/Clase 4 - Calculo Lambda.md",
     "PLP/Teoricas/Clase 2 - Curry, Listas, Recursion.md",
     "PLP/Teoricas/Clase 1 - Programacion Funcional.md",
     "PLP/Teoricas/Clase 0 - Intro Haskell.md",
-    "PLP/Teoricas/Clase 4 - Calculo Lambda.md",
     "Algo-III/2 - Practicas/Representacion de Grafos.md",
     "Algo-III/2 - Practicas/Clase 1.md",
     "Algo-III/1 - Teoricas/Clase 6 - Grafos.md",
