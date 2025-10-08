@@ -25,4 +25,14 @@ Son **grafos conexos sin circuitos simples**
 
 
 ## Arboles enraizados
-Arboles que tienen un vertice distinguido que llamamos ra´ız
+Arboles que **tienen un vertice distinguido** que llamamos ***raiz***
+### Propiedades
+- Explicitamente queda _definido_ un **arbol dirigido**
+- ***Nivel*** de un vertice = La **distancia** de **la raiz a ese vertice**
+- ***Altura h*** = el **maximo nivel** de sus **vertices**
+- ***Vertices internos*** = Aquellos que no son ni hojas ni la raiz
+- ***Arbol m-ario*** = Cuando $\forall$ sus **vertices internos** tienen **grado** a lo sumo **m+1** y su **raiz** a lo sumo **m**
+- ***Arbol exactamente m-ario*** = Cuando $\forall$ sus **vertices internos** tienen grado **m+1** y su **raiz m**
+- ***Arbol balanceado*** = Si $\forall$ sus hojas estan a nivel h o h − 1
+- ***Arbol balanceado completo*** = si $\forall$ sus hojas estan a nivel h
+- ***Relacion padre-hijo*** = dos _vertices adyacentes_, con el padre el **vertice de menor nivel**
