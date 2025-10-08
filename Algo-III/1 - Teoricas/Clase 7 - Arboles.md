@@ -51,4 +51,7 @@ Es un **subgrafo generador** (que _tiene el mismo conjunto de vertices_) de G **
 ## Recorrido de arboles, grafos o digrafos
 Para hacerlo de una forma ordenada y sistematica, se siguen dos ordenes:
 - #### A lo ancho (Breadth-First Search - BFS)
-	- **Comienza** por el nivel 0 (**raiz**) y se **visita cada vertice** en un nivel antes de pasar al siguiente nivel
+	- **Comienza** por la **raiz** y se **visita cada vertice** en un nivel **antes de pasar al siguiente** nivel
+- #### En profundidad (Depth-First Search - DFS)
+	- **Comienza** por la **raiz** y se **explora cada rama lo mas profundo posible** antes de retroceder
+- 
