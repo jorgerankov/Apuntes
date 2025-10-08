@@ -93,7 +93,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.5
+    "width": 347.5,
+    "collapsed": true
   },
   "right": {
     "id": "0c0f80407ec2ad3f",
@@ -185,7 +186,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "549f43bd902af441",
+  "active": "48788d875d8e20b1",
   "lastOpenFiles": [
     "Algo-III/1 - Teoricas/Clase 6 - Grafos.md",
     "Algo-III/1 - Teoricas/Clase 7 - Arboles.md",
