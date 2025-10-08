@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Clase 6 - Grafos"
             }
+          },
+          {
+            "id": "48788d875d8e20b1",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Algo-III/1 - Teoricas/Clase 7 - Arboles.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Clase 7 - Arboles"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.5,
-    "collapsed": true
+    "width": 347.5
   },
   "right": {
     "id": "0c0f80407ec2ad3f",
@@ -171,15 +185,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "46e0e1f836d658ac",
+  "active": "549f43bd902af441",
   "lastOpenFiles": [
+    "Algo-III/1 - Teoricas/Clase 6 - Grafos.md",
+    "Algo-III/1 - Teoricas/Clase 7 - Arboles.md",
     "PLP/Teoricas/Clase 4 - Calculo Lambda.md",
     "PLP/Teoricas/Clase 2 - Curry, Listas, Recursion.md",
     "PLP/Teoricas/Clase 1 - Programacion Funcional.md",
     "PLP/Teoricas/Clase 0 - Intro Haskell.md",
     "Algo-III/2 - Practicas/Representacion de Grafos.md",
     "Algo-III/2 - Practicas/Clase 1.md",
-    "Algo-III/1 - Teoricas/Clase 6 - Grafos.md",
     "Algo-III/1 - Teoricas/Clase 5 - Demos.md",
     "Algo-III/1 - Teoricas/Clase 4 - Greedy.md",
     "Algo-III/1 - Teoricas/Clase 3 - Programacion Dinamica.md",
@@ -202,7 +217,6 @@
     "Algo-II/1- Teóricas/7 - Arboles.md",
     "Algo-II/1- Teóricas/6 - Diseño de TADs.md",
     "Algo-II/1- Teóricas/5 - Complejidad.md",
-    "Algo-II/1- Teóricas/4 - Estados.md",
     "Algo-II/1- Teóricas",
     "Algo-II",
     "SQL",
