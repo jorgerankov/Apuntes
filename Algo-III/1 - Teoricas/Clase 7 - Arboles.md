@@ -36,3 +36,19 @@ Arboles que **tienen un vertice distinguido** que llamamos ***raiz***
 - ***Arbol balanceado*** = Si $\forall$ sus hojas estan a nivel h o h − 1
 - ***Arbol balanceado completo*** = si $\forall$ sus hojas estan a nivel h
 - ***Relacion padre-hijo*** = dos _vertices adyacentes_, con el padre el **vertice de menor nivel**
+### Teorema
+- Un arbol **m-ario** de **altura h** tiene a lo sumo **m$^h$ hojas**
+	- Alcanza esta cota si es un _arbol exactamente m-ario balanceado completo con h $\geq$ 1_
+- Un arbol **m-ario con l hojas** tiene h $\geq$ \[log$_m$ l\] 
+- Si T es un arbol **exactamente m-ario balanceado no trivial** entonces h = \[log$_m$ l\]
+
+## Arboles generadores (AG)
+Es un **subgrafo generador** (que _tiene el mismo conjunto de vertices_) de G **que es arbol**
+### Teorema
+- Todo **grafo conexo tiene** (al menos) un **arbol generador**
+- G tiene un **unico arbol generador** <=> **G es arbol**
+
+## Recorrido de arboles, grafos o digrafos
+Para hacerlo de una forma ordenada y sistematica, se siguen dos ordenes:
+- #### A lo ancho (Breadth-First Search - BFS)
+	- **Comienza** por el nivel 0 (**raiz**) y se **visita cada vertice** en un nivel antes de pasar al siguiente nivel
