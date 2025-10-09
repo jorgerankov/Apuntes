@@ -180,22 +180,30 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 		- Es conexo
 		- Todos los vertices tienen grado par
 
-## Mas tipos de grafos
-#### Grafo regular 
+
+### Grafo regular 
 - Aquellos grafos donde cada vertice el la mismo grado
 - Ejemplo: un cuadrado es un grafo 2-regular (cada vertice tiene 2 aristas => cada vertice es de grado 2)
-#### Grafo completo k$_n$
+### Grafo completo k$_n$
 - Aquellos grafos donde cada vertice es adyacente a todos los demas
 - Ejemplo: Un triangulo es un grafo completo k$_3$
-#### Grafos bipartitos
+### Grafos bipartitos
 - Aquellos grafos que hacen una particion de su conjunto de vertices
 - **G es bipartito** <=> 
 	- V = V1 $\cup$ V2 con V1 $\neq \space \emptyset \space \land$ V2 $\neq \space \emptyset$ 
 	- $\land$  V1 $\cap$ V2 = $\emptyset$ 
-#### Grafos bipartitos completos K${n,m}$
+### Grafos bipartitos completos K${n,m}$
 - Son grafos bipartitos de n + m vertices con $\forall$ las aristas posibles
 - Ejemplo: K$_{3,2}$ tiene 3 vertices por un lado y 2 por el otro
 - La cantidad de aristas de un grafo K$_{n,m}$ es $n . m$ 
-#### Sub-Grafos
-- Es un grafo que esta incluido en otro grafo
-- Para obtener su
+### Sub-Grafos
+- Es un grafo que **esta incluido en otro** grafo
+- Para **obtener subgrafos de un grafo** se puede:
+	- Suprimir uno o varios vertices y las aristas incidentes en ellos
+	- Suprimir solamente una o varias aristas
+- Si tengo un grafo {a,b,c,d,e,f,g} y quiero ver G$_{a,e,g}$, me quedo solo con los vertices y aristas de {b,c,d,f} 
+### Grafos conexos
+#### Relacion de conexion
+- Relacion que se define en el conjunto de vertices
+- Un vertice se relaciona con otro <=> $\exists$ un camino del vertice $i$ al vertice $j$ o si $i$ = $j$
+- v$_i$
