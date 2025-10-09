@@ -158,5 +158,7 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
   **cuyos elementos m$_{ij}$ son:
 	- 1 si v$_i$ es extremo de a
 	- 0 si v$_i$ no es extremo de a
-## Grado / Valencia
+## Grado / Valencia de un vertice
 #### Funcion grado: g V -> N$_0$
+- g(v$_i$) = Cantidad de aristas incidentes en v$_i$
+- Los bucles se cuentan x2
