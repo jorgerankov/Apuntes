@@ -144,3 +144,8 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 ### Grafo simple
 - Si y solo si no tiene aristas paralelas ni bucles
 - El ejemplo no es un grafo simple
+## Representacion matricial de G
+### Matriz de adyacencia
+- Matriz booleana de $n$ x $n$ (cuadrada)
+- Ma(G) (Matriz de adyacencia de G)
+### Matriz de incidencia
