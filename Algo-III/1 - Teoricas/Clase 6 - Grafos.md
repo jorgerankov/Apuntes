@@ -142,4 +142,5 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 - Son las aristas que apuntan a un mismo vertice
 
 ### Grafo simple
-- Si y solo si no tiene aristas paralelas ni bucles 
+- Si y solo si no tiene aristas paralelas ni bucles
+- El ejemplo no es un grafo simple
