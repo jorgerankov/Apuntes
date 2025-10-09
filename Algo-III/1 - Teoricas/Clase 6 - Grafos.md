@@ -147,5 +147,9 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 ## Representacion matricial de G
 ### Matriz de adyacencia
 - Matriz booleana de $n$ x $n$ (cuadrada)
-- Ma(G) (Matriz de adyacencia de G)
+- **Ma(G)** (Matriz de adyacencia de G) 
+  **cuyos elementos m$_{ij}$ son:**
+	- 1 si v$_i$ es adyacente a v$_j$
+	- 0 si v$_i$ no es adyacente a v$_j$
+
 ### Matriz de incidencia
