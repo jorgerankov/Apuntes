@@ -163,3 +163,9 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 - g(v$_i$) = Cantidad de aristas incidentes en v$_i$
 - Los bucles se cuentan x2
 - **La suma de los grados de los vertices es igual al doble de la cantidad de aristas**
+## Caminos y ciclos en grafos
+#### Camino
+- Sucesion de aristas adyacentes
+#### Ciclo
+- Camino cerrado (V inicial = V final)
+- 
