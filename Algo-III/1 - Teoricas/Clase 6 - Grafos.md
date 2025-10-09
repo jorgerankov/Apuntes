@@ -210,3 +210,8 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 - Se puede llegar de cualquier vertice a cualquier otro mediante algun camino entre ellos
 ## Desconexion de Grafos
 Dado un Grafo G conexo:
+#### Istmo / Punto de corte
+- Vertice tal que al surpimirlo/removerlo desconecta al grafo
+#### Puente
+- Es una arista tal que al surpimirla/removerla desconecta al grafo
+#### Conjunto desconectante
