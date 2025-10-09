@@ -179,3 +179,8 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 	- Un grafo tiene ciclo euleriano si
 		- Es conexo
 		- Todos los vertices tienen grado par
+
+## Mas tipos de grafos
+#### Grafo regular
+- Aquellos grafos donde cada vertice el la mismo grado
+- Ejemplo: un cuadrado es un grafo 2-regular (cada vertice tiene 2 aristas => cada vertice es de grado 2)
