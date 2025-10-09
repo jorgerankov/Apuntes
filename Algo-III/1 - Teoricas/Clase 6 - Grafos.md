@@ -98,3 +98,40 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 - ##### Recorrido/Camino orientado
 - ##### Circuito/Ciclo orientado
 - Un digrafo se dice ***fuertemente conexo*** si _para todo par de vertices u, v_ **existen caminos orientados de u a v y de v a u**
+
+
+
+
+# Definiciones
+#### Vertices:
+- Son los valores del grafo
+- Se dibujan o definen como nodos
+#### Aristas
+- Las lineas que conectan los vertices unos con otros
+- Permite unir nodos entre si
+#### Vertices Adyacentes
+- Nodo que tiene al menos una conexion con otro nodo unidos mediante una arista
+- Ejemplo: 
+```
+	  V2 ---- V1
+	  |
+	  V4
+	  
+	V1 y V4 son vertices adyacentes con V2  
+```
+
+#### Vertice aislado
+- Aquel vertice que no tiene aristas con ningun otro vertice
+- No es adyacente con ningun vertice
+#### Aristas incidentes en un vertice
+- Son aquellas aristas que tienen al vertice como extremo
+- Ejemplo:
+```		
+		a2
+	T---_________
+	V1 ------ V2 ----- V4
+		 a1        a3
+
+	a1, a2 y a3 son aristas incidentes de V2
+```
+ 	
