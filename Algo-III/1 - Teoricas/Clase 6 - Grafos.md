@@ -194,3 +194,8 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 	- $\land$  V1 $\cap$ V2 = $\emptyset$ 
 #### Grafos bipartitos completos K${n,m}$
 - Son grafos bipartitos de n + m vertices con $\forall$ las aristas posibles
+- Ejemplo: K$_{3,2}$ tiene 3 vertices por un lado y 2 por el otro
+- La cantidad de aristas de un grafo K$_{n,m}$ es $n . m$ 
+#### Sub-Grafos
+- Es un grafo que esta incluido en otro grafo
+- Para obtener su
