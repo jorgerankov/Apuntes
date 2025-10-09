@@ -192,4 +192,5 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 - **G es bipartito** <=> 
 	- V = V1 $\cup$ V2 con V1 $\neq \space \emptyset \space \land$ V2 $\neq \space \emptyset$ 
 	- $\land$  V1 $\cap$ V2 = $\emptyset$ 
-
+#### Grafos bipartitos completos K${n,m}$
+- Son grafos bipartitos de n + m vertices con $\forall$ las aristas posibles
