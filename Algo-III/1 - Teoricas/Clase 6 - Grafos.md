@@ -181,6 +181,10 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 		- Todos los vertices tienen grado par
 
 ## Mas tipos de grafos
-#### Grafo regular
+#### Grafo regular 
 - Aquellos grafos donde cada vertice el la mismo grado
 - Ejemplo: un cuadrado es un grafo 2-regular (cada vertice tiene 2 aristas => cada vertice es de grado 2)
+#### Grafo completo k$_n$
+- Aquellos grafos donde cada vertice es adyacente a todos los demas
+- Ejemplo: Un triangulo es un grafo completo k$_3$
+- 
