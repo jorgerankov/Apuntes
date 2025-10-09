@@ -132,7 +132,7 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 
 	a1, a2 y a3 son aristas incidentes de V2
 ```
-#### Aristas adyacentes
+#### Aristas adyacentes en un vertice
 - Son las aristas que tienen un unico vertice en comun
 - En el ejemplo anterior, a1 y a3 son aristas adyacentes ya que el unico vertice que tienen en comun entre ambas es v2 
 #### Aristas paralelas
@@ -162,3 +162,4 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 #### Funcion grado: g V -> N$_0$
 - g(v$_i$) = Cantidad de aristas incidentes en v$_i$
 - Los bucles se cuentan x2
+- **La suma de los grados de los vertices es igual al doble de la cantidad de aristas**
