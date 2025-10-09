@@ -168,4 +168,6 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 - Sucesion de aristas adyacentes
 #### Ciclo
 - Camino cerrado (V inicial = V final)
-- 
+## Caminos y ciclos eulerianos
+#### Camino de Euler
+#### Ciclo de Euler
