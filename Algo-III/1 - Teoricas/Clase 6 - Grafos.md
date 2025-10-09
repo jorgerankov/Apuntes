@@ -206,4 +206,5 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 #### Relacion de conexion
 - Relacion que se define en el conjunto de vertices
 - Un vertice se relaciona con otro <=> $\exists$ un camino del vertice $i$ al vertice $j$ o si $i$ = $j$
-- v$_i$
+- v$_i$ R v$_j$ <=> $\exists$ camino de v$_i$ a v$_j$ $\lor$ v$_i$ = v$_j$
+
