@@ -187,4 +187,9 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 #### Grafo completo k$_n$
 - Aquellos grafos donde cada vertice es adyacente a todos los demas
 - Ejemplo: Un triangulo es un grafo completo k$_3$
-- 
+#### Grafos bipartitos
+- Aquellos grafos que hacen una particion de su conjunto de vertices
+- **G es bipartito** <=> 
+	- V = V1 $\cup$ V2 con V1 $\neq \space \emptyset \space \land$ V2 $\neq \space \emptyset$ 
+	- $\land$  V1 $\cap$ V2 = $\emptyset$ 
+
