@@ -54,4 +54,12 @@ Para hacerlo de una forma ordenada y sistematica, se siguen dos ordenes:
 	- **Comienza** por la **raiz** y se **visita cada vertice** en un nivel **antes de pasar al siguiente** nivel
 - #### En profundidad (Depth-First Search - DFS)
 	- **Comienza** por la **raiz** y se **explora cada rama lo mas profundo posible** antes de retroceder
-- 
+#### DFS p/ enumerar $\forall$ los vertices de un digrafo
+- **tree edges**: arcos que forman el bosque DFS
+- **backward edges**: van hacia un ancestro. 
+- **forward edges**: van hacia un descendiente. 
+- **cross-edges**: van hacia a otro arbol (anterior) del bosque o a otra rama (anterior) del arbol
+
+##### Para grafos, solamente existen aristas _tree edges_ y _back edges_
+
+
