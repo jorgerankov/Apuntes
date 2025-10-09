@@ -170,4 +170,12 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 - Camino cerrado (V inicial = V final)
 ## Caminos y ciclos eulerianos
 #### Camino de Euler
+- Camino que pasa por todas las aristas solo una vez
+- Un grafo tiene camino euleriano si
+	- Es conexo
+	- Todos los vertices tienen grado par o a lo sumo 2 grados impar
 #### Ciclo de Euler
+- Ciclo que pasa por todas las aristas del grafo
+	- Un grafo tiene ciclo euleriano si
+		- Es conexo
+		- Todos los vertices tienen grado par
