@@ -135,3 +135,11 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 #### Aristas adyacentes
 - Son las aristas que tienen un unico vertice en comun
 - En el ejemplo anterior, a1 y a3 son aristas adyacentes ya que el unico vertice que tienen en comun entre ambas es v2 
+#### Aristas paralelas
+- Son las aristas que estan comprendidas entre los mismos vertices
+- En el ejemplo, a1 y a2 son aristas paralelas
+#### Bucles / Lazos
+- Son las aristas que apuntan a un mismo vertice
+
+### Grafo simple
+- Si y solo si no tiene aristas paralelas ni bucles 
