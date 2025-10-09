@@ -124,14 +124,14 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 - Aquel vertice que no tiene aristas con ningun otro vertice
 - No es adyacente con ningun vertice
 #### Aristas incidentes en un vertice
-- Son aquellas aristas que tienen al vertice como extremo
+- Son las aristas que tienen al menos un vertice como extremo
 - Ejemplo:
 ```		
-		a2
-	T---_________
-	V1 ------ V2 ----- V4
-		 a1        a3
+	|-----a2-----|
+	V1 ---a1--- V2 --a3-- V4
 
 	a1, a2 y a3 son aristas incidentes de V2
 ```
- 	
+#### Aristas adyacentes
+- Son las aristas que tienen un unico vertice en comun
+- En el ejemplo anterior, a1 y a3 son aristas adyacentes ya que el unico vertice que tienen en comun entre ambas es v2 
