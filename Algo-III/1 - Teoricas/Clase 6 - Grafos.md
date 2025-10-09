@@ -151,5 +151,9 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
   **cuyos elementos m$_{ij}$ son:**
 	- 1 si v$_i$ es adyacente a v$_j$
 	- 0 si v$_i$ no es adyacente a v$_j$
-
 ### Matriz de incidencia
+- Matriz booleana de $n$ x $m$ 
+- **Mi(G)** (Matriz de incidencia de G) 
+  **cuyos elementos m$_{ij}$ son:
+	- 1 si v$_i$ es extremo de a
+	- 0 si v$_i$ no es extremo de a
