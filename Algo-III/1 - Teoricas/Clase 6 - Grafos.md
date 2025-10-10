@@ -140,7 +140,6 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 - En el ejemplo, a1 y a2 son aristas paralelas
 #### Bucles / Lazos
 - Son las aristas que apuntan a un mismo vertice
-
 ### Grafo simple
 - Si y solo si no tiene aristas paralelas ni bucles
 - El ejemplo no es un grafo simple
@@ -227,7 +226,7 @@ Dado un Grafo G conexo:
 - **Simples**: $\forall$ los vertices son $\neq$
 - **Elementales**: Si $\forall$ las aristas son $\neq$
 ### <u>Funcion Grado</u>
-#### Grado positivo
+#### Grado Positivo
 - Cantidad de **arcos** (aristas dirigidas) **que "entran" al vertice** =>  g$^+$(v)
 #### Grado Negativo
 - Cantidad de **arcos** (aristas dirigidas) **que "salen" del vertice** => g$^-$(v)
@@ -249,9 +248,15 @@ Dado un Grafo G conexo:
 - Es un vertice v tal que g$^+$(v) = 0
 - Es decir, es un vertice del que salen aristas pero no le llega ninguna (da pero no recibe)
 - v no es extremo final de ninguna arista
-### <u>Representacion matricial de Digrafos</u>
-#### Matriz de adyacencia
+## <u>Representacion matricial de Digrafos</u>
+#### Matriz de Adyacencia
 - Matriz booleana de $n$ x $n$
 - **Ma(G) cuyos elementos m$_{ij}$ son**:
-	- 1 si $\exists$a $\in$ : $\delta$(a) =(v$_i$,v$_j$)
+	- 1 si $\exists$a $\in$ : $\delta$(a) =(v$_i$,v$_j$), es decir, 1 si hay un vertice v$_i$ que "apunte" a v$_j$ ==> v$_1$ ---> v$_2$, (v$_1$, v$_2$) = 1
 	- 0 si no
+#### Matriz de Incidencia
+- Matriz (no estrictamente) booleana de $n$ x $m$
+- **Mi(G) cuyos elementos m$_{ij}$ son**:
+	- 1 si v$_i$ es vertice inicial de a$_j$
+	- -1 si v$_i$ es vertice final de a$_j$
+	- 0 si v$_i$ no es extremo de a$_j$
