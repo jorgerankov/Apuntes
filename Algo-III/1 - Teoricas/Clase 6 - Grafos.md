@@ -303,5 +303,13 @@ Dado un Grafo G conexo:
 #### Hermanos
 - v y w son **hermanos** <=> **tienen el mismo padre** (una misma arista tiene vertices apuntando hacia ambos)
 #### Nivel de un vertice
-- El nivel de la raiz es 0: n(r) = 0
-- Cada vertice tiene un nivel mas que su padre: Si p es padre de v --> n(v) 
+- El _nivel de la raiz es 0_: n(r) = 0
+- _Cada vertice tiene un nivel mas que su padre_: Si p es padre de v --> n(v) = n(p) + 1
+- La **altura** de un arbol es el mayor nivel posible (el ultimo)
+## <u>Arbol n-ario</u>
+- Arbol donde **cada vertice puede tener a lo sumo n hijos**
+	- Ejemplo: n = 2 => arbol binario
+### Arbol n-ario regular
+- **Todos los vertices tienen la misma cantidad de hijos**, salvo las hojas que no tienen hijos
+### Arbol n-ario regular pleno/completo
+- Si **ademas de ser n-ario regular**, **todas las hojas se hallan en el mismo nivel**
