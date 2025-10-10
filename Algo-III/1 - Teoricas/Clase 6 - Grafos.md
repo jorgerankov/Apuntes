@@ -233,9 +233,19 @@ Dado un Grafo G conexo:
 - Cantidad de **arcos** (aristas dirigidas) **que "salen" del vertice** => g$^-$(v)
 #### Grado Total
 - **Suma** de los **grados** positivo y negativo => g(v)
+- Los **bucles** cuentan como **entrada y salida**. Es decir, en el grado total van a contar doble
 #### Grado Neto
 - **Diferencia** entre **grados** positivo y negativo => g$_N$(v) 
   => g$^+$(v$_i$) - g$^-$(v$_i$)
 #### Propiedades:
 - $\sum$ g$^+$(v$_i$) = | A |; $\sum$ g$^-$(v$_i$) = | A |
 - $\sum$ g(v) = 2 | A |; $\sum$ g$_N$(v$_i$) = 0
+
+#### Pozo
+- Es un vertice v tal que g$^-$(v) = 0. 
+- Es decir, es un vertice al que le llegan aristas pero no tiene salientes (recibe pero no da) 
+- v no es extremo inicial de ninguna arista
+#### Fuente
+- Es un vertice v tal que g$^+$(v) = 0
+- Es decir, es un vertice del que salen aristas pero no le llega ninguna (da pero no recibe)
+- v no es extremo final de ninguna arista
