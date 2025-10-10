@@ -144,7 +144,7 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 ### Grafo simple
 - Si y solo si no tiene aristas paralelas ni bucles
 - El ejemplo no es un grafo simple
-## Representacion matricial de G
+## <u>Representacion matricial de G</u>
 ### Matriz de adyacencia
 - Matriz booleana de $n$ x $n$ (cuadrada)
 - **Ma(G)** (Matriz de adyacencia de G) 
@@ -158,17 +158,17 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
   **cuyos elementos m$_{ij}$ son:
 	- 1 si v$_i$ es extremo de a
 	- 0 si v$_i$ no es extremo de a
-## Grado / Valencia de un vertice
+## <u>Grado / Valencia de un vertice</u>
 #### Funcion grado: g V -> N$_0$
 - g(v$_i$) = Cantidad de aristas incidentes en v$_i$
 - Los bucles se cuentan x2
 - **La suma de los grados de los vertices es igual al doble de la cantidad de aristas**
-## Caminos y ciclos en grafos
+## <u>Caminos y ciclos en grafos</u>
 #### Camino
 - Sucesion de aristas adyacentes
 #### Ciclo
 - Camino cerrado (V inicial = V final)
-## Caminos y ciclos eulerianos
+## <u>Caminos y ciclos eulerianos</u>
 #### Camino de Euler
 - Camino que pasa por todas las aristas solo una vez
 - Un grafo tiene camino euleriano si
@@ -181,34 +181,34 @@ Es una estructura en la que **las aristas tienen una dirección**. Es decir, **
 		- Todos los vertices tienen grado par
 
 
-### Grafo regular 
+### <u>Grafo regular</u> 
 - Aquellos grafos donde cada vertice el la mismo grado
 - Ejemplo: un cuadrado es un grafo 2-regular (cada vertice tiene 2 aristas => cada vertice es de grado 2)
-### Grafo completo k$_n$
+### <u>Grafo completo k</u>$_n$
 - Aquellos grafos donde cada vertice es adyacente a todos los demas
 - Ejemplo: Un triangulo es un grafo completo k$_3$
-### Grafos bipartitos
+### <u>Grafos bipartitos</u>
 - Aquellos grafos que hacen una particion de su conjunto de vertices
 - **G es bipartito** <=> 
 	- V = V1 $\cup$ V2 con V1 $\neq \space \emptyset \space \land$ V2 $\neq \space \emptyset$ 
 	- $\land$  V1 $\cap$ V2 = $\emptyset$ 
-### Grafos bipartitos completos K${n,m}$
+### <u>Grafos bipartitos completos K</u>${n,m}$
 - Son grafos bipartitos de n + m vertices con $\forall$ las aristas posibles
 - Ejemplo: K$_{3,2}$ tiene 3 vertices por un lado y 2 por el otro
 - La cantidad de aristas de un grafo K$_{n,m}$ es $n . m$ 
-### Sub-Grafos
+### <u>Sub-Grafos</u>
 - Es un grafo que **esta incluido en otro** grafo
 - Para **obtener subgrafos de un grafo** se puede:
 	- Suprimir uno o varios vertices y las aristas incidentes en ellos
 	- Suprimir solamente una o varias aristas
 - Si tengo un grafo {a,b,c,d,e,f,g} y quiero ver G$_{a,e,g}$, me quedo solo con los vertices y aristas de {b,c,d,f} 
-### Grafos conexos
+### <u>Grafos conexos</u>
 #### Relacion de conexion
 - Relacion que se define en el conjunto de vertices
 - Un vertice se relaciona con otro <=> $\exists$ un camino del vertice $i$ al vertice $j$ o si $i$ = $j$
 - v$_i$ R v$_j$ <=> $\exists$ camino de v$_i$ a v$_j$ $\lor$ v$_i$ = v$_j$
 - Se puede llegar de cualquier vertice a cualquier otro mediante algun camino entre ellos
-## Desconexion de Grafos
+## <u>Desconexion de Grafos</u>
 Dado un Grafo G conexo:
 #### Istmo / Punto de corte
 - Vertice tal que al surpimirlo/removerlo desconecta al grafo
@@ -217,7 +217,7 @@ Dado un Grafo G conexo:
 #### Conjunto desconectante
 - Completar
 
-## Digrafos - Grafos dirigidos
+## <u>Digrafos - Grafos dirigidos</u>
 #### Definicion
 - Es una **terna** formada por 
 	- Un **conjunjo de vertices** V $\neq\space\emptyset$
@@ -226,7 +226,7 @@ Dado un Grafo G conexo:
 #### Caminos
 - **Simples**: $\forall$ los vertices son $\neq$
 - **Elementales**: Si $\forall$ las aristas son $\neq$
-### Funcion Grado
+### <u>Funcion Grado</u>
 #### Grado positivo
 - Cantidad de **arcos** (aristas dirigidas) **que "entran" al vertice** =>  g$^+$(v)
 #### Grado Negativo
@@ -249,3 +249,9 @@ Dado un Grafo G conexo:
 - Es un vertice v tal que g$^+$(v) = 0
 - Es decir, es un vertice del que salen aristas pero no le llega ninguna (da pero no recibe)
 - v no es extremo final de ninguna arista
+### <u>Representacion matricial de Digrafos</u>
+#### Matriz de adyacencia
+- Matriz booleana de $n$ x $n$
+- **Ma(G) cuyos elementos m$_{ij}$ son**:
+	- 1 si $\exists$a $\in$ : $\delta$(a) =(v$_i$,v$_j$)
+	- 0 si no
