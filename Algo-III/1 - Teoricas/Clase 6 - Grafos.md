@@ -260,3 +260,7 @@ Dado un Grafo G conexo:
 	- 1 si v$_i$ es vertice inicial de a$_j$
 	- -1 si v$_i$ es vertice final de a$_j$
 	- 0 si v$_i$ no es extremo de a$_j$
+## <u>Grafo asociado a un Digrafo</u>
+##### Digrafo -> Eliminar sentido de aristas -> Grafo asociado
+- Si hay aristas paralelas o antiparalelas en el digrafo, se representa una de ellas
+## <u>Conexidad en Digrafos</u>
