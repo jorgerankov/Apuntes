@@ -234,7 +234,8 @@ Dado un Grafo G conexo:
 #### Grado Total
 - **Suma** de los **grados** positivo y negativo => g(v)
 #### Grado Neto
-- **Diferencia** entre **grados** positivo y negativo => g$_N$(v)
+- **Diferencia** entre **grados** positivo y negativo => g$_N$(v) 
+  => g$^+$(v$_i$) - g$^-$(v$_i$)
 #### Propiedades:
 - $\sum$ g$^+$(v$_i$) = | A |; $\sum$ g$^-$(v$_i$) = | A |
 - $\sum$ g(v) = 2 | A |; $\sum$ g$_N$(v$_i$) = 0
