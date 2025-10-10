@@ -269,7 +269,7 @@ Dado un Grafo G conexo:
 #### Digrafo fuertemente conexo
 - Todo aquel en el que exista algun camino entre todo par de vertices
 
-# Arboles
+# <u>Arboles</u>
 ### Definicion
 - **Son grafos que no son conexos ni tienen ciclos**
 - Es decir, **grafos que pueden ir de cualquier vertice a cualquier otro mediante algun conjunto de aristas** y ademas sus vertices **no pueden tener un mismo punto de partida y de llegada** (no se puede ir y volver al mismo vertice mediante un conjunto de aristas)
@@ -278,18 +278,30 @@ Dado un Grafo G conexo:
 - Si **agrego una arista** entre dos vertices de un arbol, **deja de ser un arbol** (Deja de tener el camino simple, pasa a tener un ciclo)
 - **Todas las aristas de un arbol son puentes** (Si desconecto alguna, deja de ser un grafo conexo)
 - En todo arbol: | V | = | A | + 1 => La cantidad de vertices es igual a la cantidad de aristas + 1
-## Bosque
+## <u>Bosque</u>
 - Es un **grafo no conexo** en el cual **cada una de las componentes es un arbol**
 - **Ejemplo**: Un grafo que no tiene todos sus vertices conectados entre si pero todos cumplen la propiedad de arbol por su cuenta
-## Arboles dirigidos
+## <u>Arboles dirigidos</u>
 - Un digrafo simple **es un arbol dirigido** si **su grafo asociado** (es decir, el "grafo sin flechitas") **es un arbol dirigido**
-### Arbol dirigido con raiz
+### <u>Arbol dirigido con raiz</u>
 - Es un arbol dirigido en el cual **el grado entrante** (positivo) **de cada vertice es igual a 1** (les llega por lo menos una arista), **excepto** por un **unico vertice con grado positivo igual a 0**, que sera _**la raiz**_ (es decir, que no le deben llegar aristas)
-### Otras definiciones sobre arboles
-- Un **vertice v** de un arbol se dice **hoja cuando g(v) = 1** (el grado total de ese vertice va a ser el entrante)
-- Los **vertices internos** son aquellos que **no son ni la raiz ni las hojas**
+### <u>Otras definiciones sobre arboles</u>
+#### Hoja
+- Un **vertice v** de un arbol se dice **hoja cuando g(v) = 1** (el grado total de ese vertice va a ser el entrante (solo recibe una arista de otro vertice pero no le sale ninguna))
+#### Vertices internos
+- Son aquellos que **no son ni la raiz ni las hojas**
+#### Rama
 - Una **rama** es **todo camino que va desde la raiz a alguna hoja**
+#### Antecesor
 - v es **antecesor** de w <=> $\exists$ un **unico camino simple de v a w**
-- Asimismo, w es **sucesor** de v **en el mismo caso**
+#### Sucesor
+- Asimismo, w es **sucesor** de v **en el caso anterior**
+#### Padre
 - v es **padre** de w <=> $\exists$ **una arista de v a w**
-- w es **hijo** de v en el caso anterior
+#### Hijo
+- w es **hijo** de v **en el caso anterior**
+#### Hermanos
+- v y w son **hermanos** <=> **tienen el mismo padre** (una misma arista tiene vertices apuntando hacia ambos)
+#### Nivel de un vertice
+- El nivel de la raiz es 0: n(r) = 0
+- Cada vertice tiene un nivel mas que su padre: Si p es padre de v --> n(v) 
