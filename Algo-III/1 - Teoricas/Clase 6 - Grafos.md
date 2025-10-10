@@ -264,3 +264,7 @@ Dado un Grafo G conexo:
 ##### Digrafo -> Eliminar sentido de aristas -> Grafo asociado
 - Si hay aristas paralelas o antiparalelas en el digrafo, se representa una de ellas
 ## <u>Conexidad en Digrafos</u>
+#### Digrafo conexo
+- Todo aquel grafo cuyo grafo asociado sea conexo
+#### Digrafo fuertemente conexo
+- Todo aquel en el que exista algun camino entre todo par de vertices
