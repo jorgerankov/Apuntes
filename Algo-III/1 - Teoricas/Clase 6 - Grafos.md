@@ -215,3 +215,14 @@ Dado un Grafo G conexo:
 #### Puente
 - Es una arista tal que al surpimirla/removerla desconecta al grafo
 #### Conjunto desconectante
+- Completar
+
+## Digrafos - Grafos dirigidos
+#### Definicion
+- Es una **terna** formada por 
+	- Un **conjunjo de vertices** V $\neq\space\emptyset$
+	- Un **conjunto de aristas dirigidas** o "arcos" 
+	- Y una **funcion de incidencia** $\delta$ que a cada arista le hace corresponder un par ordenado de vertices (v$_i$, v$_j$), con v$_i$ siendo el extremo inicial y v$_j$ el extremo final
+#### Caminos
+- **Simples**: $\forall$ los vertices son $\neq$
+- **Elementales**: Si $\forall$ las aristas son $\neq$
