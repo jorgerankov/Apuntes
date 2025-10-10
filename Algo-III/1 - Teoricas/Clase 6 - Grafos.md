@@ -279,4 +279,10 @@ Dado un Grafo G conexo:
 - **Todas las aristas de un arbol son puentes** (Si desconecto alguna, deja de ser un grafo conexo)
 - En todo arbol: | V | = | A | + 1 => La cantidad de vertices es igual a la cantidad de aristas + 1
 ## Bosque
-- Es un grafo no conexo
+- Es un **grafo no conexo** en el cual **cada una de las componentes es un arbol**
+- **Ejemplo**: Un grafo que no tiene todos sus vertices conectados entre si pero todos cumplen la propiedad de arbol por su cuenta
+## Arboles dirigidos
+- Un digrafo simple **es un arbol dirigido** si **su grafo asociado** (es decir, el "grafo sin flechitas") **es un arbol dirigido**
+### Arbol dirigido con raiz
+- Es un arbol dirigido en el cual **el grado entrante** (positivo) **de cada vertice es igual a 1** (les llega por lo menos una arista), **excepto** por un **unico vertice con grado positivo igual a 0**, que sera _**la raiz**_ (es decir, que no le deben llegar aristas)
+- 
