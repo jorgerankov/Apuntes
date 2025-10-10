@@ -268,3 +268,11 @@ Dado un Grafo G conexo:
 - Todo aquel grafo cuyo grafo asociado sea conexo
 #### Digrafo fuertemente conexo
 - Todo aquel en el que exista algun camino entre todo par de vertices
+
+# Arboles
+### Definicion
+- **Son grafos que no son conexos ni tienen ciclos**
+- Es decir, **grafos que pueden ir de cualquier vertice a cualquier otro mediante algun conjunto de aristas** y ademas sus vertices **no pueden tener un mismo punto de partida y de llegada** (no se puede ir y volver al mismo vertice mediante un conjunto de aristas)
+- Entre **todo par de vertices existe un unico camino simple**
+### Propiedades
+- Si **agrego una arista** entre dos vertices de un arbol, **deja de ser un arbol** (Dejo de tener el camino simple)
