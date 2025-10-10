@@ -275,4 +275,8 @@ Dado un Grafo G conexo:
 - Es decir, **grafos que pueden ir de cualquier vertice a cualquier otro mediante algun conjunto de aristas** y ademas sus vertices **no pueden tener un mismo punto de partida y de llegada** (no se puede ir y volver al mismo vertice mediante un conjunto de aristas)
 - Entre **todo par de vertices existe un unico camino simple**
 ### Propiedades
-- Si **agrego una arista** entre dos vertices de un arbol, **deja de ser un arbol** (Dejo de tener el camino simple)
+- Si **agrego una arista** entre dos vertices de un arbol, **deja de ser un arbol** (Deja de tener el camino simple, pasa a tener un ciclo)
+- **Todas las aristas de un arbol son puentes** (Si desconecto alguna, deja de ser un grafo conexo)
+- En todo arbol: | V | = | A | + 1 => La cantidad de vertices es igual a la cantidad de aristas + 1
+## Bosque
+- Es un grafo no conexo
