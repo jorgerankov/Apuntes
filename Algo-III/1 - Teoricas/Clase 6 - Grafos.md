@@ -226,3 +226,15 @@ Dado un Grafo G conexo:
 #### Caminos
 - **Simples**: $\forall$ los vertices son $\neq$
 - **Elementales**: Si $\forall$ las aristas son $\neq$
+### Funcion Grado
+#### Grado positivo
+- Cantidad de **arcos** (aristas dirigidas) **que "entran" al vertice** =>  g$^+$(v)
+#### Grado Negativo
+- Cantidad de **arcos** (aristas dirigidas) **que "salen" del vertice** => g$^-$(v)
+#### Grado Total
+- **Suma** de los **grados** positivo y negativo => g(v)
+#### Grado Neto
+- **Diferencia** entre **grados** positivo y negativo => g$_N$(v)
+#### Propiedades:
+- $\sum$ g$^+$(v$_i$) = | A |; $\sum$ g$^-$(v$_i$) = | A |
+- $\sum$ g(v) = 2 | A |; $\sum$ g$_N$(v$_i$) = 0
