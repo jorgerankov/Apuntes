@@ -285,4 +285,11 @@ Dado un Grafo G conexo:
 - Un digrafo simple **es un arbol dirigido** si **su grafo asociado** (es decir, el "grafo sin flechitas") **es un arbol dirigido**
 ### Arbol dirigido con raiz
 - Es un arbol dirigido en el cual **el grado entrante** (positivo) **de cada vertice es igual a 1** (les llega por lo menos una arista), **excepto** por un **unico vertice con grado positivo igual a 0**, que sera _**la raiz**_ (es decir, que no le deben llegar aristas)
-- 
+### Otras definiciones sobre arboles
+- Un **vertice v** de un arbol se dice **hoja cuando g(v) = 1** (el grado total de ese vertice va a ser el entrante)
+- Los **vertices internos** son aquellos que **no son ni la raiz ni las hojas**
+- Una **rama** es **todo camino que va desde la raiz a alguna hoja**
+- v es **antecesor** de w <=> $\exists$ un **unico camino simple de v a w**
+- Asimismo, w es **sucesor** de v **en el mismo caso**
+- v es **padre** de w <=> $\exists$ **una arista de v a w**
+- w es **hijo** de v en el caso anterior
