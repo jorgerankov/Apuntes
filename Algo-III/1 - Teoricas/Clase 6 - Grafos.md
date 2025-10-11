@@ -325,11 +325,14 @@ Dado un Grafo G conexo:
 - Lo primero que se nombra es la raiz
 - Recorre el subarbol izquierdo en este mismo orden
 - Finalmente, hace lo mismo con el subarbol derecho
+- En cada subarbol, paso la raiz -> sub. izq -> sub. der
 #### Orden simetrico (inorder)
 - Recorre el subarbol izquierdo en este mismo orden
 - Nombra la raiz
 - Recorre el subarbol derecho en este mismo orden
+- En cada subarbol, paso el sub. izq -> raiz -> sub. der
 #### Orden posterior (postorder)
 - Recorre el subarbol izquierdo en este mismo orden
 - Recorre el subarbol derecho en este mismo orden
 - Nombra la raiz
+- En cada subarbol, paso el sub. izq -> sub. der -> raiz 
