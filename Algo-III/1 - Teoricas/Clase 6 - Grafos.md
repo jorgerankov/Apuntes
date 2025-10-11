@@ -313,3 +313,23 @@ Dado un Grafo G conexo:
 - **Todos los vertices tienen la misma cantidad de hijos**, salvo las hojas que no tienen hijos
 ### Arbol n-ario regular pleno/completo
 - Si **ademas de ser n-ario regular**, **todas las hojas se hallan en el mismo nivel**
+# <u>Recorrido de arboles</u>
+### Subarbol
+- Sea G = (A, V, \) un arbol con raiz r
+- Sea v $\in$ V, se llama **subarbol con raiz v**
+- Y se indica **T(v)** al **arbol que consta de v, todos sus descendientes y las aristas entre ellos**
+### Recorridos
+- Significa **nombrar a todos los vertices del arbol siguiendo un determinado orden**
+### Definiciones recursivas
+#### Orden previo (preorder)
+- Lo primero que se nombra es la raiz
+- Recorre el subarbol izquierdo en este mismo orden
+- Finalmente, hace lo mismo con el subarbol derecho
+#### Orden simetrico (inorder)
+- Recorre el subarbol izquierdo en este mismo orden
+- Nombra la raiz
+- Recorre el subarbol derecho en este mismo orden
+#### Orden posterior (postorder)
+- Recorre el subarbol izquierdo en este mismo orden
+- Recorre el subarbol derecho en este mismo orden
+- Nombra la raiz
