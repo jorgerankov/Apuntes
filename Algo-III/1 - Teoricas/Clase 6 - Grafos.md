@@ -92,8 +92,8 @@ Dados dos grafos G = (V, X) y G' = (V' , X') son **isomorfos**:
 ### Digrafos
 Es una estructura en la que **las aristas tienen una dirección**. Es decir, **cada arista va de un vértice** (nodo) **a otro**, formando un **par ordenado**
 - Dado un _arco e = (u,w)_ llamaremos al primer elemento (u) ***cola*** de e y al segundo elemento (w), ***cabeza*** de e
-- El ***grado de entrada*** d$_{in}$(v) de un vertice v de un digrafo es **la cantidad de arcos que llegan a v**
-- El ***grado de salida*** d$_{out}$(v) de un vertice v de un digrafo es la **cantidad de arcos que salen de v** == _la cantidad de arcos que tienen a v como cola_
+- El ***grado de entrada*** d$_{in}$(v) de un vertice v de un digrafo es **la cantidad de arcos que llegan a v** (cantidad de aristas dirigidas que reciben)
+- El ***grado de salida*** d$_{out}$(v) de un vertice v de un digrafo es la **cantidad de arcos que salen de v** == _la cantidad de arcos que tienen a v como cola_ (cantidad de aristas dirigidas que envian)
 - El ***grafo subyacente*** de un digrafo G es el grafo G$^s$ que resulta de remover las direcciones de sus arcos
 - ##### Recorrido/Camino orientado
 - ##### Circuito/Ciclo orientado
