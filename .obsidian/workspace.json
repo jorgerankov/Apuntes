@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algo-III/2 - Practicas/Untitled.md",
+                "file": "Algo-III/2 - Practicas/Guia Grafos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Untitled"
+              "title": "Guia Grafos"
             }
           }
         ]
@@ -78,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.5
+    "width": 347.5,
+    "collapsed": true
   },
   "right": {
     "id": "0c0f80407ec2ad3f",
@@ -173,7 +174,7 @@
   "active": "48788d875d8e20b1",
   "lastOpenFiles": [
     "Algo-III/1 - Teoricas/Clase 6 - Grafos.md",
-    "Algo-III/2 - Practicas/Untitled.md",
+    "Algo-III/2 - Practicas/Guia Grafos.md",
     "Algo-III/1 - Teoricas/Clase 7 - Arboles.md",
     "PLP/Teoricas/Clase 4 - Calculo Lambda.md",
     "PLP/Teoricas/Clase 2 - Curry, Listas, Recursion.md",
