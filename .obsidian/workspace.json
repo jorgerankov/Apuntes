@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algo-III/1 - Teoricas/Clase 6 - Grafos.md",
-                "mode": "preview",
+                "file": "Algo-III/2 - Practicas/Untitled.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Clase 6 - Grafos"
+              "title": "Untitled"
             }
           }
         ]
@@ -78,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.5,
-    "collapsed": true
+    "width": 347.5
   },
   "right": {
     "id": "0c0f80407ec2ad3f",
@@ -173,8 +172,9 @@
   },
   "active": "48788d875d8e20b1",
   "lastOpenFiles": [
-    "Algo-III/1 - Teoricas/Clase 7 - Arboles.md",
     "Algo-III/1 - Teoricas/Clase 6 - Grafos.md",
+    "Algo-III/2 - Practicas/Untitled.md",
+    "Algo-III/1 - Teoricas/Clase 7 - Arboles.md",
     "PLP/Teoricas/Clase 4 - Calculo Lambda.md",
     "PLP/Teoricas/Clase 2 - Curry, Listas, Recursion.md",
     "PLP/Teoricas/Clase 1 - Programacion Funcional.md",
@@ -187,7 +187,6 @@
     "Algo-III/1 - Teoricas/Clase 1 - Complejidad computacional.md",
     "Algo-III/1 - Teoricas/Clase 2 - Fuerza bruta y Backtracking.md",
     "Algo-III/2 - Practicas/Practica 1 - Divide and Conquer.md",
-    "Algo-III/2 - Practicas/Untitled.md",
     "Algo-III/2 - Practicas/Practica 2 - Backtracking.md",
     "README.md",
     "vault prueba.md",
