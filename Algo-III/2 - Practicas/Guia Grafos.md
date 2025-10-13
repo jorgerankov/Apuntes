@@ -11,7 +11,7 @@ Entonces, no puede existir **ningun camino que conecte un vértice de (P) con un
 
 ## Representación de grafos y digrafos
 #### Representación por Conjunto de Aristas
-- **Notación:** (G = (V, E))
+- **Notación:** G = (V, E)
     - V = V(G): conjunto de **vértices**
     - E = E(G): conjunto de **aristas**
 - **Características**
@@ -19,9 +19,9 @@ Entonces, no puede existir **ningun camino que conecte un vértice de (P) con un
 	- No consume espacio adicional más allá del tamaño del grafo
 	- No asume propiedades estructurales especiales
 #### Representación por Conjunto de Vecindarios
-- **Notación:** (G = (V, N))
-    - (V): conjunto de vértices
-    - (N): **función** que asigna a cada vértice (v \in V) su conjunto de vecinos (N(v))
+- **Notación:** G = (V, N)
+    - V: conjunto de vértices
+    - N: **función** que asigna a cada vértice (v $\in$ V) su conjunto de vecinos (N(v))
 - **Para dígrafos:**
     - Se distingue entre:
         - **Vecindario de entrada:** vértices desde donde llegan aristas
@@ -42,3 +42,11 @@ Entonces, no puede existir **ningun camino que conecte un vértice de (P) con un
     - Función que asigna a cada vértice (excepto la raíz) su **único predecesor**
     - Aprovecha la propiedad de que cada nodo (salvo la raíz) tiene exactamente un padre
 ### 14 - RepresentaGrafos
+a) _N se representa con una secuencia (vector o lista) que en cada posición v tiene el conjunto N(v) implementado sobre una secuencia (lista o vector). Cada vértice es una estructura que tiene un índice para acceder en O(1) a N(v). Esta representación se conoce comúnmente como lista de adyacencias._
+```
+N = [N(v), N(v), ..., N(v)]
+
+N(v) asigna a cada vértice (v en V) su conjunto de vecinos
+N(v) = [vecino1, vecino2, ..., vecino_n]
+
+```
