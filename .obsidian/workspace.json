@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "Guia Grafos"
             }
+          },
+          {
+            "id": "2b44519aca64304d",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Untitled"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -78,8 +93,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.5,
-    "collapsed": true
+    "width": 347.5
   },
   "right": {
     "id": "0c0f80407ec2ad3f",
@@ -171,10 +185,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "48788d875d8e20b1",
+  "active": "2b44519aca64304d",
   "lastOpenFiles": [
-    "Algo-III/1 - Teoricas/Clase 6 - Grafos.md",
     "Algo-III/2 - Practicas/Guia Grafos.md",
+    "Untitled.md",
+    "Algo-III/1 - Teoricas/Clase 6 - Grafos.md",
     "Algo-III/1 - Teoricas/Clase 7 - Arboles.md",
     "PLP/Teoricas/Clase 4 - Calculo Lambda.md",
     "PLP/Teoricas/Clase 2 - Curry, Listas, Recursion.md",
@@ -202,7 +217,6 @@
     "Algo-II/1- Teóricas/7- ABB y AVL.md",
     "Algo-II/1- Teóricas/7 - Arboles.md",
     "Algo-II/1- Teóricas/6 - Diseño de TADs.md",
-    "Algo-II/1- Teóricas/5 - Complejidad.md",
     "Algo-II/1- Teóricas",
     "Algo-II",
     "SQL",
