@@ -53,9 +53,11 @@ N(v) = [vecino1, vecino2, ..., vecino_n] de cada v
 Puedo acceder a cada N(v) en O(1) = L de adyacencias
 ```
 1) _Inicializar la estructura a partir de un conjunto de aristas de G_:
-2) _Determinar si dos vértices v y w son adyacentes_: Acceder en O(1) a N(v) + ver si w existe en la lista (recorrer n veces la lista) = O(1) + O(n) = O(n) temporal
-3) _Recorrer y/o procesar el vecindario N(v) de un vértice v dado_: si v tiene n vecinos, recorrer el vecindario N(v) cuesta O(n) temporal
-4) _Insertar un vértice v con su conjunto de vecinos N(v)_: O(1) si es una LE
+2) _Determinar si dos vértices v y w son adyacentes_: Acceder en O(1) a N(v) + ver si w existe en la lista (recorrer n veces la lista) = O(1) + O(|V|) (en el peor caso) = O(n) temporal
+3) _Recorrer y/o procesar el vecindario N(v) de un vértice v dado_: acceder a N(v) en O(1), si v tiene n vecinos, recorrer el vecindario N(v) cuesta O(d(v)) = O(d(v)) temporal
+4) _Insertar un vértice v con su conjunto de vecinos N(v)_: 
+	- Si N es tamaño fijo |V| = redimensionar todo N + agregar el nuevo v con su conjunto = O(|V|)
+	- Si N es una LE, agregar v cuesta O(1) + agregar 
 5) _Insertar una arista vw_:
 6) _Remover un vértice v con todas sus adyacencias_: 
 	   - Acceder a todos los N(v) existentes (n) para remover a v de todos los N(v) = O(n)
