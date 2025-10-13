@@ -47,6 +47,16 @@ a) _N se representa con una secuencia (vector o lista) que en cada posición v t
 N = [N(v), N(v), ..., N(v)]
 
 N(v) asigna a cada vértice (v en V) su conjunto de vecinos
-N(v) = [vecino1, vecino2, ..., vecino_n]
 
+N(v) = [vecino1, vecino2, ..., vecino_n] de cada v
+
+Puedo acceder a cada N(v) en O(1) = L de adyacencias
 ```
+1) _Inicializar la estructura a partir de un conjunto de aristas de G_:
+2) _Determinar si dos vértices v y w son adyacentes_: 
+3) _Recorrer y/o procesar el vecindario N(v) de un vértice v dado_: 
+4) _Insertar un vértice v con su conjunto de vecinos N(v)_: 
+5) _Insertar una arista vw_
+6) _Remover un vértice v con todas sus adyacencias_
+7) _Remover una arista vw:_
+8) _Mantener un orden de N(v) de acuerdo a algún invariante que permita recorrer cada vecindario en un orden dado_
