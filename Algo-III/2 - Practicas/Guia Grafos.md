@@ -57,8 +57,12 @@ Puedo acceder a cada N(v) en O(1) = L de adyacencias
 3) _Recorrer y/o procesar el vecindario N(v) de un vértice v dado_: acceder a N(v) en O(1), si v tiene n vecinos, recorrer el vecindario N(v) cuesta O(d(v)) = O(d(v)) temporal
 4) _Insertar un vértice v con su conjunto de vecinos N(v)_: 
 	- Si N es tamaño fijo |V| = redimensionar todo N + agregar el nuevo v con su conjunto = O(|V|)
-	- Si N es una LE, agregar v cuesta O(1) + agregar 
+	- Si N es una LE, agregar v cuesta O(1) + agregar todo su conjunto de vecinos N(v) con d(v) elems = O(d(v))
+	- Ademas, agregar v a todos los vecinos = O(d(v))
 5) _Insertar una arista vw_:
+	- Si v existe en el Grafo, acceder a N(v) en O(1) + agregar w a N(v): O(d(v)) si es un vector fijo, O(1) si es una Lista Enlazada
+	- Si no existe, extiendo N en O(|V|) + agrego w a N(v) en O(d(v)) si es un vector fijo, O(1) si es una Lista Enlazada 
+	- Mismos casos para N(w)
 6) _Remover un vértice v con todas sus adyacencias_: 
 	   - Acceder a todos los N(v) existentes (n) para remover a v de todos los N(v) = O(n)
 	   - Eliminar un N(v) completo es acceder en O(1) a N(v), recorrer y eliminar cada elemento 1 por 1 = O(n)
