@@ -24,3 +24,12 @@
 - **Notacion** de _funcion que asocia (**sustitucion**) las variables a cada tipo_:
   **S** = {X$_{k_1}$ := τ$_1$, . . . , X$_{k_n}$ := τ$_n$}, Donde **S(X$_{k_i}$)** = τ$_i$ para cada 
   1 $\leq$ i $\leq$ n
+- Si τ es un tipo => **S(τ) reemplaza cada incognita de τ por el valor que le otorga S**
+#### Problema de unificacion
+Es un **conjunto finito E de ecuaciones entre tipos** que **pueden involucrar incognitas**
+#### Unificador
+- Aplicado en E, es **una sustitucion S** tal que
+	- S(τ$_1$) = S(σ$_1$), 
+	- ... 
+	- S(τ$_n$) = S(σ$_n$)
+- La solucion a un problema de unificacion _no es unica_
