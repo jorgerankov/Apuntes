@@ -93,8 +93,10 @@ Es un **subgrafo generador** (que _tiene el mismo conjunto de vertices_) de G **
 ### Ordenes de recorrido:
 - #### A lo ancho (BFS)
 	- **Comienza** por la **raiz** (nivel 0) y **se visita cada vertice en un nivel antes de pasar al siguiente**
+	- **LISTA** implementada como **cola**
 - #### En profundidad (DFS)
 	- **Comienza** por la **raiz** y **se explora cada rama lo mas profundo posible antes de retroceder**
+	- **LISTA** implementada como **pila**
 #### DFS p/ enumerar $\forall$ los vertices de un digrafo
 - **tree edges**: arcos que forman el bosque DFS
 - **backward edges**: van hacia un ancestro. 
