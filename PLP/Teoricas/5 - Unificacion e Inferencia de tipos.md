@@ -19,5 +19,8 @@
 	- Constructores unarios
 	- Constructores binarios
 - Los **tipos** se **forman usando un conjunto de incognitas y constructores**: τ ::= X$_n$ | C(τ1, . . . , τn)
-
-  
+#### Sustitucion
+- Funcion que le asigna un tipo a cada incognita
+- **Notacion** de _funcion que asocia (**sustitucion**) las variables a cada tipo_:
+  **S** = {X$_{k_1}$ := τ$_1$, . . . , X$_{k_n}$ := τ$_n$}, Donde **S(X$_{k_i}$)** = τ$_i$ para cada 
+  1 $\leq$ i $\leq$ n
