@@ -65,7 +65,7 @@ Para hacerlo de una forma ordenada y sistematica, se siguen dos ordenes:
 
 # <u>Arboles</u>
 ### Definicion
-- **Son grafos que son conexos y no tienen ciclos**
+- **Son grafos que son conexos y no tienen ciclos ni circuitos simples**
 - Es decir, **grafos que pueden ir de cualquier vertice a cualquier otro mediante algun conjunto de aristas** y ademas sus vertices **no pueden tener un mismo punto de partida y de llegada** (no se puede ir y volver al mismo vertice mediante un conjunto de aristas)
 - Entre **todo par de vertices existe un unico camino simple**
 ### Propiedades
