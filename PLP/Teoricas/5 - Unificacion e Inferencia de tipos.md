@@ -41,3 +41,10 @@ Dado un conjunto de ecuaciones E (problema de unificacion):
 #### Ej
 _Calcular unificadores m´as generales para los siguientes problemas de unificacion:_
 {(X2 → (X1 → X1)) ?= ((Bool → Bool) → (X1 → X2))}
+->Decompose => {X2 = (Bool → Bool), (X1 → X1) = (X1 → X2)}
+->Elim $_{\{X_2 := Bool -> Bool\}}$=> {X1 -> X1 = X1 ->(Bool -> Bool)}
+->Decompose => {X1 ?= X1, X1 ?= Bool -> Bool}
+-> Delete => {X1 ?= Bool -> Bool}
+-> Elim $_{\{X_1 := Bool -> Bool\}}$ => ∅
+E tiene solucion, **mgu(E)** = {X1 := B -> B} o {X2 := B -> B}
+= **{X1 := B -> B, X2 := B -> B}** 
