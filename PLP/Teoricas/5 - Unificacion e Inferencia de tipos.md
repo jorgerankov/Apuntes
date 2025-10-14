@@ -59,4 +59,4 @@ E tiene solucion, **mgu(E)** = {X$_1$ := B -> B} o {X$_2$ := B -> B}
 - Sucede si 
 	- **No hay dos variables ligadas con el mismo nombre**
 	- **No** hay una **variable ligada** con el **mismo nombre que una variable libre**
-- 
+- Siempre se puede rectificar un termino α-renombrandolo
