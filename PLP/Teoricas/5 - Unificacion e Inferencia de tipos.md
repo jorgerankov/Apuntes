@@ -60,3 +60,15 @@ E tiene solucion, **mgu(E)** = {X$_1$ := B -> B} o {X$_2$ := B -> B}
 	- **No hay dos variables ligadas con el mismo nombre**
 	- **No** hay una **variable ligada** con el **mismo nombre que una variable libre**
 - Siempre se puede rectificar un termino α-renombrandolo
+#### Ej
+_Aplicar el algoritmo de inferencia sobre los siguientes terminos:_
+λx. λy. y x
+1) Ya esta rectificado
+2) R0 = ∅
+   M0 = λx: X1. λy: X2. yx
+3) $I$(∅ | λx: X1. λy: X2. yx) =
+   $I$(x: X1 | λy: X2. yx) = (X2 -> X3 | )
+   $I$ (x: X1, y: X2 | yx) = (X3 | {X2 ?= X1 -> X3})
+   |- $I$ (x: X1, y: X2 | y) = (X2 | ∅)
+   |- $I$ (x: X1, y: X2 | x) = (X2 | ∅)
+(λx. x x)(λx. x x)
