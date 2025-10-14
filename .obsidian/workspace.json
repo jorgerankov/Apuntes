@@ -11,10 +11,14 @@
             "id": "d94c63496e0f4e2e",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Algo-III/1 - Teoricas/Clase 7 - Arboles.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Clase 7 - Arboles"
             }
           }
         ]
@@ -74,8 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.5,
-    "collapsed": true
+    "width": 347.5
   },
   "right": {
     "id": "0c0f80407ec2ad3f",
@@ -169,10 +172,10 @@
   },
   "active": "d94c63496e0f4e2e",
   "lastOpenFiles": [
-    "Arboles generadores.md",
-    "Algo-III/2 - Practicas/Guia Grafos.md",
     "Algo-III/1 - Teoricas/Clase 6 - Grafos.md",
     "Algo-III/1 - Teoricas/Clase 7 - Arboles.md",
+    "Algo-III/1 - Teoricas/Clase 8 - Arboles generadores.md",
+    "Algo-III/2 - Practicas/Guia Grafos.md",
     "PLP/Teoricas/Clase 4 - Calculo Lambda.md",
     "PLP/Teoricas/Clase 2 - Curry, Listas, Recursion.md",
     "PLP/Teoricas/Clase 1 - Programacion Funcional.md",
