@@ -4,39 +4,20 @@
     "type": "split",
     "children": [
       {
-        "id": "7ff562899aa42429",
+        "id": "90d94c6c35c59e97",
         "type": "tabs",
         "children": [
           {
-            "id": "48788d875d8e20b1",
+            "id": "d94c63496e0f4e2e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Algo-III/2 - Practicas/Guia Grafos.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Guia Grafos"
-            }
-          },
-          {
-            "id": "2b44519aca64304d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Arboles generadores.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Arboles generadores"
+              "title": "New tab"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -186,10 +167,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "2b44519aca64304d",
+  "active": "d94c63496e0f4e2e",
   "lastOpenFiles": [
-    "Algo-III/2 - Practicas/Guia Grafos.md",
     "Arboles generadores.md",
+    "Algo-III/2 - Practicas/Guia Grafos.md",
     "Algo-III/1 - Teoricas/Clase 6 - Grafos.md",
     "Algo-III/1 - Teoricas/Clase 7 - Arboles.md",
     "PLP/Teoricas/Clase 4 - Calculo Lambda.md",
