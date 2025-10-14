@@ -33,3 +33,8 @@ Es un **conjunto finito E de ecuaciones entre tipos** que **pueden involucrar in
 	- ... 
 	- S(τ$_n$) = S(σ$_n$)
 - La solucion a un problema de unificacion _no es unica_
+#### Algoritmo de unificacion Martelli–Montanari
+Dado un conjunto de ecuaciones E (problema de unificacion):
+- Mientras  E $\neq$ ∅, se **aplica sucesivamente alguna de las seis reglas**
+- La regla puede resultar en una **falla**
+- Sino, la regla es de la forma E →$_S$ E', donde E se reduce a sustituir 
