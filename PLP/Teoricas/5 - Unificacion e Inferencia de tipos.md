@@ -37,4 +37,5 @@ Es un **conjunto finito E de ecuaciones entre tipos** que **pueden involucrar in
 Dado un conjunto de ecuaciones E (problema de unificacion):
 - Mientras  E $\neq$ ∅, se **aplica sucesivamente alguna de las seis reglas**
 - La regla puede resultar en una **falla**
-- Sino, la regla es de la forma E →$_S$ E', donde E se reduce a sustituir 
+- Sino, la regla es de la forma **E →$_S$ E'**, donde **E se reduce a resolver E' aplicando la sustitucion S** 
+- 
