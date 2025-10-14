@@ -66,29 +66,6 @@ Es un **subgrafo generador** (que _tiene el mismo conjunto de vertices_) de G **
 - Todo **grafo conexo tiene** (al menos) un **arbol generador**
 - G tiene un **unico arbol generador** <=> **G es arbol**
 
-## Recorrido de arboles, grafos o digrafos
-Para hacerlo de una forma ordenada y sistematica, se siguen dos ordenes:
-- #### A lo ancho (Breadth-First Search - BFS)
-	- **Comienza** por la **raiz** y se **visita cada vertice** en un nivel **antes de pasar al siguiente** nivel
-- #### En profundidad (Depth-First Search - DFS)
-	- **Comienza** por la **raiz** y se **explora cada rama lo mas profundo posible** antes de retroceder
-#### DFS p/ enumerar $\forall$ los vertices de un digrafo
-- **tree edges**: arcos que forman el bosque DFS
-- **backward edges**: van hacia un ancestro. 
-- **forward edges**: van hacia un descendiente. 
-- **cross-edges**: van hacia a otro arbol (anterior) del bosque o a otra rama (anterior) del arbol
-
-##### Para grafos, solamente existen aristas _tree edges_ y _back edges_
-
-
-
-## <u>Arbol n-ario</u>
-- Arbol donde **cada vertice puede tener a lo sumo n hijos**
-	- Ejemplo: n = 2 => arbol binario
-### Arbol n-ario regular
-- **Todos los vertices tienen la misma cantidad de hijos**, salvo las hojas que no tienen hijos
-### Arbol n-ario regular pleno/completo
-- Si **ademas de ser n-ario regular**, **todas las hojas se hallan en el mismo nivel**
 # <u>Recorrido de arboles</u>
 ### Subarbol
 - Sea G = (A, V, \) un arbol con raiz r
@@ -112,3 +89,26 @@ Para hacerlo de una forma ordenada y sistematica, se siguen dos ordenes:
 - Recorre el subarbol derecho en este mismo orden
 - Nombra la raiz
 - En cada subarbol, paso el sub. izq -> sub. der -> raiz 
+
+### Ordenes de recorrido:
+- #### A lo ancho (BFS)
+	- **Comienza** por la **raiz** (nivel 0) y **se visita cada vertice en un nivel antes de pasar al siguiente**
+- #### En profundidad (DFS)
+	- **Comienza** por la **raiz** y **se explora cada rama lo mas profundo posible antes de retroceder**
+#### DFS p/ enumerar $\forall$ los vertices de un digrafo
+- **tree edges**: arcos que forman el bosque DFS
+- **backward edges**: van hacia un ancestro. 
+- **forward edges**: van hacia un descendiente. 
+- **cross-edges**: van hacia a otro arbol (anterior) del bosque o a otra rama (anterior) del arbol
+
+##### Para grafos, solamente existen aristas _tree edges_ y _back edges_
+
+
+
+## <u>Arbol n-ario</u>
+- Arbol donde **cada vertice puede tener a lo sumo n hijos**
+	- Ejemplo: n = 2 => arbol binario
+### Arbol n-ario regular
+- **Todos los vertices tienen la misma cantidad de hijos**, salvo las hojas que no tienen hijos
+### Arbol n-ario regular pleno/completo
+- Si **ademas de ser n-ario regular**, **todas las hojas se hallan en el mismo nivel**

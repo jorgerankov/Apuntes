@@ -35,7 +35,8 @@
               "title": "Clase 7 - Arboles"
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -185,10 +186,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d94c63496e0f4e2e",
+  "active": "dffff491c346d92c",
   "lastOpenFiles": [
-    "Algo-III/1 - Teoricas/Clase 7 - Arboles.md",
     "Algo-III/1 - Teoricas/Clase 6 - Grafos.md",
+    "Algo-III/1 - Teoricas/Clase 7 - Arboles.md",
     "Algo-III/1 - Teoricas/Clase 8 - Arboles generadores.md",
     "Algo-III/2 - Practicas/Guia Grafos.md",
     "PLP/Teoricas/Clase 4 - Calculo Lambda.md",
