@@ -1,73 +1,9 @@
-# Arboles
-Son **grafos conexos sin circuitos simples**
-### Dado un grafo G = (V, X):
-1) **G es un arbol**
-2) Existe exactamente **un camino** entre **todo par de nodos**
-3) G **es conexo**, pero **si se quita cualquier arista a G** queda **un grafo no conexo**
-	- _Toda arista es puente_
-4) G es un grafo **sin circuitos simples** y _m = n − 1_
-5) G es conexo y _m = n − 1_
-
-
-***Una hoja es un nodo de grado 1***
-
-### Lemas
-- ##### Lema 0
-	- _G = (V, X) un grafo, v,w ∈ V dos vertices diferentes_
-	- Existen _2 caminos distintos entre estos dos veertices_ entonces **hay un ciclo en G**
-- ##### Lema 1
-	- _G = (V, X) un grafo conexo y e ∈ X_
-	- G − e es **conexo** <=> **e pertenece** a un **circuito simple de G**
-- ##### Lema 2
-	- Todo _arbol no trivial_ tiene **al menos dos hojas**
-- ##### Lema 3
-	- Sea G = (V, X) arbol. Entonces m = n − 1
-
-
-## Arboles enraizados
-Arboles que **tienen un vertice distinguido** que llamamos ***raiz***
-### Propiedades
-- Explicitamente queda _definido_ un **arbol dirigido**
-- ***Nivel*** de un vertice = La **distancia** de **la raiz a ese vertice**
-- ***Altura h*** = el **maximo nivel** de sus **vertices**
-- ***Vertices internos*** = Aquellos que no son ni hojas ni la raiz
-- ***Arbol m-ario*** = Cuando $\forall$ sus **vertices internos** tienen **grado** a lo sumo **m+1** y su **raiz** a lo sumo **m**
-- ***Arbol exactamente m-ario*** = Cuando $\forall$ sus **vertices internos** tienen grado **m+1** y su **raiz m**
-- ***Arbol balanceado*** = Si $\forall$ sus hojas estan a nivel h o h − 1
-- ***Arbol balanceado completo*** = si $\forall$ sus hojas estan a nivel h
-- ***Relacion padre-hijo*** = dos _vertices adyacentes_, con el padre el **vertice de menor nivel**
-### Teorema
-- Un arbol **m-ario** de **altura h** tiene a lo sumo **m$^h$ hojas**
-	- Alcanza esta cota si es un _arbol exactamente m-ario balanceado completo con h $\geq$ 1_
-- Un arbol **m-ario con l hojas** tiene h $\geq$ \[log$_m$ l\] 
-- Si T es un arbol **exactamente m-ario balanceado no trivial** entonces h = \[log$_m$ l\]
-
-## Arboles generadores (AG)
-Es un **subgrafo generador** (que _tiene el mismo conjunto de vertices_) de G **que es arbol**
-### Teorema
-- Todo **grafo conexo tiene** (al menos) un **arbol generador**
-- G tiene un **unico arbol generador** <=> **G es arbol**
-
-## Recorrido de arboles, grafos o digrafos
-Para hacerlo de una forma ordenada y sistematica, se siguen dos ordenes:
-- #### A lo ancho (Breadth-First Search - BFS)
-	- **Comienza** por la **raiz** y se **visita cada vertice** en un nivel **antes de pasar al siguiente** nivel
-- #### En profundidad (Depth-First Search - DFS)
-	- **Comienza** por la **raiz** y se **explora cada rama lo mas profundo posible** antes de retroceder
-#### DFS p/ enumerar $\forall$ los vertices de un digrafo
-- **tree edges**: arcos que forman el bosque DFS
-- **backward edges**: van hacia un ancestro. 
-- **forward edges**: van hacia un descendiente. 
-- **cross-edges**: van hacia a otro arbol (anterior) del bosque o a otra rama (anterior) del arbol
-
-##### Para grafos, solamente existen aristas _tree edges_ y _back edges_
-
-
 # <u>Arboles</u>
 ### Definicion
 - **Son grafos que son conexos y no tienen ciclos ni circuitos simples**
 - Es decir, **grafos que pueden ir de cualquier vertice a cualquier otro mediante algun conjunto de aristas** y ademas sus vertices **no pueden tener un mismo punto de partida y de llegada** (no se puede ir y volver al mismo vertice mediante un conjunto de aristas)
 - Entre **todo par de vertices existe un unico camino simple**
+- Todo **arbol tiene como cantidad de aristas** = la cantidad de vertices - 1
 ### Propiedades
 - Si **agrego una arista** entre dos vertices de un arbol, **deja de ser un arbol** (Deja de tener el camino simple, pasa a tener un ciclo)
 - **Todas las aristas de un arbol son puentes** (Si desconecto alguna, deja de ser un grafo conexo)
@@ -100,6 +36,68 @@ Para hacerlo de una forma ordenada y sistematica, se siguen dos ordenes:
 - El _nivel de la raiz es 0_: n(r) = 0
 - _Cada vertice tiene un nivel mas que su padre_: Si p es padre de v --> n(v) = n(p) + 1
 - La **altura** de un arbol es el mayor nivel posible (el ultimo)
+### Lemas
+- ##### Lema 0
+	- Sea _G = (V, X) un grafo, v,w ∈ V dos vertices diferentes_
+	- Existen _2 caminos distintos entre estos dos veertices_ entonces **hay un ciclo en G**
+- ##### Lema 1
+	- Sea _G = (V, X) un grafo conexo y e ∈ X_
+	- G − e es **conexo** <=> **e pertenece** a un **circuito simple de G**
+- ##### Lema 2
+	- Todo _arbol no trivial_ tiene **al menos dos hojas**
+- ##### Lema 3
+	- Sea G = (V, X) arbol. Entonces m = n − 1
+- ##### Corolario 1
+	- Sea _G = (V, X) sin circuitos simples_ y _c componentes conexas_. Entonces _m = n − c_
+- ##### Corolario 2
+	- Sea _G = (V, X) con c componentes conexas_. Entonces _m ≥ n − c_
+## Arboles enraizados
+Arboles que **tienen un vertice distinguido** que llamamos ***raiz***
+### Propiedades
+- Queda _definido_ un **arbol dirigido**
+- ##### Nivel de un vertice
+	- La **distancia** de **la raiz a ese vertice**
+- ##### Altura h 
+	- el **maximo nivel** de sus **vertices**
+- ##### Vertices internos
+	- Aquellos que no son ni hojas ni la raiz
+- ##### Arbol m-ario
+	- Cuando $\forall$ sus **vertices internos** tienen **grado** a lo sumo **m+1** y su **raiz** a lo sumo **m**
+- ##### Arbol exactamente m-ario
+	- Cuando $\forall$ sus **vertices internos** tienen grado **m+1** y su **raiz m**
+- ##### Arbol balanceado
+	- Si $\forall$ sus hojas estan a nivel h o h − 1
+- ##### Arbol balanceado completo
+	- si $\forall$ sus hojas estan a nivel h
+- ##### Relacion padre-hijo*** = dos _vertices adyacentes_, con el padre el **vertice de menor nivel**
+### Teorema
+- Un arbol **m-ario** de **altura h** tiene a lo sumo **m$^h$ hojas**
+	- Alcanza esta cota si es un _arbol exactamente m-ario balanceado completo con h $\geq$ 1_
+- Un arbol **m-ario con l hojas** tiene h $\geq$ \[log$_m$ l\] 
+- Si T es un arbol **exactamente m-ario balanceado no trivial** entonces h = \[log$_m$ l\]
+
+## Arboles generadores (AG)
+Es un **subgrafo generador** (que _tiene el mismo conjunto de vertices_) de G **que es arbol**
+### Teorema
+- Todo **grafo conexo tiene** (al menos) un **arbol generador**
+- G tiene un **unico arbol generador** <=> **G es arbol**
+
+## Recorrido de arboles, grafos o digrafos
+Para hacerlo de una forma ordenada y sistematica, se siguen dos ordenes:
+- #### A lo ancho (Breadth-First Search - BFS)
+	- **Comienza** por la **raiz** y se **visita cada vertice** en un nivel **antes de pasar al siguiente** nivel
+- #### En profundidad (Depth-First Search - DFS)
+	- **Comienza** por la **raiz** y se **explora cada rama lo mas profundo posible** antes de retroceder
+#### DFS p/ enumerar $\forall$ los vertices de un digrafo
+- **tree edges**: arcos que forman el bosque DFS
+- **backward edges**: van hacia un ancestro. 
+- **forward edges**: van hacia un descendiente. 
+- **cross-edges**: van hacia a otro arbol (anterior) del bosque o a otra rama (anterior) del arbol
+
+##### Para grafos, solamente existen aristas _tree edges_ y _back edges_
+
+
+
 ## <u>Arbol n-ario</u>
 - Arbol donde **cada vertice puede tener a lo sumo n hijos**
 	- Ejemplo: n = 2 => arbol binario
