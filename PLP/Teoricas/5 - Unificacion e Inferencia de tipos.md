@@ -38,4 +38,6 @@ Dado un conjunto de ecuaciones E (problema de unificacion):
 - Mientras  E $\neq$ ∅, se **aplica sucesivamente alguna de las seis reglas**
 - La regla puede resultar en una **falla**
 - Sino, la regla es de la forma **E →$_S$ E'**, donde **E se reduce a resolver E' aplicando la sustitucion S** 
-- 
+#### Ej
+_Calcular unificadores m´as generales para los siguientes problemas de unificacion:_
+{(X2 → (X1 → X1)) ?= ((Bool → Bool) → (X1 → X2))}
