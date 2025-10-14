@@ -38,13 +38,18 @@ Dado un conjunto de ecuaciones E (problema de unificacion):
 - Mientras  E $\neq$ ∅, se **aplica sucesivamente alguna de las seis reglas**
 - La regla puede resultar en una **falla**
 - Sino, la regla es de la forma **E →$_S$ E'**, donde **E se reduce a resolver E' aplicando la sustitucion S** 
-#### Ej
-_Calcular unificadores m´as generales para los siguientes problemas de unificacion:_
-{(X2 → (X1 → X1)) ?= ((Bool → Bool) → (X1 → X2))}
-->Decompose => {X2 = (Bool → Bool), (X1 → X1) = (X1 → X2)}
-->Elim $_{\{X_2 := Bool -> Bool\}}$=> {X1 -> X1 = X1 ->(Bool -> Bool)}
-->Decompose => {X1 ?= X1, X1 ?= Bool -> Bool}
--> Delete => {X1 ?= Bool -> Bool}
+#### Ejemplo
+_Calcular unificadores mas generales para los siguientes problemas de unificacion:_
+
+###### {(X$_2$ → (X$_1$ → X$_1$)) ?= ((Bool → Bool) → (X$_1$ → X$_2$))}
+->Decompose => {X$_2$ = (Bool → Bool), (X1 → X1) = (X$_1$ → X$_2$)}
+->Elim $_{\{X_2 := Bool -> Bool\}}$=> {X$_1$ -> X$_1$ = X$_1$ ->(Bool -> Bool)}
+->Decompose => {X$_1$ ?= X$_1$, X$_1$ ?= Bool -> Bool}
+-> Delete => {X$_1$ ?= Bool -> Bool}
 -> Elim $_{\{X_1 := Bool -> Bool\}}$ => ∅
-E tiene solucion, **mgu(E)** = {X1 := B -> B} o {X2 := B -> B}
-= **{X1 := B -> B, X2 := B -> B}** 
+E tiene solucion, **mgu(E)** = {X$_1$ := B -> B} o {X$_2$ := B -> B}
+= **{X$_1$ := B -> B, X$_2$ := B -> B}** 
+
+###### {X$_1$ ?= (X$_2$ → X$_2$), X$_2$ ?= (X$_1$ → X$_1$)}
+-> Elim $_{\{x1 := x2 -> x2\}}$ {X$_2$ = (X$_2$ -> X$_2$) -> X2 -> X2}
+-> Occurs-check => falla => E no tiene solucion => **mgu(E) no esta definido**
