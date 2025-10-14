@@ -12,10 +12,12 @@
 - Es un **grafo no conexo** en el cual **cada una de las componentes es un arbol**
 - **Ejemplo**: Un grafo que no tiene todos sus vertices conectados entre si pero todos cumplen la propiedad de arbol por su cuenta
 ## <u>Arboles dirigidos</u>
+- Arboles que **tienen un vertice distinguido** que llamamos ***raiz***
 - Un digrafo simple **es un arbol dirigido** si **su grafo asociado** (es decir, el "grafo sin flechitas") **es un arbol dirigido**
-### <u>Arbol dirigido con raiz</u>
+### <u>Arbol dirigido con raiz (enraizado)</u>
 - Es un arbol dirigido en el cual **el grado entrante** (positivo) **de cada vertice es igual a 1** (les llega por lo menos una arista), **excepto** por un **unico vertice con grado positivo igual a 0**, que sera _**la raiz**_ (es decir, que no le deben llegar aristas)
 ### <u>Otras definiciones sobre arboles</u>
+- Queda _definido_ un **arbol dirigido**
 #### Hoja
 - Un **vertice v** de un arbol se dice **hoja cuando g(v) = 1** (el grado total de ese vertice va a ser el entrante (solo recibe una arista de otro vertice pero no le sale ninguna))
 #### Vertices internos
@@ -33,6 +35,7 @@
 #### Hermanos
 - v y w son **hermanos** <=> **tienen el mismo padre** (una misma arista tiene vertices apuntando hacia ambos)
 #### Nivel de un vertice
+- La **distancia** de **la raiz a ese vertice**
 - El _nivel de la raiz es 0_: n(r) = 0
 - _Cada vertice tiene un nivel mas que su padre_: Si p es padre de v --> n(v) = n(p) + 1
 - La **altura** de un arbol es el mayor nivel posible (el ultimo)
@@ -51,25 +54,6 @@
 	- Sea _G = (V, X) sin circuitos simples_ y _c componentes conexas_. Entonces _m = n − c_
 - ##### Corolario 2
 	- Sea _G = (V, X) con c componentes conexas_. Entonces _m ≥ n − c_
-## Arboles enraizados
-Arboles que **tienen un vertice distinguido** que llamamos ***raiz***
-### Propiedades
-- Queda _definido_ un **arbol dirigido**
-- ##### Nivel de un vertice
-	- La **distancia** de **la raiz a ese vertice**
-- ##### Altura h 
-	- el **maximo nivel** de sus **vertices**
-- ##### Vertices internos
-	- Aquellos que no son ni hojas ni la raiz
-- ##### Arbol m-ario
-	- Cuando $\forall$ sus **vertices internos** tienen **grado** a lo sumo **m+1** y su **raiz** a lo sumo **m**
-- ##### Arbol exactamente m-ario
-	- Cuando $\forall$ sus **vertices internos** tienen grado **m+1** y su **raiz m**
-- ##### Arbol balanceado
-	- Si $\forall$ sus hojas estan a nivel h o h − 1
-- ##### Arbol balanceado completo
-	- si $\forall$ sus hojas estan a nivel h
-- ##### Relacion padre-hijo*** = dos _vertices adyacentes_, con el padre el **vertice de menor nivel**
 ### Teorema
 - Un arbol **m-ario** de **altura h** tiene a lo sumo **m$^h$ hojas**
 	- Alcanza esta cota si es un _arbol exactamente m-ario balanceado completo con h $\geq$ 1_
