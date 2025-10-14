@@ -51,5 +51,12 @@ E tiene solucion, **mgu(E)** = {X$_1$ := B -> B} o {X$_2$ := B -> B}
 = **{X$_1$ := B -> B, X$_2$ := B -> B}** 
 
 ###### {X$_1$ ?= (X$_2$ → X$_2$), X$_2$ ?= (X$_1$ → X$_1$)}
--> Elim $_{\{x1 := x2 -> x2\}}$ {X$_2$ = (X$_2$ -> X$_2$) -> X2 -> X2}
--> Occurs-check => falla => E no tiene solucion => **mgu(E) no esta definido**
+-> Elim $_{\{x1 := x2 -> x2\}}$ {X$_2$ = (X$_2$ -> X$_2$) -> X$_2$ -> X$_2$}
+-> _Occurs-check_ => falla => E no tiene solucion => **mgu(E) no esta definido**
+
+# Algoritmo $I$ - Inferencia de tipos
+#### Rectificacion del termino
+- Sucede si 
+	- **No hay dos variables ligadas con el mismo nombre**
+	- **No** hay una **variable ligada** con el **mismo nombre que una variable libre**
+- 
