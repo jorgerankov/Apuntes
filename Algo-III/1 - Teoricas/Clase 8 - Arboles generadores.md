@@ -13,7 +13,8 @@
 - El algoritmo de Prim es correcto
 - Dado **un grafo G conexo determina un arbol generador minimo de G**
 - El _algoritmo Prim_ es un algoritmo goloso
-#### Algoritmo de Kruskal
-- Genera un bosque en algun momento con exactamente k aristas0 ≤ k ≤ n − 1, tal que **crea un subgrafo generador sin ciclos de un arbol generador minimo de G**
+## Algoritmo de Kruskal
+#### Proposicion
+- Sea G un grafo conexo y B$_k$ = (V, X$_{T_k}$ ) el bosque generado por el algoritmo en algun momento con exactamente k aristas0 ≤ k ≤ n − 1, tal que **crea un subgrafo generador sin ciclos de un arbol generador minimo de G**
 - Dado un grafo G conexo determina un arbol generador minimo de G
 - Es un algoritmo goloso
