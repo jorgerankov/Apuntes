@@ -4,13 +4,22 @@
 - **N(v)** := vecindario del nodo v
 - **d(v)** := | N(v) | = grado del nodo v
 Vamos a asumir que **nuestros nodos son los numeros de 1 a n**
-## Definicion
+## Matriz de adyacencia
+#### Definicion
 Se representa el **grafo G = (V, E)** como **una matriz M de n × n**
 Si i, j ∈ V, entonces:
 - M[i][j] = M[j][i] = 0 si (i, j) $\notin$ E
 - M[i][j] = M[j][i] = 1 si (i, j) ∈ E
 **Complejidad espacial**: $\Theta$(n$^2$)
 - La **matriz es simetrica** asi que **podriamos guardar solo una mitad**
+## Lista de adyacencia
+#### Definicion
+Representamos el grafo **G = (V, E) como un vector** donde en la posicion correspondiente a cada nodo **vamos a almacenar un puntero a su conjunto de vecinos**
+Si v,w ∈ V, entonces:
+- w ∈ N[v] y v ∈ N[w] si (v,w) ∈ E
+- w $\notin$ N[v] y v $\notin$ N[w] si (v,w) $\notin$ E
+
+# Ejercicios
 ### 7 - Intersección Máxima
 _Sea G un grafo conexo. Demostrar por el contrarrecíproco que todo par de caminos simples de longitud máxima de G tienen un vértice en común_
 - Supongo que en G hay dos caminos X e Y disjuntos en vértices de igual longitud
