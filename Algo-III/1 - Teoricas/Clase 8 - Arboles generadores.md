@@ -11,7 +11,8 @@
 - Entonces **T'** = (V, X$_T$ ∪ {e} \ {f}) **es arbol generador de G**
 #### Teorema
 - El algoritmo de Prim es correcto
-- Dado un grafo G conexo determina un arbol generador minimo de G
+- Dado **un grafo G conexo determina un arbol generador minimo de G**
+- El _algoritmo Prim_ es un algoritmo goloso
 #### Algoritmo de Kruskal
 - Genera un bosque en algun momento con exactamente k aristas0 ≤ k ≤ n − 1, tal que **crea un subgrafo generador sin ciclos de un arbol generador minimo de G**
 - Dado un grafo G conexo determina un arbol generador minimo de G
