@@ -101,3 +101,14 @@ _Aplicar el algoritmo de inferencia sobre los siguientes terminos:_
    |- λx: X1. λy: X1 -> X3. yx : X1 -> (X1 -> X3) -> X3
 
 (λx. x x)(λx. x x)
+
+# Correccion del algoritmo de unificacion
+Dado un conjunto de ecuaciones de unificacion E, definimos
+- n$_1$: cantidad de incognitas $\neq$ en E
+- n$_2$: tamano de E => $\sum_{(\tau ?= σ)\space \in \space E}$ |$\tau$| + |σ|
+- n$_3$: cantidad de ecuaciones de la forma $\tau$ ?= X$_n$ en E
+Las reglas que no producen falla achican la tripla (n1, n2, n3), _de acuerdo con el orden lexicografico_
+
+|     |     |
+| --- | --- |
+|     |     |
