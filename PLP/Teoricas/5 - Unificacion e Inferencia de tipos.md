@@ -27,16 +27,19 @@
 - Si τ es un tipo => **S(τ) reemplaza cada incognita de τ por el valor que le otorga S**
 ### Problema de unificacion
 Es un **conjunto finito E de ecuaciones entre tipos** que **pueden involucrar incognitas**
-#### Unificador
+E = {τ$_1$ =$^?$ σ$_1$, τ$_2$ =$^?$ σ$_2$, ... , τ$_n$ =$^?$ σ$_n$}
+### Unificador
 - Aplicado en E, es **una sustitucion S** tal que
-	- S(τ$_1$) = S(σ$_1$), 
-	- ... 
-	- S(τ$_n$) = S(σ$_n$)
+	- S(τ$_1$) = S(σ$_1$), ..., S(τ$_n$) = S(σ$_n$)
 - La solucion a un problema de unificacion _no es unica_
+### Generalidad
+Una sustitucion S$_A$ **es mas general** que S$_B$ si $\exists$ un S$_C$ tal que:
+**S$_B$ = S$_C$ o S$_A$**
+- Es decir, S$_B$ se obtiene instanciando variables de S$_A$
 #### Algoritmo de unificacion Martelli–Montanari
 Dado un conjunto de ecuaciones E (problema de unificacion):
 - Mientras  E $\neq$ ∅, se **aplica sucesivamente alguna de las seis reglas**
-- La regla puede resultar en una **falla**
+- La regla **puede resultar en una falla**
 - Sino, la regla es de la forma **E →$_S$ E'**, donde **E se reduce a resolver E' aplicando la sustitucion S** 
 #### Ejemplo
 _Calcular unificadores mas generales para los siguientes problemas de unificacion:_
