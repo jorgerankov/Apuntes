@@ -84,20 +84,20 @@ Tenemos un contexto Γ y un termino M con anotaciones de tipos, recursivamente c
 Cuando ya calculamos $I$(Γ$_0$ | M$_0$) = (τ | E)
 - Calculamos **S** = mgu(E)
 - Si $\nexists$ el unificador, el termino U no es tipable
-- Sino
-#### Ej
+- Sino, el termino U es tipable y vale **S(Γ$_0$) ⊢ S(M$_0$) : S(τ)**
+#### Ejercicio
 _Aplicar el algoritmo de inferencia sobre los siguientes terminos:_
 λx. λy. y x
 1) Ya esta rectificado
-2) R0 = ∅
-   M0 = λx: X1. λy: X2. yx
+2) $\Gamma_0$ = ∅
+   M$_0$ = λx: X$_1$. λy: X$_2$. yx
 3) $I$(∅ | λx: X1. λy: X2. yx) = (X1 -> X2 -> X3 | E)
    $I$(x: X1 | λy: X2. yx) = (X2 -> X3 | E)
    $I$ (x: X1, y: X2 | yx) = (X3 | {X2 ?= X1 -> X3} == E)
-   |- $I$ (x: X1, y: X2 | y) = (X2 | ∅)
-   |- $I$ (x: X1, y: X2 | x) = (X2 | ∅)
+   -  $I$ (x: X1, y: X2 | y) = (X2 | ∅)
+   -  $I$ (x: X1, y: X2 | x) = (X2 | ∅)
 4) S = mgu(E) = {X2 := X1 -> X3}, por ende, U es tipable
-   y el juicio de tipado mas general que le da tipo a U es S(∅) |- S(M.) : S( X1 -> X2 -> X3) o sea: |- λx: X1. 
-   λy: X1 -> X3. yx : X1 -> (X1 -> X3) -> X3
+   y el juicio de tipado mas general que le da tipo a U es S(∅) |- S(M.) : S(X1 -> X2 -> X3) o sea: 
+   |- λx: X1. λy: X1 -> X3. yx : X1 -> (X1 -> X3) -> X3
 
 (λx. x x)(λx. x x)
