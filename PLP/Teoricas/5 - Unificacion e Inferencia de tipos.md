@@ -75,6 +75,16 @@ Dado un termino U (suponemos ya rectificado), producimos un contexto Γ$_0$ y un
 Tenemos un contexto Γ y un termino M con anotaciones de tipos, recursivamente calculamos
 - Un tipo $\tau$ que corresponde al tipo de M
 - Un cjto de ecuaciones E, que representan restricciones para que M este bien tipado
+- Se define un algoritmo recursivo: **$I$ ($\Gamma$ | M) = ($\tau$ | E)**
+	- Donde $\Gamma$ es el contexto, M el termino, $\tau$ el tipo y E las restricciones
+	- ($\Gamma$ | M) es la entrada, ($\tau$ | E) es la salida 
+	  **Precondicion**: Γ le da tipo a todas las variables de M
+### 4. Unificacion de restricciones
+Γ$_0$ y M$_0$ resultan de anotar un termino rectificado U
+Cuando ya calculamos $I$(Γ$_0$ | M$_0$) = (τ | E)
+- Calculamos **S** = mgu(E)
+- Si $\nexists$ el unificador, el termino U no es tipable
+- Sino
 #### Ej
 _Aplicar el algoritmo de inferencia sobre los siguientes terminos:_
 λx. λy. y x
