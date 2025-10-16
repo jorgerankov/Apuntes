@@ -60,17 +60,21 @@ E tiene solucion, **mgu(E)** = {X$_1$ := B -> B} o {X$_2$ := B -> B}
 -> _Occurs-check_ => falla => E no tiene solucion => **mgu(E) no esta definido**
 
 # Algoritmo $I$ - Inferencia de tipos
-### Rectificacion del termino
+### 1. Rectificacion del termino
 - Sucede si 
 	- **No hay dos variables ligadas con el mismo nombre**
 	- **No** hay una **variable ligada** con el **mismo nombre que una variable libre**
 - Siempre se puede rectificar un termino α-renombrandolo
-### Anotacion
+### 2. Anotacion
 Dado un termino U (suponemos ya rectificado), producimos un contexto Γ$_0$ y un termino M$_0$
 - Γ$_0$ le da tipo a todas las variables libres de U
   El tipo de cada variable es una incognita _fresca_
 - M$_0$ esta anotado tal que **erase(M$_0$) = U**
   $\forall$ las anotaciones son incognitas frescas
+### 3. Generacion de restricciones
+Tenemos un contexto Γ y un termino M con anotaciones de tipos, recursivamente calculamos
+- Un tipo $\tau$ que corresponde al tipo de M
+- Un cjto de ecuaciones E, que representan restricciones para que M este bien tipado
 #### Ej
 _Aplicar el algoritmo de inferencia sobre los siguientes terminos:_
 λx. λy. y x
