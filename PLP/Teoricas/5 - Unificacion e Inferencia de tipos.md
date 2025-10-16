@@ -109,6 +109,9 @@ Dado un conjunto de ecuaciones de unificacion E, definimos
 - n$_3$: cantidad de ecuaciones de la forma $\tau$ ?= X$_n$ en E
 Las reglas que no producen falla achican la tripla (n1, n2, n3), _de acuerdo con el orden lexicografico_
 
-|     |     |
-| --- | --- |
-|     |     |
+|           | n$_1$  | n$_2$ | n$_3$ |
+| :-------: | :----: | :---: | :---: |
+|   Elim    |  $>$   |       |       |
+| Decompose |  $=$   |  $>$  |       |
+|  Delete   | $\geq$ |  $>$  |       |
+|   Swap    |  $=$   |  $=$  |  $>$  |
