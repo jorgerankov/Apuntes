@@ -38,12 +38,14 @@ Una sustitucion S$_A$ **es mas general** que S$_B$ si $\exists$ un S$_C$ tal que
 - Es decir, S$_B$ se obtiene instanciando variables de S$_A$
 #### Algoritmo de unificacion Martelli–Montanari
 Dado un conjunto de ecuaciones E (problema de unificacion):
-- Mientras  E $\neq$ ∅, se **aplica sucesivamente alguna de las seis reglas**
+- Mientras  E $\neq$ ∅, se **aplica sucesivamente alguna de las seis reglas (verlas en la diapo)**
 - La regla **puede resultar en una falla**
-- Sino, la regla es de la forma **E →$_S$ E'**, donde **E se reduce a resolver E' aplicando la sustitucion S** 
+- Sino, la regla es de la forma **E →$_S$ E'**, donde **E se reduce a resolver E' aplicando la sustitucion S**
+- **S = Sn ◦ ... ◦ S2 ◦ S1** es un **unificador** para E
+- ##### Unificador mas general
+	- **mgu(E)** es el **unificador mas general de E**, si existe
 #### Ejemplo
 _Calcular unificadores mas generales para los siguientes problemas de unificacion:_
-
 ###### {(X$_2$ → (X$_1$ → X$_1$)) ?= ((Bool → Bool) → (X$_1$ → X$_2$))}
 ->Decompose => {X$_2$ = (Bool → Bool), (X1 → X1) = (X$_1$ → X$_2$)}
 ->Elim $_{\{X_2 := Bool -> Bool\}}$=> {X$_1$ -> X$_1$ = X$_1$ ->(Bool -> Bool)}
