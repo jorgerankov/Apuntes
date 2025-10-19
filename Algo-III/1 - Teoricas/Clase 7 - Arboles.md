@@ -95,7 +95,9 @@ Es un **subgrafo generador** (que _tiene el mismo conjunto de vertices_) de G **
 	- **Comienza** por la **raiz** (nivel 0) y **se visita cada vertice en un nivel antes de pasar al siguiente**
 	- **LISTA** implementada como **cola**
 - #### En profundidad (DFS)
+	- Es un **algoritmo recursivo** que sigue la **idea de backtracking** para poder recorrer todos los nodos
 	- **Comienza** por la **raiz** y **se explora cada rama lo mas profundo posible antes de retroceder**
+	- Recorro todos los nodos una sola vez y reviso las aristas tambien una sola vez => O(m + n)
 	- **LISTA** implementada como **pila**
 #### DFS p/ enumerar $\forall$ los vertices de un digrafo
 - **tree edges**: arcos que forman el bosque DFS
