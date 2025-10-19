@@ -91,14 +91,16 @@ Es un **subgrafo generador** (que _tiene el mismo conjunto de vertices_) de G **
 - En cada subarbol, paso el sub. izq -> sub. der -> raiz 
 
 ### Ordenes de recorrido:
-- #### A lo ancho (BFS)
-	- **Comienza** por la **raiz** (nivel 0) y **se visita cada vertice en un nivel antes de pasar al siguiente**
-	- **LISTA** implementada como **cola**
 - #### En profundidad (DFS)
 	- Es un **algoritmo recursivo** que sigue la **idea de backtracking** para poder recorrer todos los nodos
 	- **Comienza** por la **raiz** y **se explora cada rama lo mas profundo posible antes de retroceder**
 	- Recorro todos los nodos una sola vez y reviso las aristas tambien una sola vez => O(m + n)
 	- **LISTA** implementada como **pila**
+- #### A lo ancho (BFS)
+	- Tambien vamos a recorrer todos los nodos pero en lugar de recorrer en profundidad **va recorriendo a lo ancho**
+	- La idea del algoritmo es arrancar en algun nodo y recorrer todos sus vecinos, luego los vecinos de sus vecinos...
+	- **Comienza** por la **raiz** (nivel 0) y **se visita cada vertice en un nivel antes de pasar al siguiente**
+	- **LISTA** implementada como **cola**
 #### DFS p/ enumerar $\forall$ los vertices de un digrafo
 - **tree edges**: arcos que forman el bosque DFS
 - **backward edges**: van hacia un ancestro. 
