@@ -16,3 +16,4 @@ Sea G = (V, X) un grafo, ℓ : X -> R una funcion de peso para las aristas de G
 ### Teorema
 Dado un grafo orientado G con pesos no negativos en las aristas, el algoritmo de Dijkstra **determina el camino minimo entre el nodo v y el resto de los nodos de G**
 
+- Utiliza conceptualmente una cola de prioridad para guardar los vertices que estan en V \ S, donde cada vertice v se guarda junto con su valor de clave prioridad π(v) que se puede ir disminuyendo con el tiempo
