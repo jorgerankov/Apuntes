@@ -18,6 +18,8 @@ Dado un grafo orientado G con pesos no negativos en las aristas, el algoritmo de
 
 - Utiliza conceptualmente una cola de prioridad para guardar los vertices que estan en V \ S, donde cada vertice v se guarda junto con su valor de clave prioridad π(v) que se puede ir disminuyendo con el tiempo
 # Algoritmo de Ford
+### Teorema
+Dado un grafo orientado G sin ciclos de longitud negativa alcanzables desde v, el algoritmo de Ford **determina un camino minimo entre el nodo v y cada nodo alcanzable desde v**
 ##### Dado un grafo orientado G con una funcion de longitud ℓ para sus aristas y un nodo origen v
 - En **todo momento de la ejecucion** del algoritmo de Ford
 	1. Si π(w) < ∞ para alg´un nodo w entonces existe un recorrido R que conecta v con w y π(w) = ℓ(R)
