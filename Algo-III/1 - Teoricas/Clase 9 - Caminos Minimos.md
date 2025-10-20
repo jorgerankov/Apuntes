@@ -28,4 +28,6 @@ Dado un grafo orientado G sin ciclos de longitud negativa alcanzables desde v, e
 	- al finalizar la iteracion k del algoritmo de Ford, 
 	  π(w) ≤ ℓ(C)
 - Al finalizar la iteracion k del algoritmo de Ford determina un **camino minimo** entre v y w si existe un camino minimo de v a w con a lo sumo k aristas
+- _Si hubo cambio de π hasta la iteracion n inclusive en la ejecucion_ entonces **existe un ciclo de longitud negativa (c.l.n.) alcanzable desde v**
+- Si existe un c.l.n. alcanzable desde v entonces **hay cambio de π en toda iteracion de la ejecucion del algoritmo de Ford**
 
