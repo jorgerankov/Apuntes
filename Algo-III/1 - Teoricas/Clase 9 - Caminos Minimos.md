@@ -12,3 +12,7 @@ Sea G = (V, X) un grafo, ℓ : X -> R una funcion de peso para las aristas de G
 - La distancia entre u y v, _dist(u, v)_ =
 	- la longitud de un camino minimo entre u y v en caso de existir algun camino entre u y v
 	- $\infty$ caso contrario  
+# Algoritmo de Dijkstra
+### Teorema
+Dado un grafo orientado G con pesos no negativos en las aristas, el algoritmo de Dijkstra **determina el camino minimo entre el nodo v y el resto de los nodos de G**
+
