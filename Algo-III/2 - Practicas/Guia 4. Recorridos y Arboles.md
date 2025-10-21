@@ -8,4 +8,10 @@
 Si el nivel de v en T es menor o igual al nivel de w en T, y v y w estan conectados entre si por vw, entonces:
 - O v es ancestro de w
 - O v y w estan ambos en el mismo nivel 
-vw es puente <-> 
+vw es puente <-> al eliminar vw del grafo tengo mas componentes conexas que antes de eliminarlo.
+
+Ida (=>): Si vw es puente, entonces v es el padre de w en T y ninguna arista de G\ {vw} une a un descendiente de w (o a w) con un ancestro de v (o con v) 
+
+Vuelta (<-) Si v es el padre de w en T y ninguna arista de G\ {vw} une a un descendiente de w (o a w) con un ancestro de v (o con v), entonces vw es puente
+
+Veamos la ida
