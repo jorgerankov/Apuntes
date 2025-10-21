@@ -96,6 +96,11 @@ Es un **subgrafo generador** (que _tiene el mismo conjunto de vertices_) de G **
 	- **Comienza** por la **raiz** y **se explora cada rama lo mas profundo posible antes de retroceder**
 	- Recorro todos los nodos una sola vez y reviso las aristas tambien una sola vez => O(m + n)
 	- **LISTA** implementada como **pila**
+	- ### Clasificacion de aristas en DFS
+		1. **Aristas de árbol** (tree edges): Pertenecen a (E(T)).
+		2. **Aristas de retroceso** (back edges): Conectan un vértice con uno de sus ancestros en (T).
+		3. **Aristas de avance** (forward edges): Conectan un vértice con uno de sus descendientes (que no es hijo directo).
+		4. **Aristas cruzadas** (cross edges): Conectan vértices en ramas diferentes del árbol.
 - #### A lo ancho (BFS)
 	- Tambien vamos a recorrer todos los nodos pero en lugar de recorrer en profundidad **va recorriendo a lo ancho**
 	- La idea del algoritmo es arrancar en algun nodo y recorrer todos sus vecinos, luego los vecinos de sus vecinos...
