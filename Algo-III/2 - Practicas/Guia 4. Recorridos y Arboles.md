@@ -21,6 +21,12 @@ Ahora, la vuelta: Si v es el padre de w en T, entonces puedo decir que v esta en
 
 | _Una orientación de un grafo G es un grafo orientado D cuyo grafo subyacente es G. (En otras palabras, D es una orientación de G cuando D se obtiene dando una orientación a cada arista de G). Para todo árbol DFS T de un grafo conexo G se define D(T) como la orientación de G tal que v → w es una arista de D(T) cuando: v es el padre de w en T o w es un ancestro no padre de v en T_<br><br>b) Demostrar que las siguientes afirmaciones son equivalentes<br>I) G admite una orientación que es fuertemente conexa. <br>II) G no tiene puentes. <br>III) para todo árbol DFS de T ocurre que D(T) es fuertemente conexo. <br>IV ) existe un árbol DFS de T tal que D(T) es fuertemente conexo |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-I => II) Si G admite una orientación que es fuertemente conexa, entonces G no tiene puentes. Por contradiccion, digamos que G tiene algun puente (vw), tal que 
+_I => II) Si G admite una orientación que es fuertemente conexa, entonces G no tiene puentes._ 
+Por contradiccion, digamos que G tiene algun puente 
+(vw, v -> w) que lo orientamos en el grafo G; al desconectarlo de G obtenemos 2 componentes distintas, una que contiene a v y otra que contiene a w. En el digrafo orientado, para ir de w a v, debo usar alguna arista (wv) que conecte ambas componentes entre si, pero la unica arista que teniamos fue removida, e iba de v a w, no de w a v, y no hay forma de conectarlos nuevamente. Por lo tanto, **no hay camino dirigido de (w) a (v)**, así que el dígrafo **no es fuertemente conexo** (contradicción)
 
-II => I) Si G no tiene puentes, entonces G admite una orientación que es fuertemente conexa
+_II => I) Si G no tiene puentes, entonces G admite una orientación que es fuertemente conexa_
+Tomo un arbol DFS (T) de G. Defino la orientacion D(T) tal que:
+- v -> w si v es padre de w en T
+- w -> v si w es un descendiente de v y hay una arista de retroceso de w a v
+Como G no tiene puentes, toda arista de 
