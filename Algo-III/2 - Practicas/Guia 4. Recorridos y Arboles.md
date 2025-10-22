@@ -29,4 +29,10 @@ _II => I) Si G no tiene puentes, entonces G admite una orientación que es fuert
 Tomo un arbol DFS (T) de G. Defino la orientacion D(T) tal que:
 - v -> w si v es padre de w en T
 - w -> v si w es un descendiente de v y hay una arista de retroceso de w a v
-Como G no tiene puentes, toda arista de 
+Como G no tiene puentes, toda arista de (vw) pertenece a algun ciclo => Hay alguna arista de retroceso que "cierra" el ciclo desde algun descendiente de w hacia v o algun ancestro de v. Esto me garantiza poder "subir y bajar" en el arbol usando las aristas de retroceso. Por lo tanto, desde cualquier vértice puedo llegar a cualquier otro 
+
+# Recorridos en anchura
+
+| 5. ⋆Un árbol generador T de un grafo G es v-geodésico si la distancia entre v y w en T es igual a la distancia entre v y w en G para todo w ∈ V (G). Demostrar que todo árbol BFS de G enraizado en v es v-geodésico. Dar un contraejemplo para la vuelta, i.e., mostrar un árbol generador vgeodésico de un grafo G que no pueda ser obtenido cuando BFS se ejecuta en G desde v. |
+| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+->) La ida se cumple demostrando que todo vertice w en G esta 
