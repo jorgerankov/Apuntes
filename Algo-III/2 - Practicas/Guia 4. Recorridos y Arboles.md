@@ -38,3 +38,7 @@ Como G no tiene puentes, toda arista de (vw) pertenece a algun ciclo => Hay algu
 ->) La ida se cumple demostrando que todo vertice w esta a la misma distancia de v tanto en G como en T
 Tomemos a v como la raiz del grafo enraizado G, y ejecutemos BFS desde alli, tal que se nos devuelva un árbol BFS que, a su vez, es un árbol generador T, ya que el mismo comienza a recorrer desde la raiz hasta la ultima hoja siguiendo un recorrido determinado, y dandole una direccion a cada arista entre 2 nodos.
 Si un nodo w era hijo de v en el grafo G (es decir, estaba en un nivel mayor que v, ya que v es raiz y esta en el nivel 0), al correr BFS en el Grafo logramos observar que, siguiendo el camino que conecta v con w, la cantidad de aristas + 1 coincide con la diferencia de nivel entre ambos, dando a entender que se cumple la distancia entre ambos vertices tanto en el grafo G enraizado como en el arbol BFS
+
+Ejecuto BFS en (G) **desde el vértice (v)**. Esto produce un **árbol BFS (T) enraizado en (v)**.
+BFS construye un árbol generador (T) de (G) que incluye todos los vértices de (G). (T) es un **subgrafo** de (G) (las aristas de (T) son aristas de (G)).
+Después de ejecutar BFS desde (v), cada vértice (w) tiene un **nivel** en (T), que es la distancia desde (v) en (T).
