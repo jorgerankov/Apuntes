@@ -39,6 +39,21 @@ Como G no tiene puentes, toda arista de (vw) pertenece a algun ciclo => Hay algu
 Tomemos a v como la raiz del grafo enraizado G, y ejecutemos BFS desde alli, tal que se nos devuelva un árbol BFS que, a su vez, es un árbol generador T, ya que el mismo comienza a recorrer desde la raiz hasta la ultima hoja siguiendo un recorrido determinado, y dandole una direccion a cada arista entre 2 nodos.
 Si un nodo w era hijo de v en el grafo G (es decir, estaba en un nivel mayor que v, ya que v es raiz y esta en el nivel 0), al correr BFS en el Grafo logramos observar que, siguiendo el camino que conecta v con w, la cantidad de aristas + 1 coincide con la diferencia de nivel entre ambos, dando a entender que se cumple la distancia entre ambos vertices tanto en el grafo G enraizado como en el arbol BFS
 
-Ejecuto BFS en (G) **desde el vértice (v)**. Esto produce un **árbol BFS (T) enraizado en (v)**.
+->) Ejecuto BFS en (G) **desde el vértice (v)**. Esto produce un **árbol BFS (T) enraizado en (v)**.
 BFS construye un árbol generador (T) de (G) que incluye todos los vértices de (G). (T) es un **subgrafo** de (G) (las aristas de (T) son aristas de (G)).
 Después de ejecutar BFS desde (v), cada vértice (w) tiene un **nivel** en (T), que es la distancia desde (v) en (T).
+
+Todo árbol BFS de (G) enraizado en (v) es (v)-geodésico.
+- Sea (d_G(v, w)) la **distancia entre (v) y (w) en (G)** (longitud del camino más corto).
+- Sea (d_T(v, w)) la **distancia entre (v) y (w) en (T)** (longitud del único camino en el árbol).
+
+qvq (d_T(v, w) = d_G(v, w)) para todo (w $\in$ V(G))
+Como (T) es un **subgrafo** de (G) (las aristas de (T) son aristas de (G)), cualquier camino en (T) también es un camino en (G) => la distancia en (T) no puede ser **menor** que la distancia en (G).
+
+BFS explora los vértices en orden creciente de distancia desde (v)
+Cuando BFS visita (w) por primera vez, lo hace desde un vértice (u) tal que (d_G(v, u) = d_G(v, w) - 1); BFS agrega la arista (uw) al árbol (T), por lo que d_T(v, w) = d_T(v, u) + 1
+Por la propiedad de BFS, sabemos que (d_T(v, u) = d_G(v, u)), tal que d_T(v, w) = d_G(v, u) + 1 = d_G(v, w)
+
+Por lo tanto, (T) es (v)-geodésico.
+
+<-) 
