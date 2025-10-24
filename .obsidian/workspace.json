@@ -11,10 +11,14 @@
             "id": "59718108d18825ee",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "PLP/Teoricas/5 - Unificacion e Inferencia de tipos.md",
+                "mode": "preview",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "5 - Unificacion e Inferencia de tipos"
             }
           }
         ]
@@ -166,10 +170,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "549f43bd902af441",
+  "active": "59718108d18825ee",
   "lastOpenFiles": [
-    "Algo-III/1 - Teoricas/Clase 6 - Grafos.md",
     "SQL/Proyectos.md",
+    "Algo-III/1 - Teoricas/Clase 6 - Grafos.md",
     "Algo-III/2 - Practicas/Guia 4. Recorridos y Arboles.md",
     "Algo-III/2 - Practicas/Representacion de Grafos.md",
     "Algo-III/1 - Teoricas/Clase 7 - Arboles.md",
