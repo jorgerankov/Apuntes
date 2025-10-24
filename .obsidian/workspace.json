@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algo-III/2 - Practicas/Guia 4. Recorridos y Arboles.md",
+                "file": "SQL/Proyectos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Guia 4. Recorridos y Arboles"
+              "title": "Proyectos"
             }
           }
         ],
@@ -187,8 +187,9 @@
   },
   "active": "669735cb7c3f4e60",
   "lastOpenFiles": [
-    "Algo-III/1 - Teoricas/Clase 6 - Grafos.md",
+    "SQL/Proyectos.md",
     "Algo-III/2 - Practicas/Guia 4. Recorridos y Arboles.md",
+    "Algo-III/1 - Teoricas/Clase 6 - Grafos.md",
     "Algo-III/2 - Practicas/Representacion de Grafos.md",
     "Algo-III/1 - Teoricas/Clase 7 - Arboles.md",
     "Algo-III/1 - Teoricas/Clase 9 - Caminos Minimos.md",
@@ -216,7 +217,6 @@
     "Algo-II/2 - Laboratorios",
     "Algo-II/1- Teóricas/9 - Tries.md",
     "Algo-II/1- Teóricas/8.1 - Complejidades de Estructuras.md",
-    "Algo-II/1- Teóricas/8 - Heaps.md",
     "Algo-II/1- Teóricas",
     "Algo-II",
     "SQL",
