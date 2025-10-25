@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PLP/Teoricas/5 - Unificacion e Inferencia de tipos.md",
-                "mode": "preview",
+                "file": "PLP/Teoricas/6 - Logica de Primer Orden.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5 - Unificacion e Inferencia de tipos"
+              "title": "6 - Logica de Primer Orden"
             }
           }
         ]
@@ -172,6 +172,14 @@
   },
   "active": "59718108d18825ee",
   "lastOpenFiles": [
+    "PLP/Teoricas/Imagenes/Pasted image 20251025113823.png",
+    "PLP/Teoricas/Imagenes/Cuant_exist.png",
+    "PLP/Teoricas/Imagenes/regla_univ.png",
+    "PLP/Teoricas/Imagenes/Screenshot From 2025-10-25 10-32-22.png",
+    "PLP/Teoricas/Imagenes/Screenshot From 2025-10-25 11-05-41.png",
+    "PLP/Teoricas/6 - Logica de Primer Orden.md",
+    "PLP/Teoricas/5 - Unificacion e Inferencia de tipos.md",
+    "PLP/Teoricas/Imagenes",
     "SQL/Proyectos.md",
     "Algo-III/1 - Teoricas/Clase 6 - Grafos.md",
     "Algo-III/2 - Practicas/Guia 4. Recorridos y Arboles.md",
@@ -183,7 +191,6 @@
     "Algo-III/2 - Practicas/Guia 2. Backtracking.md",
     "Algo-III/2 - Practicas/Guia 1. Divide and Conquer.md",
     "Algo-III/2 - Practicas/Guia 3. Grafos.md",
-    "PLP/Teoricas/5 - Unificacion e Inferencia de tipos.md",
     "PLP/Teoricas/2 - Curry, Listas, Recursion.md",
     "PLP/Teoricas/0 - Intro Haskell.md",
     "PLP/Teoricas/4 - Calculo Lambda.md",
@@ -200,13 +207,10 @@
     "Algo-III/1 - Teoricas",
     "Algo-II/2 - Laboratorios/3 - POO, Aliasing y Memoria dinámica.md",
     "Algo-II/2 - Laboratorios",
-    "Algo-II/1- Teóricas/9 - Tries.md",
-    "Algo-II/1- Teóricas/8.1 - Complejidades de Estructuras.md",
     "Algo-II/1- Teóricas",
     "Algo-II",
     "SQL",
     "PLP/Teorica",
-    "PLP",
-    "Algo-III/Teorica"
+    "PLP"
   ]
 }
