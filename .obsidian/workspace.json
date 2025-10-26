@@ -35,8 +35,7 @@
               "title": "5 - Unificacion e Inferencia de tipos"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -186,15 +185,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "fc4e074334048b87",
+  "active": "59718108d18825ee",
   "lastOpenFiles": [
+    "PLP/Teoricas/5 - Unificacion e Inferencia de tipos.md",
     "PLP/Teoricas/6 - Logica de Primer Orden.md",
     "PLP/Teoricas/Imagenes/Pasted image 20251025113823.png",
     "PLP/Teoricas/Imagenes/Cuant_exist.png",
     "PLP/Teoricas/Imagenes/regla_univ.png",
     "PLP/Teoricas/Imagenes/Screenshot From 2025-10-25 10-32-22.png",
     "PLP/Teoricas/Imagenes/Screenshot From 2025-10-25 11-05-41.png",
-    "PLP/Teoricas/5 - Unificacion e Inferencia de tipos.md",
     "PLP/Teoricas/Imagenes",
     "SQL/Proyectos.md",
     "Algo-III/1 - Teoricas/Clase 6 - Grafos.md",
