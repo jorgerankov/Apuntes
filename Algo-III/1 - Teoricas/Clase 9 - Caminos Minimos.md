@@ -34,6 +34,11 @@ Dado un grafo orientado G sin ciclos de longitud negativa alcanzables desde v, e
 # <u>Algoritmo de Floyd</u>
 ## Teorema
 Determina **los caminos minimos entre todos los pares de nodos de un grafo orientado sin ciclos de longitud negativa**
+## Matriz de distancias
+Genera una matriz de n * n que define en cada una de sus casillas el peso que tiene una arista que une un par de vertices. 
+- La distancia que une a un nodo consigo mismo vale 0
+- Si un vertice **no esta unido con otro**, la distancia es $\infty$
+- Sino, ponemos el **valor/peso de la arista entre los vertices ij**
 ## Lema
 Al finalizar la iteracion k del algoritmo, ℓ$_{ij}$ es la longitud de los caminos minimos desde v$_i$ a v$_j$ cuyos nodos intermedios son elementos de V$_k$ = {v$_1$, ..., v$_k$}, si no existe ciclo de longitud negativa con todos sus vertices en V$_k$.
 
