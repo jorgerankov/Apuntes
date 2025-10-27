@@ -39,6 +39,11 @@ Genera una matriz de n * n que define en cada una de sus casillas el peso que ti
 - La distancia que une a un nodo consigo mismo vale 0
 - Si un vertice **no esta unido con otro**, la distancia es $\infty$
 - Sino, ponemos el **valor/peso de la arista entre los vertices ij**
+> Para cada valor que esta en M$_{ij}$, M$_{ji}$, 2 $\leq$ $i$ $\leq$ n, 2 $\leq$ $j$ $\leq$ n, si la suma de ambos es menor que el adyacente de ambos, entonces reemplazamos el valor actual del adyacente por la suma que obtuvimos
+
+#### Ejemplo
+$$ \begin{array}{cc}  &A \\  &A \end{array} $$
+
 ## Lema
 Al finalizar la iteracion k del algoritmo, ℓ$_{ij}$ es la longitud de los caminos minimos desde v$_i$ a v$_j$ cuyos nodos intermedios son elementos de V$_k$ = {v$_1$, ..., v$_k$}, si no existe ciclo de longitud negativa con todos sus vertices en V$_k$.
 
