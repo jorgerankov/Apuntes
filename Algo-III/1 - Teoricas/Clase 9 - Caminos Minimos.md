@@ -17,7 +17,7 @@ Sea G = (V, X) un grafo, ℓ : X -> R una funcion de peso para las aristas de G
 Dado un grafo orientado G con pesos no negativos en las aristas, el algoritmo de Dijkstra **determina el camino minimo entre el nodo v y el resto de los nodos de G**
 
 - Utiliza conceptualmente una cola de prioridad para guardar los vertices que estan en V \ S, donde cada vertice v se guarda junto con su valor de clave prioridad π(v) que se puede ir disminuyendo con el tiempo
-# Algoritmo de Ford
+# Algoritmo de Belmand-Ford
 ### Teorema
 Dado un grafo orientado G sin ciclos de longitud negativa alcanzables desde v, el algoritmo de Ford **determina un camino minimo entre el nodo v y cada nodo alcanzable desde v**
 ##### Dado un grafo orientado G con una funcion de longitud ℓ para sus aristas y un nodo origen v
@@ -31,3 +31,17 @@ Dado un grafo orientado G sin ciclos de longitud negativa alcanzables desde v, e
 - _Si hubo cambio de π hasta la iteracion n inclusive en la ejecucion_ entonces **existe un ciclo de longitud negativa (c.l.n.) alcanzable desde v**
 - Si existe un c.l.n. alcanzable desde v entonces **hay cambio de π en toda iteracion de la ejecucion del algoritmo de Ford**
 
+# Algoritmo de Floyd
+## Teorema
+Determina los caminos minimos entre todos los pares de nodos de un grafo orientado sin ciclos de longitud negativa
+
+## Lema
+Al finalizar la iteracion k del algoritmo, ℓ$_{ij}$ es la longitud de los caminos minimos desde v$_i$ a v$_j$ cuyos nodos intermedios son elementos de Vk = {v1, . . . , vk }, si no existe ciclo de longitud negativa con todos sus v´ertices en Vk .
+
+
+# Algoritmo de Dantzig
+## Teorema
+Determina los caminos minimos entre todos los pares de nodos de un grafo orientado sin ciclos de longitud negativa
+
+# Lema
+Al finalizar la iteracion k − 1 del algoritmo, la matriz de k × k generada contiene la longitud de los caminos minimos en el subgrafo inducido por los vertices {v1, . . . , vk } sin ciclos de longitud negativa
