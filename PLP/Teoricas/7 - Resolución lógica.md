@@ -153,5 +153,18 @@ _Todas las reglas transforman la f´ormula en otra equivalente_
 
 #### Paso 4
 Deshacerse de los cuantificadores existenciales ($\exists$) mediante la **técnica de Herbrand y Skolem**
+![[Pasted image 20251028130823.png]]
+- Preserva la **satisfactibilidad**, pero no siempre produce fórmulas equivalentes
+- **No preserva la validez**
+##### Ejemplo de no preservación de validez
+![[Pasted image 20251028130959.png]]
 
+##### Dada una fórmula en forma normal prenexa, se aplica:
+> $\forall$X$_1$, ..., $\forall$X$_n$. $\exists$Y. σ ---> $\forall$X$_1$, ..., $\forall$X$_n$. σ{y := f(X$_1$, ..., X$_n$)}
+> donde f es un simbolo de función nuevo de aridad $\geq$ 0
 
+La fórmula resultante está en **forma normal de Skolem**
+> σ$_{Sk}$ ::= $\forall$X$_1$X$_2$...X$_n$.$\tau$
+> donde $\tau$ 
+#### Paso 5
+Dada una fórmula en forma normal de Skolem
