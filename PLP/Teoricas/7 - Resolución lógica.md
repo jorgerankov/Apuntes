@@ -31,4 +31,12 @@ Es un **conjunto de reglas**, donde cada regla es de la forma:
 	- Se basa en el **método de resolución**
 
 
-
+# Resolución para lógica proposicional
+- **Entrada**: Una fórmula σ de la lógica proposicional
+- **Salida**: Un booleano que indica si σ es válida
+## Método de resolución
+1. Escribir $\neg$σ como un **conjunto $C$ de cláusulas**
+2. Buscar **refutar $C$**
+Si se **encuentra una refutación de $C$**:
+- Vale $\neg$σ ⊢ ⊥, tal que ¬σ es insatisfactible/contradicción
+- Luego, vale σ -> σ es válida/tautología
