@@ -106,3 +106,10 @@ Sea $C$ := $C_0$ ==> Repetir mientras sea posible
 		- Si no es posible, devoler $SAT$
 3. Tomar $C$ := $C$ $\cup$ {ρ} y volver al paso 1 
 
+# <u>Resolución para lógica de primer orden</u>
+**Entrada**: Una fórmula σ cerrada de la LPO
+**Salida**: Un booleano indicando si σ es válida
+> **Si σ es válida, el método siempre termina
+> Sino, el método puede no terminar**
+
+
