@@ -93,3 +93,16 @@ Se basa en la **regla de deducción**:
 ![[Pasted image 20251028114411.png]]
 La conclusión se llama la **resolvente de las premisas**
 
+**Entrada**: Un conjunto de cláusulas $C_0$ = {$K_1$, ..., $K_n$}
+**Salida**: $SAT/INSAT$, indica si $C_0$ es insatisfactible ($C_0$ ⊢ ⊥)
+
+### Algoritmo de refutación
+Sea $C$ := $C_0$ ==> Repetir mientras sea posible
+1. Si { } $\in$ $C$, devolver $INSAT$
+2. Elegir dos cláusulas $K$, $K'$ $\in$ $C$ tales que
+	- $K$ = {**P**, $l_1$, ..., $l_n$}
+	- $K'$ = {$\neg$**P**, $l_1'$, ..., $l_m'$}
+	- La resolvente ρ = {$l_1$, ..., $l_n$, $l_1'$, ..., $l_m'$} no está en $C$
+		- Si no es posible, devoler $SAT$
+3. Tomar $C$ := $C$ $\cup$ {ρ} y volver al paso 1 
+
