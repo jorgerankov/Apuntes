@@ -66,3 +66,11 @@ Distribuir $\lor$ sobre $\land$
 > (σ $\land$ $\tau$) $\lor$ $\rho$ ---> (σ $\lor$ $\rho$) $\land$ ($\tau$ $\lor$ $\rho$)
 
 ##### La fórmula resultante está en forma normal conjuntiva (CNF)
+Es una conjunción de disyunciones de literales
+> Fórmulas en CNF ---> σ$_{cnf}$ ::= ($k_1$ $\land$ $k_2$ $\land$ ... $\land$ $k_n$)
+> Clausulas ---> $k$ ::= ($l_1$ $\lor$ $l_2$ $\lor$ ... $\lor$ $l_m$)
+> Literales ---> $l$ ::= **P** | **$\neg$P**
+
+#### Paso 4
+Sabiendo que $\lor$ es:
+- 
