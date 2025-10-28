@@ -149,4 +149,9 @@ _Todas las reglas transforman la f´ormula en otra equivalente_
 > σ$_{pre}$ ::= $Q_1X_1$. $Q_2X_2$ . ... $Q_nX_n$ . $\tau$
 > 
 > donde cada $Q_i$ es un cuantificador {$\forall$, $\exists$}
+> y $\tau$ representa una fórmula en forma normal negada libre de cuantificadores
+
+#### Paso 4
+Deshacerse de los cuantificadores existenciales ($\exists$) mediante la **técnica de Herbrand y Skolem**
+
 
