@@ -187,3 +187,7 @@ Empujar los cuantificadores universales hacia adentro
 
 ## Refutación en LPO
 Una vez obtenido un conjunto de clausulas $C$ = {κ$_1$, ... , κ$_n$}, se busca una **refutación**, es decir, **una demostración de C ⊢ ⊥**
+![[Pasted image 20251028140151.png]]
+- El algoritmo de refutación se adapta sin mayores cambios
+- Se usa la nueva regla de resolución para calcular la resolvente
+
