@@ -117,4 +117,22 @@ Sea $C$ := $C_0$ ==> Repetir mientras sea posible
 2. Buscar una **refutación** de $C$
 	- Si $\exists$ alguna refutación, **el método encuentra alguna**
 	- Sino, **el método puede "colgarse"**
-	- 
+### Pasaje a forma clausal en LPO
+#### Paso 1
+Igual que forma clausal original
+#### Paso 2
+Se agregan los conectivos {$\forall$, $\exists$}
+$\neg\forall$X. σ ---> $\exists$X. $\neg$σ
+$\neg\exists$X. σ ---> $\forall$X. $\neg$σ
+##### La fórmula resultante está en forma normal negada (NNF):
+> σ$_{nnf}$ ::= P(t$_1$, ..., t$_n$) | $\neg$P(t$_1$, ..., t$_n$) | σ$_{nnf}$ $\land$ σ$_{nnf}$ | σ$_{nnf}$ $\lor$ σ$_{nnf}$ 
+> | $\forall$X. σ$_{nnf}$ | $\exists$X. σ$_{nnf}$
+
+#### Paso 3
+Extraer los cuantificadores ("$\forall$/$\exists$") hacia afuera. Se asume que
+ X $\notin$ fv($\tau$)
+ > ($\forall$X. σ) $\land$ $\tau$ --> $\forall$X. (σ $\land$ $\tau$)
+ > ($\forall$X. σ) $\lor$ $\tau$ --> $\forall$X. (σ $\lor$ $\tau$)
+ > ($\exists$X. σ) $\land$ $\tau$ --> $\exists$X. (σ $\land$ $\tau$)
+ > ($\exists$X. σ) $\lor$ $\tau$ --> $\exists$X. (σ $\lor$ $\tau$)
+ > 
