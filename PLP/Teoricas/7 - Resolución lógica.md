@@ -131,8 +131,22 @@ $\neg\exists$X. σ ---> $\forall$X. $\neg$σ
 #### Paso 3
 Extraer los cuantificadores ("$\forall$/$\exists$") hacia afuera. Se asume que
  X $\notin$ fv($\tau$)
- > ($\forall$X. σ) $\land$ $\tau$ --> $\forall$X. (σ $\land$ $\tau$)
+ > ($\forall$X. σ) $\land$ $\tau$ --> $\forall$X. (σ $\land$ $\tau$) 
  > ($\forall$X. σ) $\lor$ $\tau$ --> $\forall$X. (σ $\lor$ $\tau$)
+ > 
+ > $\tau$ $\land$ ($\forall$X. σ) --> $\forall$X. ($\tau$ $\land$ σ )
+ > $\tau$ $\lor$ ($\forall$X. σ) --> $\forall$X. ($\tau$ $\lor$ σ)
+ > 
  > ($\exists$X. σ) $\land$ $\tau$ --> $\exists$X. (σ $\land$ $\tau$)
  > ($\exists$X. σ) $\lor$ $\tau$ --> $\exists$X. (σ $\lor$ $\tau$)
  > 
+ > $\tau$ $\land$ ($\exists$X. σ) --> $\exists$X. ($\tau$ $\land$ σ)
+ > $\tau$ $\lor$ ($\exists$X. σ) --> $\exists$X. ($\tau$ $\lor$ σ)
+ > 
+_Todas las reglas transforman la f´ormula en otra equivalente_
+
+##### La fórmula resultante está en forma normal prenexa
+> σ$_{pre}$ ::= $Q_1X_1$. $Q_2X_2$ . ... $Q_nX_n$ . $\tau$
+> 
+> donde cada $Q_i$ es un cuantificador {$\forall$, $\exists$}
+
