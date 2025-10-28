@@ -31,15 +31,32 @@ Es un **conjunto de reglas**, donde cada regla es de la forma:
 	- Se basa en el **método de resolución**
 
 
-# Resolución para lógica proposicional
+# <u>Resolución para lógica proposicional</u>
 - **Entrada**: Una fórmula σ de la lógica proposicional
 - **Salida**: Un booleano que indica si σ es válida
 ## Método de resolución
-1. Escribir $\neg$σ como un **conjunto $C$ de cláusulas**
+1. Escribir $\neg$σ como un **conjunto $C$ de cláusulas** (_forma clausal_)
 2. Buscar **refutar $C$**
 ##### Si se encuentra una refutación de $C$**:
 - Vale $\neg$σ ⊢ ⊥, tal que ¬σ es insatisfactible/contradicción
 - Luego, vale σ -> σ es válida/tautología
 ##### Si no se encuentra:
 - No vale $\neg$σ ⊢ ⊥, tal que σ es satisfactible
-- Luego, no vale ⊢ σ, tal que σ no es  
+- Luego, no vale ⊢ σ, tal que σ no es válida 
+## Pasaje a forma clausal
+_Todas las reglas transforman la fórmula en otra equivalente_
+#### Paso 1
+Deshacerse del conectivo "==>"
+> σ => $\tau$ ---> $\neg$σ $\lor$ $\tau$ 
+
+_La fórmula resultante solo usa los conectivos_ {¬, ∨, ∧}
+
+#### Paso 2
+Empujar el conectivo "$\neg$" hacia adentro
+> $\neg$(σ $\land$ $\tau$) ---> $\neg$σ $\lor$ $\neg\tau$ 
+> $\neg$(σ $\lor$ $\tau$) ---> $\neg$σ $\land$ $\neg\tau$
+> $\neg\neg$σ ---> σ
+
+##### La fórmula resultante está en **forma normal negada** (NNF):
+> σ$_{nnf}$ ::= P | $\neg$P | σ$_{nnf}$ $\land$ σ$_{nnf}$ | σ$_{nnf}$ $\lor$ σ$_{nnf}$
+

@@ -8,18 +8,6 @@
         "type": "tabs",
         "children": [
           {
-            "id": "5d185f3bf05722cb",
-            "type": "leaf",
-            "state": {
-              "type": "image",
-              "state": {
-                "file": "Algo-III/1 - Teoricas/Imagenes/Pasted image 20251027153402.png"
-              },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251027153402"
-            }
-          },
-          {
             "id": "6a8debecfc563cd8",
             "type": "leaf",
             "state": {
@@ -33,8 +21,7 @@
               "title": "7 - Resolución lógica"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -186,13 +173,13 @@
   },
   "active": "6a8debecfc563cd8",
   "lastOpenFiles": [
-    "Algo-III/1 - Teoricas/Clase 9 - Caminos Minimos.md",
+    "Algo-III/1 - Teoricas/Imagenes/Pasted image 20251027153402.png",
     "PLP/Teoricas/7 - Resolución lógica.md",
+    "Algo-III/1 - Teoricas/Clase 9 - Caminos Minimos.md",
     "Pasted image 20251027173050.png",
     "Algo-III/1 - Teoricas/Imagenes/Pasted image 20251027153518.png",
     "Algo-III/1 - Teoricas/Imagenes.md",
     "Algo-III/1 - Teoricas/Imagenes",
-    "Algo-III/1 - Teoricas/Imagenes/Pasted image 20251027153402.png",
     "PLP/Teoricas/6 - Logica de Primer Orden.md",
     "PLP/Teoricas/5 - Unificacion e Inferencia de tipos.md",
     "PLP/Teoricas/Imagenes/Pasted image 20251025113823.png",
@@ -221,7 +208,6 @@
     "Algo-III/1 - Teoricas/Clase 1 - Complejidad computacional.md",
     "Algo-III/1 - Teoricas/Clase 2 - Fuerza bruta y Backtracking.md",
     "README.md",
-    "vault prueba.md",
     "PLP/Teoricas",
     "Algo-III/2 - Practicas",
     "Algo-III/1 - Teoricas",
