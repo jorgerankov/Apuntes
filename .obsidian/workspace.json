@@ -13,7 +13,7 @@
             "state": {
               "type": "image",
               "state": {
-                "file": "Pasted image 20251028114411.png"
+                "file": "PLP/Teoricas/Imagenes/Pasted image 20251028114411.png"
               },
               "icon": "lucide-image",
               "title": "Pasted image 20251028114411"
@@ -76,7 +76,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.5
+    "width": 347.5,
+    "collapsed": true
   },
   "right": {
     "id": "0c0f80407ec2ad3f",
@@ -168,15 +169,15 @@
       "bases:Create new base": false
     }
   },
-  "active": "549f43bd902af441",
+  "active": "6a8debecfc563cd8",
   "lastOpenFiles": [
-    "Pasted image 20251028134258.png",
-    "Pasted image 20251028114411.png",
+    "PLP/Teoricas/Imagenes/Pasted image 20251028134258.png",
+    "PLP/Teoricas/Imagenes/Pasted image 20251028114411.png",
     "Algo-III/1 - Teoricas/Imagenes/Pasted image 20251027173050.png",
-    "Pasted image 20251028134351.png",
-    "Pasted image 20251028140151.png",
-    "Pasted image 20251028130959.png",
-    "Pasted image 20251028130823.png",
+    "PLP/Teoricas/Imagenes/Pasted image 20251028134351.png",
+    "PLP/Teoricas/Imagenes/Pasted image 20251028140151.png",
+    "PLP/Teoricas/Imagenes/Pasted image 20251028130959.png",
+    "PLP/Teoricas/Imagenes/Pasted image 20251028130823.png",
     "PLP/Teoricas/7 - Resolución lógica.md",
     "Algo-III/1 - Teoricas/Imagenes/Pasted image 20251027153402.png",
     "Algo-III/1 - Teoricas/Clase 9 - Caminos Minimos.md",
