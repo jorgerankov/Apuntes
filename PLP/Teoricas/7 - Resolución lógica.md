@@ -62,4 +62,6 @@ Empujar el conectivo "$\neg$" hacia adentro
 
 #### Paso 3
 Distribuir $\lor$ sobre $\land$
-> 
+> σ $\lor$ ($\tau$ $\land$ $\rho$) ---> (σ $\lor$ $\tau$) $\land$ (σ $\lor$ $\rho$)
+> (σ $\land$ $\tau$) $\lor$ $\rho$ ---> (σ $\lor$ $\rho$) $\land$ ($\tau$ $\lor$ $\rho$)
+
