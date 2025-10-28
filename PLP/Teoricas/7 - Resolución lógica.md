@@ -165,6 +165,7 @@ Deshacerse de los cuantificadores existenciales ($\exists$) mediante la **técni
 
 La fórmula resultante está en **forma normal de Skolem**
 > σ$_{Sk}$ ::= $\forall$X$_1$X$_2$...X$_n$.$\tau$
-> donde $\tau$ 
+> donde $\tau$ representa una fórmula en forma normal negada libre de cuantificadores
 #### Paso 5
-Dada una fórmula en forma normal de Skolem
+Dada una fórmula en forma normal de Skolem:
+> $\forall$X$_1$X$_2$...X$_n$. $\tau$
