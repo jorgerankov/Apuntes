@@ -178,4 +178,12 @@ Empujar los cuantificadores universales hacia adentro
 
 ## Resumen
 1. Reescribir ==> usando $\neg$ y $\lor$
-2. 
+2. Pasar a forma normal negada, empujando $\neg$ hacia adentro
+3. Pasar a forma normal prenexa, extrayendo $\forall$, $\exists$ hacia afuera
+4. Pasar a forma normal de Skolem, Skolemizando los existenciales
+5. Pasar a forma normal conjuntiva, distribuyendo $\lor$ sobre $\land$
+6. Empujar los cuantificadores hacia adentro de las conjunciones
+> Cada paso produce una fórmula equivalente, **excepto la Skolemización** que **sólo preserva satisfactibilidad**
+
+## Refutación en LPO
+Una vez obtenido un conjunto de clausulas $C$ = {κ$_1$, ... , κ$_n$}, se busca una **refutación**, es decir, **una demostración de C ⊢ ⊥**
