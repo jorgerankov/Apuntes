@@ -72,5 +72,17 @@ Es una conjunción de disyunciones de literales
 > Literales ---> $l$ ::= **P** | **$\neg$P**
 
 #### Paso 4
-Sabiendo que $\lor$ es:
-- 
+##### Sabiendo que $\lor$ es:
+- Asociativa ---> σ $\lor$ ($\tau$ $\lor$ $\rho$) <--> (σ $\lor$ $\tau$) $\lor$ $\rho$
+- Conmutativa ---> σ $\lor$ $\tau$ <--> $\tau$ $\lor$  σ 
+- Idempotente ---> σ $\lor$ σ <--> σ
+Notamos una **cláusula** (_disyunción de literales_):
+> ($l_1$ $\lor$ $l_2$ $\lor$ ... $\lor$ $l_n$) se nota {$l_1$, $l_2$, ..., $l_n$}
+
+##### Mismo para $\land$:
+> ($k_1$ $\land$ $k_2$ $\land$ ... $\land$ $k_n$) se nota {$k_1$, $k_2$, ... $k_n$}
+
+## Resumen
+1. Reescribir ==> usando $\neg$ y $\lor$
+2. Pasar a forma normal negada, empujando $\neg$ hacia adentro
+3. Pasar a forma normal conjuntiva, distribuyendo $\lor$ sobre $\land$ 
