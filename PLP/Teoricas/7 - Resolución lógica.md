@@ -65,3 +65,4 @@ Distribuir $\lor$ sobre $\land$
 > σ $\lor$ ($\tau$ $\land$ $\rho$) ---> (σ $\lor$ $\tau$) $\land$ (σ $\lor$ $\rho$)
 > (σ $\land$ $\tau$) $\lor$ $\rho$ ---> (σ $\lor$ $\rho$) $\land$ ($\tau$ $\lor$ $\rho$)
 
+##### La fórmula resultante está en forma normal conjuntiva (CNF)
