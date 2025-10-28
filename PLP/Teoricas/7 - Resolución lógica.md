@@ -86,3 +86,10 @@ Notamos una **cláusula** (_disyunción de literales_):
 1. Reescribir ==> usando $\neg$ y $\lor$
 2. Pasar a forma normal negada, empujando $\neg$ hacia adentro
 3. Pasar a forma normal conjuntiva, distribuyendo $\lor$ sobre $\land$ 
+
+# Refutación
+Una vez obtenido el conjunto de cláusulas $C$ = {$K_1$, ..., $K_n$}, se busca una **refutación** ==> una demostración de $C$ ⊢ ⊥
+Se basa en la **regla de deducción**:
+![[Pasted image 20251028114411.png]]
+La conclusión se llama la **resolvente de las premisas**
+
