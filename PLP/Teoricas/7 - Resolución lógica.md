@@ -112,4 +112,9 @@ Sea $C$ := $C_0$ ==> Repetir mientras sea posible
 > **Si σ es válida, el método siempre termina
 > Sino, el método puede no terminar**
 
-
+### Método de resolución de primer orden (semi-decisión)
+1. Escribir $\neg$σ como un conjunto $C$ de **cláusulas**
+2. Buscar una **refutación** de $C$
+	- Si $\exists$ alguna refutación, **el método encuentra alguna**
+	- Sino, **el método puede "colgarse"**
+	- 
