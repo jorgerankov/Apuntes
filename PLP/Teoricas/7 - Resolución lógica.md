@@ -60,3 +60,6 @@ Empujar el conectivo "$\neg$" hacia adentro
 ##### La fórmula resultante está en **forma normal negada** (NNF):
 > σ$_{nnf}$ ::= P | $\neg$P | σ$_{nnf}$ $\land$ σ$_{nnf}$ | σ$_{nnf}$ $\lor$ σ$_{nnf}$
 
+#### Paso 3
+Distribuir $\lor$ sobre $\land$
+> 
