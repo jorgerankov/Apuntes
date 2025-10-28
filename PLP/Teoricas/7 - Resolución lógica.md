@@ -37,6 +37,9 @@ Es un **conjunto de reglas**, donde cada regla es de la forma:
 ## Método de resolución
 1. Escribir $\neg$σ como un **conjunto $C$ de cláusulas**
 2. Buscar **refutar $C$**
-Si se **encuentra una refutación de $C$**:
+##### Si se encuentra una refutación de $C$**:
 - Vale $\neg$σ ⊢ ⊥, tal que ¬σ es insatisfactible/contradicción
 - Luego, vale σ -> σ es válida/tautología
+##### Si no se encuentra:
+- No vale $\neg$σ ⊢ ⊥, tal que σ es satisfactible
+- Luego, no vale ⊢ σ, tal que σ no es  
