@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "7b97110193679ec2",
+        "id": "d803128168491607",
         "type": "tabs",
         "children": [
           {
-            "id": "6a8debecfc563cd8",
+            "id": "9118607a72a6b428",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "PLP/Teoricas/Imagenes/Pasted image 20251028114411.png"
+                "file": "PLP/Teoricas/7 - Resolución lógica.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251028114411"
+              "icon": "lucide-file",
+              "title": "7 - Resolución lógica"
             }
           }
         ]
@@ -169,10 +171,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "6a8debecfc563cd8",
+  "active": "9118607a72a6b428",
   "lastOpenFiles": [
-    "PLP/Teoricas/Imagenes/Pasted image 20251028134258.png",
     "PLP/Teoricas/Imagenes/Pasted image 20251028114411.png",
+    "PLP/Teoricas/Imagenes/Pasted image 20251028134258.png",
     "Algo-III/1 - Teoricas/Imagenes/Pasted image 20251027173050.png",
     "PLP/Teoricas/Imagenes/Pasted image 20251028134351.png",
     "PLP/Teoricas/Imagenes/Pasted image 20251028140151.png",
