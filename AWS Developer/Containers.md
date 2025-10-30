@@ -4,7 +4,7 @@
 - Icluye todo lo necesario para correrla, junto al OS, el Server y el hardware necesario
 - Mejora la abstraccion de elementos 
 
-### Container != Virtualizacion
+### Container $\neq$ Virtualizacion
 - Contiene distintos niveles de abstraccion
 - En los servers, todos los componentes pelean por los recursos
 - Poniendo una plataforma de virtualizacion, todo se estabiliza de mejor manera, pero implica instalar todo para toda virtualizacion
@@ -28,4 +28,13 @@
 Container image - read-only inmutable image thats highly portable - easy reuse, puede almacenar muchos containers
 Container - instance of that image, 
 
-### Ventajas de un microservice
+### Ventajas y caracteristicas de microservices
+![[Pasted image 20251030150557.png]]
+- Descentralized, evolutionary design
+- Smart endpoints, dumb pipes
+- Independent products, not projects
+- Designed for failure
+- Disposability
+- Development and production parity
+Microservices + Containers goes well 2gether
+
