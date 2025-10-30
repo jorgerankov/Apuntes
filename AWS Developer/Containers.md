@@ -17,4 +17,15 @@
 - #### Beneficios
 	- ES portable
 	- Se puede almacenar todo package en un solo e inmnutable artifact ->  image
-	- Puedo llevarla a cualquier lugar para correrla, tambien puedo correr diferentes versiones
+	- Puedo llevarla a cualquier lugar para correrla, tambien puedo correr diferentes versiones con diferentes dependencias en simultaneo
+	- Development y deployment mas rapido y eficiente
+	- Mejor uso y eficiencia de recursos
+- #### Images
+	- Es un template de solo lectura que puede usarse en un container
+	- Basado en una imagen de SO
+	- Guarda aplicaciones, servers, librerias
+	- ex: Dockerfiles
+Container image - read-only inmutable image thats highly portable - easy reuse, puede almacenar muchos containers
+Container - instance of that image, 
+
+### Ventajas de un microservice
