@@ -29,6 +29,11 @@ No siempre devuelve el mismo valor para todos los inputs, como hace Haskell
 pred mayorA2(X): V cuando X es mayor que 2
 	
 	% Va a ser Nat y de minima va a valer 3
-	mayorA2(suc(suc(suc(X)))). :- natural(X)
-	mayorA2(suc(X)) :- mayorA2(X)
+	mayorA2(suc(suc(suc(X)))). :- natural(X).
+	mayorA2(suc(X)) :- mayorA2(X).
+
+pred menor(X,Y): V cuando X < Y
+	
+	menor(cero, suc(X)) :- natural(X).
+	menor(suc(Y), suc(Y)) :- menor(X,Y). 
 ```
