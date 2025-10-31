@@ -6,3 +6,28 @@
 No siempre devuelve el mismo valor para todos los inputs, como hace Haskell
 - Digo que cosas valen y el sistema _razona_ sobre eso
 - Devuelve $\forall$ los valores que cumplen lo pedido, no hay un unico output
+## Sintaxis
+- ##### Variables
+	- Valores que no fueron ligados
+	- Despues de ligarse ya no pueden ser modificados
+- ##### Numeros
+- ##### Atomos
+	- Constantes, texto
+	- Empiezan con minuscula o estan entre ' '
+- ##### Teminos compuestos $\equiv$ estructuras
+	- Es un nombre seguido de n argumentos, donde cad auno de ellos es un temrino
+	- n es la aridad del termino compuesto
+	- Pueden tener varias variables
+- ##### Termino
+	- variable, numero, atomo o termino compuesto
+- ##### Clausula
+	- Es una linea del programa. Puede ser Hecho o Regla
+- ##### Predicado
+
+
+```
+mayorA2(X) es V cuando X es mayor que 2
+
+mayorA2(suc(suc(suc(cero)))).
+mayorA2(suc(X)) :- mayorA2(X)
+```
