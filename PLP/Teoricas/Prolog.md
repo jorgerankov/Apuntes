@@ -60,4 +60,6 @@ y := odie       y := garfield
 - ##### Algunos operadores
 	- E1 < E2, E1 =< E2, E1 >= E2
 	- ***X is E*** tiene exito <--> X **unifica** con el res de _evaluar la expresion aritmetica E_
-- 
+## Listas
+- Sintaxis: [], [H | T], [X,Y,...,Z | L]
+- Ejemplos: [1,2], [1,2 | N]
