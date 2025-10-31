@@ -26,8 +26,9 @@ No siempre devuelve el mismo valor para todos los inputs, como hace Haskell
 
 
 ```
-mayorA2(X) es V cuando X es mayor que 2
-
-mayorA2(suc(suc(suc(cero)))).
-mayorA2(suc(X)) :- mayorA2(X)
+pred mayorA2(X): V cuando X es mayor que 2
+	
+	mayorA2(suc(suc(suc(X)))). :- natural(X)
+	% De minima va a valer 3
+	mayorA2(suc(X)) :- mayorA2(X)
 ```
