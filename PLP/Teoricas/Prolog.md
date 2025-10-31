@@ -36,4 +36,10 @@ pred menor(X,Y): V cuando X < Y
 	
 	menor(cero, suc(X)) :- natural(X).
 	menor(suc(Y), suc(Y)) :- menor(X,Y). 
+	
+pred amaALosGatos
+
+	AMG(Z)
+	/    \
+z := john 
 ```
