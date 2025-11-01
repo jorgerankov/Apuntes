@@ -17,20 +17,25 @@ No siempre devuelve el mismo valor para todos los inputs, como hace Haskell
 - ##### Variables
 	- Valores que no fueron ligados
 	- Despues de ligarse ya no pueden ser modificados
-	- Empiezan con mayuscula 
+	- Empiezan con mayuscula o _
 - ##### Numeros
 - ##### Atomos
 	- Constantes, texto
 	- Empiezan con minuscula o estan entre ' '
 - ##### Teminos compuestos $\equiv$ estructuras
-	- Es un nombre seguido de n argumentos, donde cad auno de ellos es un temrino
-	- n es la aridad del termino compuesto
-	- Pueden tener varias variables
+	- Es un nombre seguido de _n_ argumentos, donde cada uno de ellos es un termino
+	- _n_ es la aridad del termino compuesto
+	- Pueden tener variables como argumentos
 - ##### Termino
 	- variable, numero, atomo o termino compuesto
 - ##### Clausula
-	- Es una linea del programa. Puede ser Hecho o Regla
+	- Es una linea del programa. 
+	- Puede ser Hecho (declaracion de una variable) o Regla (instanciacion de una variable X, Y, Z, etc)
+	- El **:-** se puede ver como un <-- y **las comas** como $\land$ 
 - ##### Predicado
+	- Coleccion de clausulas
+- ##### Objetivo (goal)
+	- Es el predicado que se consulta a Prolog y el que nos devuelve el resultado
 
 
 ```
