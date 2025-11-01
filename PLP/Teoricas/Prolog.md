@@ -55,8 +55,13 @@ y := odie       y := garfield
 - Se puede extender _S_ a una funcion _Term -> Term_
 - Se usan sustituciones **obtenidas con el MGU** para igualar literales y aplicar la regla de resolucion
 #### <u>Tener en cuenta que el orden de las cláusulas y sus literales en el programa influyen en el resultado</u>
+
+## Reversibilidad
+- **Predicado**: Define una relacion entre elementos, no hay parametros _in_ u _out_
+- Cualquier argumento podria cumplir ambos roles dependiendo de la consulta
+- Un predicado podria estar implementado _asumiendo que ciertas variables ya estan instanciadas_
 ## <u>Patrones de instanciacion</u>
-- El modo esperado se comunica en los comentarios ("%")
+- El modo esperado se comunica en los comentarios (_%! para documentacion, % para comentarios_)
 	- **+X debe** estar instanciado, 
 	- **-X no debe** estar instanciado,
 	- **?X puede o no** estar instanciado
