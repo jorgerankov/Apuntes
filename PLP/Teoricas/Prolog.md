@@ -1,3 +1,10 @@
+## <u>About</u>
+- Los programas se escriben en un subconjunto de la LPO
+- Es **declarativo**: Se especifican hechos, reglas de inferencia y objetivos
+- **Mundo cerrado**: Solo se puede suponer lo que se declara explicitamente
+- Todo **lo que no se pueda deducir** a partir del programa se supone falso
+- Un **solo tipo**: los terminos
+
 ## <u>Base de conocimiento</u> 
 - describe el **dominio del problema** (Set de bases y hechos que describen el problema)
 - Formado por **hechos y reglas de inferencia**
