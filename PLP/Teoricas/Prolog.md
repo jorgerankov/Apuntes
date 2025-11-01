@@ -54,7 +54,7 @@ y := odie       y := garfield
 - **Term** := El conjunto formado por todos los posibles términos
 - Se puede extender _S_ a una funcion _Term -> Term_
 - Se usan sustituciones **obtenidas con el MGU** para igualar literales y aplicar la regla de resolucion
-
+#### <u>Tener en cuenta que el orden de las cláusulas y sus literales en el programa influyen en el resultado</u>
 ## <u>Patrones de instanciacion</u>
 - El modo esperado se comunica en los comentarios ("%")
 	- **+X debe** estar instanciado, 
