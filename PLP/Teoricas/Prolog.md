@@ -17,6 +17,7 @@ No siempre devuelve el mismo valor para todos los inputs, como hace Haskell
 - ##### Variables
 	- Valores que no fueron ligados
 	- Despues de ligarse ya no pueden ser modificados
+	- Empiezan con mayuscula 
 - ##### Numeros
 - ##### Atomos
 	- Constantes, texto
