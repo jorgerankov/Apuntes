@@ -14,5 +14,21 @@ in: digrafo G con pesos >= 0
 out: el mayor peso entre las aristas que pertenecen a un
 	 camino de s a t cuyo peso del camino es <= c
 	 
-	 
+	camino_peso_min <- Dijkstra(G, s, t)
+	 // Dijkstra obtiene el camino con peso minimo
+	  entre 2 nodos (s y t) 
+	acumulador_peso <- 0
+	peso_max <- inf-
+	arista_peso_max = 0
+	para cada peso de arista e en camino_peso_min:
+		acumulador_peso <- acumulador_peso + peso[e]
+		si peso[e] > peso_max:
+			arista_peso_max <- arista[e]
+		fin si
+	fin para
+	si acumulador_peso > c:
+		devolver error
+	sino:
+		devolver arista_peso_max
+	sin si
 ```
