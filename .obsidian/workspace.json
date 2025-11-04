@@ -8,17 +8,17 @@
         "type": "tabs",
         "children": [
           {
-            "id": "9118607a72a6b428",
+            "id": "86e156c6eade1ed4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PLP/Teoricas/Prolog.md",
+                "file": "AWS Developer/2. AWS Fargate.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Prolog"
+              "title": "2. AWS Fargate"
             }
           }
         ]
@@ -171,11 +171,13 @@
       "bases:Create new base": false
     }
   },
-  "active": "9118607a72a6b428",
+  "active": "86e156c6eade1ed4",
   "lastOpenFiles": [
-    "PLP/Teoricas/7 - Resolución lógica.md",
+    "Pasted image 20251103225001.png",
+    "AWS Developer/1. Containers.md",
+    "AWS Developer/2. AWS Fargate.md",
     "PLP/Teoricas/Prolog.md",
-    "AWS Developer/Containers.md",
+    "PLP/Teoricas/7 - Resolución lógica.md",
     "Pasted image 20251030150557.png",
     "Pasted image 20251030150541.png",
     "AWS Developer",
@@ -210,8 +212,6 @@
     "Algo-III/1 - Teoricas/Clase 5 - Demos.md",
     "Algo-III/1 - Teoricas/Clase 4 - Greedy.md",
     "Algo-III/1 - Teoricas/Clase 3 - Programacion Dinamica.md",
-    "Algo-III/1 - Teoricas/Clase 1 - Complejidad computacional.md",
-    "Algo-III/1 - Teoricas/Clase 2 - Fuerza bruta y Backtracking.md",
     "PLP/Teoricas",
     "Algo-III/2 - Practicas",
     "Algo-III/1 - Teoricas",
