@@ -123,8 +123,18 @@ out: Ancho de banda (k maximo tal que Gk es conexo)
 	retornar ancho_banda
 ```
 ### 14) a.
-Kruskal con orden de selección obtiene (T) como resultado a partir de un Grafo G, donde T es un AGM. Luego, definimos qT basado en T.
-Busco demostrar que Kruskal con orden de seleccion:
-- Selecciona exactamente las aristas de T
-- No selecciona ninguna arista fuera de T
+Sea T un AGM cualquiera de G, definimos qT(e) = 0 si e en T, y 1 si e no en T.
+Sea T' el arbol obtenido por Kruskal con orden de selección usando q_T
+Quiero ver que T' = T mostrando que toda arista de T es elegida por Kruskal, y que ninguna arista de T es elegida por Kruskal 
+
+En cada iteracion de Kruskal se elige una arista de peso minimo que no crea un ciclo.
+
+Sea e $\in$ T una arista que aun no fue elegida. Si e puede ser agregada sin crear un ciclo en T', entonces es considerada. Kruskal busca la arista de peso minimo. Como T es un AGM, e tiene peso minimo o igual entre las aristas no procesadas que no crean ciclo. Si hay empate con otra arista e $\notin$ T del mismo peso:
+- q$_T$(e) = 0
+- q$_T$(e') = 1
+- Kruskal elige la de minima prioridad: e (con prioridad 0)
+Por lo tanto, Kruskal selecciona e.
+
+Sea e $\notin$ T una arista cualquiera. Como T es un arbol generador, agregar e a T crea un ciclo C. 
+
 Busco crear T a partir del grafo G corriendo el algoritmo de Kruskal con orden de selección. Si Kruskal tendría que elegir entre 2 o más aristas con mismo peso p, elegiría cualquiera de ellas, pero con el orden de selección, Kruskal elige la de mínima prioridad (aquella que tiene prioridad 0). Esto implica que toda arista que quedó fuera de la selección por mínima prioridad, no pertenece al AGM T, tal que tienen prioridad 1 y, por ende, quedan fuera de T, demostrando que Kruskal con orden de selección elige el resultado equivalente a T. Finalmente, se obtiene T como resultado del algoritmo de Kruskal.
