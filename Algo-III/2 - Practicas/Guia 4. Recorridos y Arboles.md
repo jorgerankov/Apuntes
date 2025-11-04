@@ -67,16 +67,39 @@ in: grilla[n][m],
 	objetivo w
 out: minima cantidad de movimientos para obtener w
 
-	pos_ini <- posicion[x1][y1]
-	objetivo <- w
-	acumulador_movimientos <- {}
-	mientras no haya visitado todas las posibles
-	combinaciones del grafo:
-		res_actual = BFS(Grafo, pos_ini, objetivo)
-		cant_movimientos <- |visitados|
-		si res_actual == objetivo:
-			cantidad_movimientos U cant_movimientos
-		fin si
-	fin mientras
-	devolver min(cantidad_movimientos)
+	Inicializacion BFS
+		Cola <- {}
+		visitado <- {}
+		distancia <- {}
+		
+		estado_inicial <- (x1,y1,v1)
+		encolar(cola, estado_inicial)
+		visitado.agregar(estado_inicial)
+		distancia[estado_inicial] <- 0
+	BFS
+		resultado_minimo <- inf+
+
+		mientras cola no este vacia:
+			(x, y, v) <- desencolar(cola)
+			dist_actual <- distancia[(x,y,v)]
+			
+		distancia_actual <- distancia[(x,y,v)]
+		
+		si v == w:
+			resultado_minimo <- min(resultado_minimo,
+			dist_actual)
+			continuar
+		
+		Para c/vecino (x', y') adyacente a (x, y):
+			valor_destino <- grilla[x'][y']
+			v_nuevo <- (v + valor_destino) mod k
+			estado_nuevo <- (x', y', v_nuevo)
+			
+			Si estado_nuevo not in visitado:
+				visitado.agregar(estado_nuevo)
+				distancia[estado_nuevo] <- dist_actual 
+				+ 1
+				encolar(cola, estado_nuevo)
+	
+	Retornar resultado_minimo	
 ```
