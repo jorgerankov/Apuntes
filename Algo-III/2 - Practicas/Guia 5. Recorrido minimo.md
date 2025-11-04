@@ -1,3 +1,5 @@
 # Dijkstra
 ### 1) a.
-Observemos que, bajo la definicion de d(., .), sabemos que d(s, v) nos indica el peso del camino minimo entre s y v, d(w, t) el peso de un camino minimo entre w y t
+Observemos que, bajo la definicion de d(., .), sabemos que d(s, v) nos indica el peso del camino minimo entre s y v, y d(w, t) el peso del camino minimo entre w y t, y no existe un peso menor a los obtenidos, ya que, como se indica, son el camino minimo, por lo que no existe un camino mínimo menor al mínimo obtenido. Luego, el peso de ellos tambien será mínimo. Sea e = (v, w) una arista que conecta a v con w con un peso c. Sabemos que, al ser una arista dirigida, v conecta con w. 
+
+Uniendo todo lo obtenido, d(s,v) + c(v -> w) + d(w, t) es el resultado de sumar los pesos del camino minimo de s a v, el peso de la arista v -> w y el peso del camino minimo de w a t. "Bloqueando" el peso que obtenemos en v -> w y sabiendo que d(s,v) y d(w,t) son los minimos pesos posibles que podemos obtener de esos caminos minimos,  d(s,v) + c(v -> w) + d(w, t) nos devuelve como resultado el peso que obtenemos encontrando el camino minimo entre s y t, pasando por v y w, y no existe un camino mínimo menor al obtenido, tal que encontramos d(s, t), y demostrando que v -> w es st-eficiente, como queríamos probar.
