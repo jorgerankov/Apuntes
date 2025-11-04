@@ -1,8 +1,7 @@
 # Recorridos en profundidad
 
 
-2 _Una arista de un grafo G es puente si su remoción aumenta la cantidad de componentes conexas de G. Sea T un árbol DFS de un grafo conexo G_
-1) Sea vw ∈ E(G) una arista tal que el nivel de v en T es menor o igual al nivel de w en T. Demostrar que vw es puente si y solo si v es el padre de w en T y ninguna arista de G\ {vw} une a un descendiente de w (o a w) con un ancestro de v (o con v)
+### 2) c.
 
 Si el nivel de v en T es menor o igual al nivel de w en T, y v y w estan conectados entre si por vw, entonces:
 - O v es ancestro de w
@@ -18,8 +17,7 @@ Veamos la ida. Si vw es puente, implica que al eliminar vw del grafo tengo mas c
 Ahora, la vuelta: Si v es el padre de w en T, entonces puedo decir que v esta en algun nivel menor que w y existe un camino que los une entre si. Mas aun, existe una arista vw que los une. Si ninguna arista de G\ {vw} une a un descendiente de w (o a w) con un ancestro de v (o con v), entonces no existe ningun otro camino que me permita llegar de v a w, ya que si lo hubiera, este deberia pasar por un descendiente de w y por un ancestro de v, donde ambos se unen a w y a v respectivamente, haciendo que exista un camino que no contiene a vw dentro de el, y generando que vw no sea puente. Luego, como esto no puede suceder, ya que no existen aristas que unan los vertices mencionados anteriormente, vw es puente
 
 
-| _Una orientación de un grafo G es un grafo orientado D cuyo grafo subyacente es G. (En otras palabras, D es una orientación de G cuando D se obtiene dando una orientación a cada arista de G). Para todo árbol DFS T de un grafo conexo G se define D(T) como la orientación de G tal que v → w es una arista de D(T) cuando: v es el padre de w en T o w es un ancestro no padre de v en T_<br><br>b) Demostrar que las siguientes afirmaciones son equivalentes<br>I) G admite una orientación que es fuertemente conexa. <br>II) G no tiene puentes. <br>III) para todo árbol DFS de T ocurre que D(T) es fuertemente conexo. <br>IV ) existe un árbol DFS de T tal que D(T) es fuertemente conexo |
-| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+### 3) b.
 _I => II) Si G admite una orientación que es fuertemente conexa, entonces G no tiene puentes._ 
 Por contradiccion, digamos que G tiene algun puente 
 (vw, v -> w) que lo orientamos en el grafo G; al desconectarlo de G obtenemos 2 componentes distintas, una que contiene a v y otra que contiene a w. En el digrafo orientado, para ir de w a v, debo usar alguna arista (wv) que conecte ambas componentes entre si, pero la unica arista que teniamos fue removida, e iba de v a w, no de w a v, y no hay forma de conectarlos nuevamente. Por lo tanto, **no hay camino dirigido de (w) a (v)**, así que el dígrafo **no es fuertemente conexo** (contradicción)
@@ -32,8 +30,7 @@ Como G no tiene puentes, toda arista de (vw) pertenece a algun ciclo => Hay algu
 
 # Recorridos en anchura
 
-| 5. ⋆Un árbol generador T de un grafo G es v-geodésico si la distancia entre v y w en T es igual a la distancia entre v y w en G para todo w ∈ V (G). Demostrar que todo árbol BFS de G enraizado en v es v-geodésico. Dar un contraejemplo para la vuelta, i.e., mostrar un árbol generador vgeodésico de un grafo G que no pueda ser obtenido cuando BFS se ejecuta en G desde v. |
-| ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+### 5
 ->) La ida se cumple demostrando que todo vertice w esta a la misma distancia de v tanto en G como en T
 Tomemos a v como la raiz del grafo enraizado G, y ejecutemos BFS desde alli, tal que se nos devuelva un árbol BFS que, a su vez, es un árbol generador T, ya que el mismo comienza a recorrer desde la raiz hasta la ultima hoja siguiendo un recorrido determinado, y dandole una direccion a cada arista entre 2 nodos.
 Si un nodo w era hijo de v en el grafo G (es decir, estaba en un nivel mayor que v, ya que v es raiz y esta en el nivel 0), al correr BFS en el Grafo logramos observar que, siguiendo el camino que conecta v con w, la cantidad de aristas + 1 coincide con la diferencia de nivel entre ambos, dando a entender que se cumple la distancia entre ambos vertices tanto en el grafo G enraizado como en el arbol BFS
@@ -103,3 +100,6 @@ out: minima cantidad de movimientos para obtener w
 	
 	Retornar resultado_minimo	
 ```
+
+# AGM, Camino minimax y maximin
+### 11)
