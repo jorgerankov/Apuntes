@@ -63,8 +63,19 @@ Luego, si encontré un resultado igual a w, guardo la cantidad de movimientos qu
 
 ```
 Algoritmo grillaBFS
-	
-	pi <- posicion[x1][y1]
-	objetivo = w
-	res_actual = BFS(Grafo)
+in: Grafo, posicion_inicial, w
+out: cantidad minima de movimientos tal que pos_ini == w
+
+	pos_ini <- posicion[x1][y1]
+	objetivo <- w
+	acumulador_movimientos <- {}
+	mientras no haya visitado todas las posibles
+	combinaciones del grafo:
+		res_actual = BFS(Grafo, pos_ini, objetivo)
+		cant_movimientos <- |visitados|
+		si res_actual == objetivo:
+			cantidad_movimientos U cant_movimientos
+		fin si
+	fin mientras
+	devolver min(cantidad_movimientos)
 ```
