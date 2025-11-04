@@ -103,8 +103,22 @@ out: minima cantidad de movimientos para obtener w
 
 # AGM, Camino minimax y maximin
 ### 12) a.
-Trabajo mi algoritmo en base a recorrer el grafo con el algoritmo de Prim, modificando los valores de las aristas del grafo original. Multiplico por -1 todos los valores de las aristas, tal que Prim obtenga el mínimo valor posible en cada pasada. Prim me asegura obtener un grafo conexo, tal que, al final de su recorrido, voy a obtener un grafo conexo con valores de aristas mínimos. Luego, vuelvo a multiplicar por -1, tal que obtenga los valores originales de las aristas, teniendo así un árbol generador con pesos máximos en sus aristas (el peso mínimo de un valor negado es el máximo de un valor positivo). Finalmente, tengo un grafo conexo con anchos de banda de valor máximo posible
+Trabajo mi algoritmo en base a recorrer el grafo con el algoritmo de Prim, modificando los valores de las aristas del grafo original. Multiplico por -1 todos los valores de las aristas, tal que Prim obtenga el mínimo valor posible en cada pasada. Prim me asegura obtener un grafo conexo, tal que, al final de su recorrido, voy a obtener un grafo conexo con valores de aristas mínimos. Luego, vuelvo a multiplicar por -1, tal que obtenga los valores originales de las aristas, teniendo así un árbol generador con pesos máximos en sus aristas (el peso mínimo de un valor negado es el máximo de un valor positivo). Recorro cada arista del AGM para obtener la de menor peso posible, tal que esa será el ancho de banda. Finalmente, devuelvo el ancho de banda obtenido.
 ```
 Algoritmo redPrim
-in: Grafo con n aristas y m
+in: Grafo G =(V, E) con pesos positivos
+out: Ancho de banda (k maximo tal que Gk es conexo)
+
+	Para cada arista e en G:
+		peso[e] <- peso[e] * (-1) // invierto valor
+	
+	AGM <- Prim(G) // Encuentro AGM minimo de pesos-
+	Para cada arista e en AGM:
+		peso[e] <- peso[e] * (-1) // restauro valor
+	
+	ancho_banda <- inf+
+	Para cada arista e en AGM:
+		Si peso[e] < peso_minimo:
+		peso_minimo <- peso[e]
+	retornar ancho_banda
 ```
