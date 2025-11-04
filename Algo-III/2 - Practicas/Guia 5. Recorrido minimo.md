@@ -7,5 +7,12 @@ Uniendo todo lo obtenido, d(s,v) + c(v -> w) + d(w, t) es el resultado de sumar 
 
 ### 2)
 ```
-algori
+algoritmo pesoSaT
+in: digrafo G con pesos >= 0
+	vertices s y t
+	cota c
+out: el mayor peso entre las aristas que pertenecen a un
+	 camino de s a t cuyo peso del camino es <= c
+	 
+	 
 ```
