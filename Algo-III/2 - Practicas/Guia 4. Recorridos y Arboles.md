@@ -102,4 +102,9 @@ out: minima cantidad de movimientos para obtener w
 ```
 
 # AGM, Camino minimax y maximin
-### 11)
+### 12) a.
+Trabajo mi algoritmo en base a recorrer el grafo con el algoritmo de Prim, modificando los valores de las aristas del grafo original. Multiplico por -1 todos los valores de las aristas, tal que Prim obtenga el mínimo valor posible en cada pasada. Prim me asegura obtener un grafo conexo, tal que, al final de su recorrido, voy a obtener un grafo conexo con valores de aristas mínimos. Luego, vuelvo a multiplicar por -1, tal que obtenga los valores originales de las aristas, teniendo así un árbol generador con pesos máximos en sus aristas (el peso mínimo de un valor negado es el máximo de un valor positivo). Finalmente, tengo un grafo conexo con anchos de banda de valor máximo posible
+```
+Algoritmo redPrim
+in: Grafo con n aristas y m
+```
