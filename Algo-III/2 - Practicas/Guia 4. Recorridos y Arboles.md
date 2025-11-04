@@ -135,6 +135,16 @@ Sea e $\in$ T una arista que aun no fue elegida. Si e puede ser agregada sin cre
 - Kruskal elige la de minima prioridad: e (con prioridad 0)
 Por lo tanto, Kruskal selecciona e.
 
-Sea e $\notin$ T una arista cualquiera. Como T es un arbol generador, agregar e a T crea un ciclo C. 
+Sea e $\notin$ T una arista cualquiera. Como T es un arbol generador, agregar e a T crea un ciclo C. Sea f $\in$ T una arista en ese ciclo C.
+Como e $\notin$ T, p(e) $\geq$ p(f):
+- Si p(e) > p(f), Kruskal procesa f antes que e. Cuando f es procesada, se agrega a T'. Cuando e es considerada, crea el ciclo con f, tal que Kruskal descarta e.
+- Si p(e) = p(f), ambas tienen el mismo peso, pero q$_T$(f) = 0 y q$_T$(e) = 1, ya que una pertenece a T' y otra no. Cuando Kruskal debe elegir entre ellas (si llega la opción de elegir entre ambas), elige f (prioridad 0) sobre e (prioridad 1). Luego, Kruskal no selecciona e.
 
-Busco crear T a partir del grafo G corriendo el algoritmo de Kruskal con orden de selección. Si Kruskal tendría que elegir entre 2 o más aristas con mismo peso p, elegiría cualquiera de ellas, pero con el orden de selección, Kruskal elige la de mínima prioridad (aquella que tiene prioridad 0). Esto implica que toda arista que quedó fuera de la selección por mínima prioridad, no pertenece al AGM T, tal que tienen prioridad 1 y, por ende, quedan fuera de T, demostrando que Kruskal con orden de selección elige el resultado equivalente a T. Finalmente, se obtiene T como resultado del algoritmo de Kruskal.
+Finalmente, T' contiene exactamente las aristas de T.
+Como ambos son arboles generadores con las mismas |V-1| aristas, T' = T.
+Por lo tanto, Kruskal con orden de selección obtiene T como resultado.
+
+# 14) b.
+Si los pesos de G son todos distintos, entonces G tiene un único árbol generador mínimo.
+
+Sea T un AGM generado por Kruskal a partir de G, con G teniendo n aristas de pesos distintos entre si {1, ..., n}.
