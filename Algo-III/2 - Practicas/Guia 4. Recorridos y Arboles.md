@@ -122,4 +122,9 @@ out: Ancho de banda (k maximo tal que Gk es conexo)
 		peso_minimo <- peso[e]
 	retornar ancho_banda
 ```
+### 14) a.
+Kruskal con orden de selección obtiene (T) como resultado a partir de un Grafo G, donde T es un AGM. Luego, definimos qT basado en T.
+Busco demostrar que Kruskal con orden de seleccion:
+- Selecciona exactamente las aristas de T
+- No selecciona ninguna arista fuera de T
 
