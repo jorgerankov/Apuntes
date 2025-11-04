@@ -57,14 +57,15 @@ Por lo tanto, (T) es (v)-geodésico.
 
 ### 8)
 Comienzo en la posicion 1 como indica el enunciado, tal que pueda obtener w. Como debo obtener un w arbitrario, recorrer todos los resultados mod k posibles que me permitan obtener dicho w me costará O(k). 
-Recorriendo el grafo aplicando BFS, me encuentro con que visito los nodos una unica vez y los marco como visitados, quitandome posibles soluciones en caso de querer recorrerlo nuevamente para buscar otras soluciones. 
-Esto me indica que, para poder obtener todas las w soluciones posibles, debo recorrer el grafo nm (vertices * aristas) veces, tal de poder encontrar todas las soluciones posibles. 
-Luego, si encontré un resultado igual a w, guardo la cantidad de movimientos que hice para llegar hasta ahi. Comparando cada solucion obtenida con el mod k tal que me de w, y quedandome con la minima cantidad de movimientos realizada en cada uno obtengo la complejidad O(n) + O(knm) = O(knm)
+Recorriendo el grafo aplicando BFS desde (x1, y1, v1) obtengo todos los estados (x,y,w) donde (x,y) son cualquier posicion y w es mi valor objetivo.
 
 ```
 Algoritmo grillaBFS
-in: Grafo, posicion_inicial, w
-out: cantidad minima de movimientos tal que pos_ini == w
+in: grilla[n][m], 
+	posicion_inicial (x1,y1), 
+	valor inicial v1,
+	objetivo w
+out: minima cantidad de movimientos para obtener w
 
 	pos_ini <- posicion[x1][y1]
 	objetivo <- w
