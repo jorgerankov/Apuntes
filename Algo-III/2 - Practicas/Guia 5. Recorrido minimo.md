@@ -8,15 +8,13 @@ Uniendo todo lo obtenido, d(s,v) + c(v -> w) + d(w, t) es el resultado de sumar 
 ### 2)
 ```
 algoritmo pesoSaT
-in: digrafo G con pesos >= 0
-	vertices s y t
-	cota c
-out: el mayor peso entre las aristas que pertenecen a un
-	 camino de s a t cuyo peso del camino es <= c
+in: digrafo G, vertices s y t, cota c
+out: Arista de peso maximo entre todos los caminos 
+	de s a t en G con peso <= c
 	 
-	camino_peso_min <- Dijkstra(G, s, t)
-	 // Dijkstra obtiene el camino con peso minimo
-	  entre 2 nodos (s y t) 
+	dist_desde_s <- Dijkstra(G, s)
+	 // Dijkstra obtiene todos los pesos d(s, v), para cada
+	  vertice v
 	acumulador_peso <- 0
 	peso_max <- inf-
 	arista_peso_max = 0
