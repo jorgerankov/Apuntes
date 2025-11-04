@@ -122,4 +122,4 @@ out: Ancho de banda (k maximo tal que Gk es conexo)
 		peso_minimo <- peso[e]
 	retornar ancho_banda
 ```
-### b. 
+
