@@ -127,4 +127,4 @@ Kruskal con orden de selección obtiene (T) como resultado a partir de un Grafo 
 Busco demostrar que Kruskal con orden de seleccion:
 - Selecciona exactamente las aristas de T
 - No selecciona ninguna arista fuera de T
-
+Busco crear T a partir del grafo G corriendo el algoritmo de Kruskal con orden de selección. Si Kruskal tendría que elegir entre 2 o más aristas con mismo peso p, elegiría cualquiera de ellas, pero con el orden de selección, Kruskal elige la de mínima prioridad (aquella que tiene prioridad 0). Esto implica que toda arista que quedó fuera de la selección por mínima prioridad, no pertenece al AGM T, tal que tienen prioridad 1 y, por ende, quedan fuera de T, demostrando que Kruskal con orden de selección elige el resultado equivalente a T. Finalmente, se obtiene T como resultado del algoritmo de Kruskal.
