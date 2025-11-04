@@ -7,26 +7,26 @@ Uniendo todo lo obtenido, d(s,v) + c(v -> w) + d(w, t) es el resultado de sumar 
 
 ### 2)
 ```
-algoritmo pesoSaT
+algoritmo pesoDeSaT
 in: digrafo G, vertices s y t, cota c
 out: Arista de peso maximo entre todos los caminos 
 	de s a t en G con peso <= c
 	 
 	dist_desde_s <- Dijkstra(G, s)
-	 // Dijkstra obtiene todos los pesos d(s, v), para cada
-	  vertice v
-	acumulador_peso <- 0
+	// Dijkstra obtiene todos los pesos d(s, v), en G
+	
+	G_transp <- Invertir todas las aristas de G
+	dist_hacia_t <- Dijkstra(G_transp, t)
+	// Dijkstra obtiene todos los pesos d(v, t), en G
+	
+	arista_max = 0
 	peso_max <- inf-
-	arista_peso_max = 0
-	para cada peso de arista e en camino_peso_min:
-		acumulador_peso <- acumulador_peso + peso[e]
-		si peso[e] > peso_max:
-			arista_peso_max <- arista[e]
-		fin si
-	fin para
-	si acumulador_peso > c:
-		devolver error
-	sino:
-		devolver arista_peso_max
-	sin si
+	
+	Para cada arista u -> v con peso w en G:
+		Si dist_desde_s[u] + w + dist_hacia_t[v] <= c: 
+			Si w > peso_max:
+				peso_max <- w
+				arista_max <- (u, v)
+	
+	Retornar arista_max
 ```
