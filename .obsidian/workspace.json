@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Algo-III/2 - Practicas/Guia 4. Recorridos y Arboles.md",
+                "file": "Algo-III/2 - Practicas/Guia 5. Recorrido minimo.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Guia 4. Recorridos y Arboles"
+              "title": "Guia 5. Recorrido minimo"
             }
           }
         ]
@@ -173,6 +173,10 @@
   },
   "active": "97bea0b585ae9357",
   "lastOpenFiles": [
+    "Algo-III/2 - Practicas/Representacion de Grafos.md",
+    "Algo-III/2 - Practicas/Guia 1. Divide and Conquer.md",
+    "Algo-III/2 - Practicas/Guia 5. Recorrido minimo.md",
+    "Algo-III/2 - Practicas/Guia 4. Recorridos y Arboles.md",
     "AWS Developer/2. AWS Fargate.md",
     "Pasted image 20251103225001.png",
     "AWS Developer/1. Containers.md",
@@ -196,13 +200,10 @@
     "PLP/Teoricas/Imagenes",
     "SQL/Proyectos.md",
     "Algo-III/1 - Teoricas/Clase 6 - Grafos.md",
-    "Algo-III/2 - Practicas/Guia 4. Recorridos y Arboles.md",
-    "Algo-III/2 - Practicas/Representacion de Grafos.md",
     "Algo-III/1 - Teoricas/Clase 7 - Arboles.md",
     "Algo-III/1 - Teoricas/Clase 8 - Arboles generadores.md",
     "Algo-III/2 - Practicas/Clase 1.md",
     "Algo-III/2 - Practicas/Guia 2. Backtracking.md",
-    "Algo-III/2 - Practicas/Guia 1. Divide and Conquer.md",
     "Algo-III/2 - Practicas/Guia 3. Grafos.md",
     "PLP/Teoricas/2 - Curry, Listas, Recursion.md",
     "PLP/Teoricas/0 - Intro Haskell.md",
