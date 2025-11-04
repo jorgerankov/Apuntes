@@ -147,4 +147,9 @@ Por lo tanto, Kruskal con orden de selección obtiene T como resultado.
 # 14) b.
 Si los pesos de G son todos distintos, entonces G tiene un único árbol generador mínimo.
 
-Sea T un AGM generado por Kruskal a partir de G, con G teniendo n aristas de pesos distintos entre si {1, ..., n}.
+Sea T un AGM generado por Kruskal a partir de G, con G teniendo n aristas de pesos distintos entre si {1, ..., n}. Sabemos que Kruskal siempre elige los minimos pesos entre todas las aristas existentes dentro de un grafo, tal que siempre va a obtener el AGM de minimo peso posible. Como todos los pesos son distintos entre si, Kruskal siempre va a elegir una arista con peso minimo que no tiene comparacion de peso con otra arista. Ademas, tampoco habrá que decidir una elección por prioridad, ya que no hay que buscar comparación entre 2 aristas del mismo peso.
+
+Ahora, observemos por contradicción que, dado un Grafo con n aristas, y siendo v, w, 2 aristas con mismo peso, y son las de minimo peso de todo el grafo, podemos obtener un único AGM. 
+
+Corriendo Kruskal en el grafo, asignemos primero qT(v)=0 y qT(w)=1, tal que, al momento de tener que elegir entre ambas aristas para generar el AGM, elijamos v, ya que tiene minima prioridad en comparacion a w. Esto nos devolverá un AGM, que lo denominaremos T, de peso mínimo posible con todas las aristas con pesos distintos.
+Ahora, corramos nuevamente Kruskal, pero asignando qT(w)=0 y qT(v)=1, tal que Kruskal seleccione a w al momento de armar el AGM, ya que w tiene minima prioridad en comparacion a v. Tambien obtenemos un AGM, que lo denominaremos T', de peso minimo posible con todas sus aristas con pesos distintos, y a su vez distinta a T. Luego, ambas tienen todas aristas de peso mínimo y peso distinto entre sí
