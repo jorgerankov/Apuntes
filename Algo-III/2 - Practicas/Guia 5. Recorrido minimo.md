@@ -72,7 +72,7 @@ Luego, guardo en dos variables los pesos obtenidos, y comparo ambos pesos. Se qu
 
 ```
 algoritmo GrafoConYSinE
-in: Digrafo G, Vertices s y t, conjunto de aristas E
+in: Digrafo DG, Vertices s y t, conjunto de aristas E
 out: las aristas de E que mejoran el camino de s a t
 
 	camino_s_sinE <- Dijkstra(G, s)
@@ -90,6 +90,9 @@ out: las aristas de E que mejoran el camino de s a t
 	camino_t_conE <- Dijkstra(dg_transp_conE, t)
 	// Obtengo todos los pesos (v, t) en dg transp con E
 	
-	Para cada arista 
+	Para cada arista u -> v con peso w en DG:
+		si camino_s_sinE[u] + w + camino_t_sinE[v] 
+		< camino_s_conE[u] + w + camino_t_conE[v]
+	
 	
 ```
