@@ -75,9 +75,21 @@ algoritmo GrafoConYSinE
 in: Digrafo G, Vertices s y t, conjunto de aristas E
 out: las aristas de E que mejoran el camino de s a t
 
-	camino_peso_min_sinE <- Dijkstra(G, s)
+	camino_s_sinE <- Dijkstra(G, s)
 	// Obtengo todos los pesos (s, v) en G
+	dg_transp <- Invertir todas las aristas de G
+	camino_t_sinE <- Dijkstra(dg_transp, t)
+	// Obtengo todos los pesos (v, t) en G
 	
-	digrafo_con_E <- G U E
+	dg_con_E <- G U E
 	// Digrafo con el cjto de aristas E agregadas
+	camino_s_conE <- Dijkstra(dg_con_E, s)
+	// Obtengo todos los pesos (s, v) en dg_con_E
+	dg_transp_conE <- Invertir todas las aristas de 
+						dg_con_E
+	camino_t_conE <- Dijkstra(dg_transp_conE, t)
+	// Obtengo todos los pesos (v, t) en dg transp con E
+	
+	Para cada arista 
+	
 ```
