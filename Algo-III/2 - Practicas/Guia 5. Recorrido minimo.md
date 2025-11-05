@@ -99,5 +99,5 @@ out: Aristas de E que mejoran d_G(s, t)
 	Si camino_con_e < dist_original:
 		aristas_mejoran <- aristas_mejoran U {e} 
 	
-	Retornar ar	
+	Retornar aristas_mejoran	
 ```
