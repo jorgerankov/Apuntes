@@ -75,6 +75,8 @@ algoritmo GrafoConYSinE
 in: Digrafo DG, Vertices s y t, conjunto de aristas E
 out: las aristas de E que mejoran el camino de s a t
 
+	cjto_E <- {}
+	
 	camino_s_sinE <- Dijkstra(G, s)
 	// Obtengo todos los pesos (s, v) en G
 	dg_transp <- Invertir todas las aristas de G
@@ -92,7 +94,9 @@ out: las aristas de E que mejoran el camino de s a t
 	
 	Para cada arista u -> v con peso w en DG:
 		si camino_s_sinE[u] + w + camino_t_sinE[v] 
-		< camino_s_conE[u] + w + camino_t_conE[v]
+		< camino_s_conE[u] + w + camino_t_conE[v]:
+			Si (u -> v) esta en E:
+				cjto_E <- cjto_E U (u -> v)
 	
-	
+	Retornar cjto_E	
 ```
