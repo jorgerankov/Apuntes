@@ -72,31 +72,32 @@ Luego, guardo en dos variables los pesos obtenidos, y comparo ambos pesos. Se qu
 
 ```
 algoritmo AristasMejoranCamino
-in: Digrafo DG, Vertices s y t, conjunto de aristas E
-out: las aristas de E que mejoran el camino de s a t
+in:  Digrafo G con pesos+,
+	 Vertices s y t, 
+	 conjunto de aristas E not en G
+out: Aristas de E que mejoran d_G(s, t)
 
-	cjto_E <- {}
-	
-	camino_s_sinE <- Dijkstra(G, s)
+	// Calcular distancias en G
+	dist_desde_s <- Dijkstra(G, s)
 	// Obtengo todos los pesos (s, v) en G
-	dg_transp <- Invertir todas las aristas de G
-	camino_t_sinE <- Dijkstra(dg_transp, t)
+	G_transp <- Invertir todas las aristas de G
+	dist_hacia_t <- Dijkstra(G_transp, t)
 	// Obtengo todos los pesos (v, t) en G
 	
-	dg_con_E <- G U E
-	// Digrafo con el cjto de aristas E agregadas
-	camino_s_conE <- Dijkstra(dg_con_E, s)
-	// Obtengo todos los pesos (s, v) en dg_con_E
-	dg_transp_conE <- Invertir todas las aristas de 
-						dg_con_E
-	camino_t_conE <- Dijkstra(dg_transp_conE, t)
-	// Obtengo todos los pesos (v, t) en dg transp con E
+	dist_original <- dist_desde_s[t]
 	
-	Para cada arista u -> v con peso w en DG:
-		si camino_s_sinE[u] + w + camino_t_sinE[v] 
-		< camino_s_conE[u] + w + camino_t_conE[v]:
-			Si (u -> v) esta en E:
-				cjto_E <- cjto_E U (u -> v)
+	Si dist_original == inf+:
+		Retornar E
 	
-	Retornar cjto_E	
+	aristas_mejoran <- {}
+	
+	Para cada arista e = (u -> v) con peso w en E:
+		camino_con_e <- dist_desde_s[u] + w + 
+		dist_hacia_t[v]
+		
+	// Mejora?
+	Si camino_con_e < dist_original:
+		aristas_mejoran <- aristas_mejoran U {e} 
+	
+	Retornar ar	
 ```
