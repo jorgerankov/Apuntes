@@ -55,6 +55,19 @@ out: Peso del camino minimo de s a t con <= 1 arista neg
 			Si dist[u] + w < dist[v] Y  nuevas_neg <= 1:
 				dist[v] <- dist[u] + w
 				negativas[v] <- nuevas_neg
-			S
-				
+			
+			Si dist[u] + w == dist[v] Y nuevas_neg < 
+										negativas[v]:
+				negativas[v] <- nuevas_neg
+	
+	Si dist[t] == inf+:
+		Retornar "No hay camino"
+	Sino:
+		Retornar dist[t]
+```
+
+### 4.
+Mi planteo para este algoritmo, al tener un Grafo G con pesos positivos, y un conjunto de aristas E $\notin$ E(G) que tambien tienen peso positivo, es correr Dijkstra 2 veces
+```
+
 ```
