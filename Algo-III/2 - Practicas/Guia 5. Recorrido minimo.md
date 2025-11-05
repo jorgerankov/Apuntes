@@ -67,7 +67,17 @@ out: Peso del camino minimo de s a t con <= 1 arista neg
 ```
 
 ### 4.
-Mi planteo para este algoritmo, al tener un Grafo G con pesos positivos, y un conjunto de aristas E $\notin$ E(G) que tambien tienen peso positivo, es correr Dijkstra 2 veces
-```
+Mi planteo para este algoritmo, al tener un Grafo G con pesos positivos, y un conjunto de aristas E $\notin$ E(G) que tambien tienen peso positivo, es correr Dijkstra 2 veces, una en un grafo G sin las aristas de E $\notin$ E(G), y otra con dichas aristas. 
+Luego, guardo en dos variables los pesos obtenidos, y comparo ambos pesos. Se que Dijkstra siempre me va a devolver el camino de menor peso de s a t, tal que, si al comparar los caminos obtenidos el de menor peso entre ambos es el que tiene las aristas E $\notin$ E(G), busco cuales son las aristas de ese camino que pertenecen a E $\notin$ E(G)
 
+```
+algoritmo GrafoConYSinE
+in: Digrafo G, Vertices s y t, conjunto de aristas E
+out: las aristas de E que mejoran el camino de s a t
+
+	camino_peso_min_sinE <- Dijkstra(G, s)
+	// Obtengo todos los pesos (s, v) en G
+	
+	digrafo_con_E <- G U E
+	// Digrafo con el cjto de aristas E agregadas
 ```
