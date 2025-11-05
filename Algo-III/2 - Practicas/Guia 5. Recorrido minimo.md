@@ -30,3 +30,31 @@ out: Arista de peso maximo entre todos los caminos
 	
 	Retornar arista_max
 ```
+### 3)
+Ejecuto el algoritmo con una versión modificada de Bellman-Ford, que cuenta las aristas negativas usadas.
+Busco guardar en cada estado la # aristas negativas usadas, tal que lo actualizo si:
+- La distancia es menor,
+- La distancia es igual pero usa menos aristas negativas, o
+- Usa exactamente una arista negativa
+```
+Algoritmo caminoMinUnaNegativa
+in: Digrafo G, Vertices s y t
+out: Peso del camino minimo de s a t con <= 1 arista neg
+
+	dist[s] <- 0
+	negativas[s] <- 0 // #aristas negativas en el camino
+	Para cada vertice v != s:
+		dist[v] <- inf+
+		negativas[v] <- inf+
+		
+	Para i = 1 hasta |V| - 1:
+		Para cada arista u -> v con peso w en G:
+			es_negativa <- (w < 0 ? 1 : 0)
+			nuevas_neg <- negativas[u] + es_negativa
+			
+			Si dist[u] + w < dist[v] Y  nuevas_neg <= 1:
+				dist[v] <- dist[u] + w
+				negativas[v] <- nuevas_neg
+			S
+				
+```
