@@ -71,7 +71,7 @@ Mi planteo para este algoritmo, al tener un Grafo G con pesos positivos, y un co
 Luego, guardo en dos variables los pesos obtenidos, y comparo ambos pesos. Se que Dijkstra siempre me va a devolver el camino de menor peso de s a t, tal que, si al comparar los caminos obtenidos el de menor peso entre ambos es el que tiene las aristas E $\notin$ E(G), busco cuales son las aristas de ese camino que pertenecen a E $\notin$ E(G)
 
 ```
-algoritmo GrafoConYSinE
+algoritmo AristasMejoranCamino
 in: Digrafo DG, Vertices s y t, conjunto de aristas E
 out: las aristas de E que mejoran el camino de s a t
 
