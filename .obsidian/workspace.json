@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "PLP/Ejercicios 11 y 12 TP Prolog.md",
-                "mode": "source",
+                "file": "PLP/Ejercicios_11_y_12.md",
+                "mode": "preview",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Ejercicios 11 y 12 TP Prolog"
+              "title": "Ejercicios_11_y_12"
             }
           }
         ]
@@ -174,7 +174,7 @@
   "active": "97bea0b585ae9357",
   "lastOpenFiles": [
     "Algo-III/2 - Practicas/Guia 5. Recorrido minimo.md",
-    "PLP/Ejercicios 11 y 12 TP Prolog.md",
+    "PLP/Ejercicios_11_y_12.md",
     "Algo-III/2 - Practicas/Representacion de Grafos.md",
     "Algo-III/2 - Practicas/Guia 1. Divide and Conquer.md",
     "Algo-III/2 - Practicas/Guia 4. Recorridos y Arboles.md",
