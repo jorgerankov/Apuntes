@@ -2,7 +2,7 @@
 
 _Se pide completar la siguiente tabla con el análisis de los nonogramas predefinidos. Indicar qué consultas se usaron para averiguar cada uno de los datos. Si algún nonograma no puede ser analizado, indicar el motivo._
 
-|  N   |   Tamaño    | ¿Tiene solución única? | ¿Es Deducible sin backtracking? |
+|  N   |   Tamaño    | ¿Tiene solución única? | ¿Es deducible sin backtracking? |
 | :--: | :---------: | :--------------------: | :-----------------------------: |
 | $0$  |  $2$ x $3$  |                        |                                 |
 | $1$  |  $5$ x $5$  |                        |                                 |
@@ -29,19 +29,19 @@ _Se pide completar la siguiente tabla con el análisis de los nonogramas predefi
 
 # <u>Ejercicio 12</u>
 
-_Indicar si el predicado replicar/3 es reversible en el segundo argumento. Se pide analizar si replicar(+Elem, -N, -Lista) funciona correctamente._
+_Indicar si el predicado replicar/3 es reversible en el segundo argumento. En concreto, se pide analizar si replicar(+Elem, -N, -Lista) funciona correctamente._
 
-Teniendo en cuenta que:
-- **_+Argumento_**: Significa que el argumento debe **estar instanciado** (ligado a un valor concreto) **antes de llamar** al predicado;
-- **_-Argumento_**: Significa que el argumento **debe estar sin instanciar** (variable libre) **antes de llamar** al predicado. El predicado **lo instancia**
+Sabiendo que:
+- **_+Argumento_**: Indica que un argumento debe **estar instanciado** (ligado a un valor concreto) **antes de llamar** al predicado;
+- **_-Argumento_**: Indica que un argumento **debe estar sin instanciar** (variable libre) **antes de llamar** al predicado. El predicado **lo instancia**
 
-Y sabiendo que `length(L, N)` es **bidireccional** (funciona tanto declarando una lista explícitamente (definiendo sus elementos) como no), para luego probar de ejecutar en la consola de Prolog **`replicar(+Elem, -N, -Lista)`**:
+Y también sabiendo que `length(L, N)` es **bidireccional** (funciona tanto declarando una lista explícitamente (definiendo sus elementos) como no), para luego probar de ejecutar en la consola de Prolog **`replicar(+Elem, -N, -Lista)`**:
 ```
 ?- replicar(x, N, [x, x, x]).
 N = 3.
 ```
-
-Podemos llegar a deducir que el predicado _replicar/3_ es reversible en el segundo argumento. Más aún, si probamos de ejecutar **`replicar(x, N, L).`** en consola (sin instanciar N y sin definir la lista L), obtenemos:
+[
+Podemos llegar a deducir que el predicado _replicar/3_ es rev]()ersible en el segundo argumento (`length(L, N)` con `L = [x, x, x]` nos da como resultado `N = 3`). Más aún, si probamos de ejecutar **`replicar(x, N, L).`** en consola (sin instanciar N y sin definir la lista L), obtenemos:
 ```
 ?- replicar(x,N,L).
 N = 0,
@@ -54,6 +54,5 @@ N = 3,
 L = [x, x, x] ;
 ...
 ```
-Demostrando que no es necesario instanciar N para que la función se ejecute como se espera.
-
+Demostrando que no es necesario instanciar N para que la función se ejecute como se espera. 
 **Finalmente, queda demostrado que el predicado _replicar/3_ es reversible en el segundo argumento (N).**
