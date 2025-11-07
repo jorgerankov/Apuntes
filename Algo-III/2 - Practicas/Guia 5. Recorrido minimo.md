@@ -176,3 +176,29 @@ out: True si es posible puntaje inf+, False sino
 	
 	Retornar False // No hay ciclo positivo
 ```
+# 12)
+```
+Algoritmo DetectarCicloNegativo
+in: Grafo G con pesos
+out: True si existe ciclo negativo, False si no
+
+	// Correr Bellman-Ford desde cualquier nodo
+	v_inicial <- cualquier nodo de G
+	
+	// Inicializo los 
+	dist[v_inicial] <- 0
+	dist[v] <- inf+ para todo v != v_inicial
+	
+	// Chequeo si se reducen los pesos entre aristas
+	Para i = 1 hasta |V| -1:
+		Para cada arista u -> v con peso w en G:
+			si dist[u] + w < dist[v]:
+				dist[v] = dist[u] + w
+	
+	// Si vuelve a reducirse, hay ciclo
+	Para cada arista u -> v con peso w en G:
+		si dist[u] + w < dist[v]:
+			Retonar True // Hay ciclo negativo
+			
+	Retornar False
+```
