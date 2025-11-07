@@ -203,3 +203,41 @@ out: True si existe ciclo negativo, False si no
 	Retornar False
 ```
 # b.
+```
+Algoritmo DetectarCicloSaT
+in: Grafo G con pesos, nodos s, t
+out: True si existe ciclo negativo, False si no
+
+	// Obtengo con BFS o DFS todos los caminos de s  
+	caminos_de_s <- BFS/DFS(G, s)
+	// Invierto el grafo para obtener caminos desde t
+	G_invertida <- Transponer G
+	// Obtengo con BFS o DFS todos los caminos de t  
+	caminos_hacia_t <- BFS/DFS(G, t)
+	
+	// Me quedo solo con los vertices que van de s a t
+	Caminos_s_t <- caminos_de_s interseccion caminos_hacia_t
+	
+	Grafo_s_t <- Grafo inducido por Caminos_s_t 
+	
+	// Correr Bellman-Ford desde s
+	v_inicial <- s
+	
+	// Inicializo las distancias
+	dist[v_inicial] <- 0
+	dist[v] <- inf+ para todo v != v_inicial
+	
+	// Chequeo si se reducen los pesos entre aristas de s a t
+	Para i = 1 hasta |V| -1:
+		Para cada arista u -> v con peso w en Grafo_s_t:
+			si dist[u] + w < dist[v]:
+				dist[v] = dist[u] + w
+	
+	// Si vuelve a reducirse, hay ciclo
+	Para cada arista u -> v con peso w en Grafo_s_t:
+		si dist[u] + w < dist[v]:
+			Retonar True // Hay ciclo negativo en el camino s a t
+			
+	Retornar False
+	// No hay ciclos negativos en el camino de s a t
+```
