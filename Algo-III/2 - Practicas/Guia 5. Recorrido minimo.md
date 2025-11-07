@@ -255,3 +255,15 @@ El algoritomo de Bellman-Ford recorrió k aristas para obtener los caminos posib
 Si no hay ciclos negativos, con n−1 iteraciones es suficiente (donde n es la cantidad de vértices) ya que, si no hay ciclos negativos, el camino minimo de s a cualquier nodo es un camino simple (sin repetir vertices), donde ese camino minimo simple tiene a lo sumo n-1 aristas.
 Si el ciclo tiene peso negativo, hay contradiccion con el enunciado. Si hay un ciclo con peso positivo, implica que existe un camino que puede eliminar ese ciclo y tener un camino mas corto y con menor peso, significando que el camino encontrado no era el minimo posible. 
 Luego, en el peor caso, s pasa por todos los n nodos para llegar a alguno de sus caminos minimos y, en ese caso, conectar n nodos cuesta n-1 aristas
+
+# 14)
+```
+Algoritmo caminoMinimoLim
+in: Digrafo G, nodos s,t, int k
+out: Camino de peso minimo de s a t que usa exact. k aristas si
+	existe, Null si no
+	
+
+
+
+```
