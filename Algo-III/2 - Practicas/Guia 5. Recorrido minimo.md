@@ -111,5 +111,13 @@ Esto me proporciona 3 observaciones:
 - Cada camino es unico y nada me asegura que pueda llegar a cualquier nodo desde cualquier otro
 En base a esto, 
 ## 11) a.
-Sabiendo que siempre comenzamos desde la posición i y tenemos que llegar a j, y sabiendo que pueden haber hasta n caminos distintos, donde cada camino tiene un puntaje p(i->j), y que hay mención de niveles en el enunciado (haciendo referencia a que podríamos estar trabajando con un DAG), podría
+Sabiendo que siempre comenzamos desde la posición i y tenemos que llegar a j, y sabiendo que pueden haber hasta n caminos distintos, donde cada camino tiene un puntaje p(i->j), y que hay mención de niveles en el enunciado (haciendo referencia a que podríamos estar trabajando con un DAG), podría, primero, realizar ordenamiento topológico del grafo para asegurarme de obtener todos los caminos de i a j de manera ordenada, para luego, con DP, guardar cada puntaje total a medidca que recorro cada uno de los caminos obtenidos en el ordenamiento topológico. Luego, retorno el puntaje n (el máximo puntaje obtenido).
 
+```
+Algoritmo puntajesConBonificaciones
+in: DAG, vertices i, j
+out: Puntaje maximo de los caminos de i a j
+
+	conjunto_caminos <- Orden Topologico de los caminos de i a j
+	
+```
