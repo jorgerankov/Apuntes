@@ -249,4 +249,4 @@ El algoritmo de Bellman-Ford obtiene siempre la arista de menor peso posible en 
 
 <-) Si tenemos un camino de a lo sumo k aristas, entonces se ha calculado correctamente la distancia mínima desde s a todo vértice alcanzable después de k iteraciones
 
-El algoritomo de Bellman-Ford recorrió k aristas para obtener los caminos posibles
+El algoritomo de Bellman-Ford recorrió k aristas para obtener los caminos posibles. Por cada arista que recorrió tuvo que hacer 1 movimiento, tal que para un camino con k aristas hizo k movimientos. Como Bellman-Ford siempre obtiene el camino minimo partiendo de un nodo origen, sabemos que al recorrer k aristas también obtuvo el camino k-mínimo para ese nodo origen a todos los demás nodos, dando a saber que, en k iteraciones, tuvo que obtener el camino mínimo desde s a cualquier nodo.
