@@ -215,7 +215,7 @@ out: True si existe ciclo negativo, False si no
 	// Obtengo con BFS o DFS todos los caminos de t  
 	caminos_hacia_t <- BFS/DFS(G, t)
 	
-	// Me quedo solo con los vertices que van de s a t
+	// Me quedo solo con los vertices en el camino de s a t
 	Caminos_s_t <- caminos_de_s interseccion caminos_hacia_t
 	
 	Grafo_s_t <- Grafo inducido por Caminos_s_t 
@@ -241,3 +241,7 @@ out: True si existe ciclo negativo, False si no
 	Retornar False
 	// No hay ciclos negativos en el camino de s a t
 ```
+# 13) a.
+Veamos que, dado un grafo G y un vertice origen s, podemos llegar mediante un camino minimo de s a n (siendo n cualquier nodo de G) pasando por a lo sumo k aristas (con peso w).
+<-) Si después de k iteraciones del algoritmo se ha calculado correctamente la distancia mínima desde s a todo vértice alcanzable, entonces fue realizado mediante un camino de a lo sumo k aristas.
+El algoritmo de Bellman-Ford obtiene siempre la arista de menor peso posible en cada una de esas iteraciones, comenzando desde el nodo origen s
