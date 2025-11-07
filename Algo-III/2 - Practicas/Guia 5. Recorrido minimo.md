@@ -145,4 +145,34 @@ Se puede obtener puntaje infinito si y solo si:
 1. Existe un ciclo alcanzable desde el nivel 1 (i)
 2. Ese ciclo tiene puntaje total positivo
 3. Desde ese ciclo se puede llegar al nivel n (j)
+```
+Algoritmo DetectarPuntajeInf
+in: Grafo G con pesos, vertice inicial i y final j
+out: True si es posible puntaje inf+, False sino
 
+	alcanzables_i <- BFS/DFS(G,i)
+	
+	G_transp <- Invierte aristas de G
+	alcanzables_j <- BFS/DFS(G_transp, j)
+	
+	vertices_i_j <- alcanzables_i interseccion alcanzables_j
+	
+	G_i_j <- Subgrafo inducido por vertices_i_j
+	
+
+	// Detectar ciclo positivo usando Bellman-Ford
+	dist[v] <- 0 para todo v en G_i_j
+	
+	// Vemos si hay mejora 
+	Para k = 1 hasta |v| - 1:
+		Para cada arista u -> v con peso w en G_i_j:
+			Si dist[u] + w > dist[v]:
+				dist[v] <- dist[u] + w
+
+	// Si aún hay mejora, existe ciclo positivo
+	Para cada arista u -> v con peso w en G_i_j:
+		Si dist[u] + w > dist[v]:
+			Retornar True // Hay ciclo positivo
+	
+	Retornar False // No hay ciclo positivo
+```
