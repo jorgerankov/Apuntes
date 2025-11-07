@@ -163,7 +163,7 @@ out: True si es posible puntaje inf+, False sino
 	// Detectar ciclo positivo usando Bellman-Ford
 	dist[v] <- 0 para todo v en G_i_j
 	
-	// Vemos si hay mejora 
+	// Vemos si hay mejora en las iteraciones
 	Para k = 1 hasta |v| - 1:
 		Para cada arista u -> v con peso w en G_i_j:
 			Si dist[u] + w > dist[v]:
