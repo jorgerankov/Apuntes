@@ -250,3 +250,8 @@ El algoritmo de Bellman-Ford obtiene siempre la arista de menor peso posible en 
 <-) Si tenemos un camino de a lo sumo k aristas, entonces se ha calculado correctamente la distancia mínima desde s a todo vértice alcanzable después de k iteraciones
 
 El algoritomo de Bellman-Ford recorrió k aristas para obtener los caminos posibles. Por cada arista que recorrió tuvo que hacer 1 movimiento, tal que para un camino con k aristas hizo k movimientos. Como Bellman-Ford siempre obtiene el camino minimo partiendo de un nodo origen, sabemos que al recorrer k aristas también obtuvo el camino k-mínimo para ese nodo origen a todos los demás nodos, dando a saber que, en k iteraciones, tuvo que obtener el camino mínimo desde s a cualquier nodo.
+
+# b.
+Si no hay ciclos negativos, con n−1 iteraciones es suficiente (donde n es la cantidad de vértices) ya que, si no hay ciclos negativos, el camino minimo de s a cualquier nodo es un camino simple (sin repetir vertices), donde ese camino minimo simple tiene a lo sumo n-1 aristas.
+Si el ciclo tiene peso negativo, hay contradiccion con el enunciado. Si hay un ciclo con peso positivo, implica que existe un camino que puede eliminar ese ciclo y tener un camino mas corto y con menor peso, significando que el camino encontrado no era el minimo posible. 
+Luego, en el peor caso, s pasa por todos los n nodos para llegar a alguno de sus caminos minimos y, en ese caso, conectar n nodos cuesta n-1 aristas
