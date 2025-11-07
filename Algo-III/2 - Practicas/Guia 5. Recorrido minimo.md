@@ -110,3 +110,5 @@ Esto me proporciona 3 observaciones:
 - No existe viceversa (ya que sino habrian ciclos),
 - Cada camino es unico y nada me asegura que pueda llegar a cualquier nodo desde cualquier otro
 En base a esto, 
+## 11) a.
+Sabiendo que siempre comenzamos desde la posición i y tenemos que llegar a j, y sabiendo que pueden haber hasta n caminos distintos, donde cada camino tiene un puntaje p(i->j), podemos multiplicar por -1 todos los pesos de las aristas, tal que convierto los pesos positivos en negativos y, aplicando el algoritmo de Bellman-Ford, obtenemos todos los caminos minimos de i a j. Uso Bellman-Ford ya que existen caminos con pesos negativos. Volviendo a negar los valores de las aristas, obtenemos los valores originales del digrafo, tal que ahora tenemos los caminos con puntajes maximos de i a j, ya que, si un camino es minimo con sus valores negados, al invertir sus valores, pasara a ser el maximo
