@@ -40,7 +40,7 @@ Y también sabiendo que `length(L, N)` es **bidireccional** (funciona tanto decl
 ?- replicar(x, N, [x, x, x]).
 N = 3.
 ```
-[
+
 Podemos llegar a deducir que el predicado _replicar/3_ es rev]()ersible en el segundo argumento (`length(L, N)` con `L = [x, x, x]` nos da como resultado `N = 3`). Más aún, si probamos de ejecutar **`replicar(x, N, L).`** en consola (sin instanciar N y sin definir la lista L), obtenemos:
 ```
 ?- replicar(x,N,L).
