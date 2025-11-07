@@ -140,3 +140,9 @@ out: Puntaje maximo de los caminos de i a j
 	
 	Retornar puntaje[j]
 ```
+# b.
+Se puede obtener puntaje infinito si y solo si:
+1. Existe un ciclo alcanzable desde el nivel 1 (i)
+2. Ese ciclo tiene puntaje total positivo
+3. Desde ese ciclo se puede llegar al nivel n (j)
+
