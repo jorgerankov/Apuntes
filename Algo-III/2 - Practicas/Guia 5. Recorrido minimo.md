@@ -259,7 +259,7 @@ Luego, en el peor caso, s pasa por todos los n nodos para llegar a alguno de sus
 # 14) a.
 ```
 Algoritmo caminoMinimoLim
-in: Digrafo G, nodos s,v, int k
+in: Digrafo G, nodos s,v, int i (#aristas requeridas)
 out: Camino de peso minimo de s a t que usa exact. k aristas si
 existe, Null si no
 	
@@ -276,7 +276,16 @@ existe, Null si no
 	total_cam_min_s: BellmanFord(G_SaV, s)
 	total_cam_min_v: BellmanFord(G_SaV, v)
 	
-	// Me qeudo
+	// Me quedo con todos los caminos minimos que coincidan
 	total_caminos_SaV <- total_cam_min_s inter total_cam_min_v
-
+	
+	max_peso = 0
+	para cada j entre total_caminos_SaV:
+		si |total_caminos_SaV[j]| == i:
+			para cada k entre total_caminos_SaV[j] con peso c:
+				total_peso_k <- total_peso_k + c
+			max_peso <- max(max_peso, total_peso_k)
+			
+	Retornar max_peso
+	
 ```
