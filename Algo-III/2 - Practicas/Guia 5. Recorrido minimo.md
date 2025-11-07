@@ -256,14 +256,27 @@ Si no hay ciclos negativos, con n−1 iteraciones es suficiente (donde n es la c
 Si el ciclo tiene peso negativo, hay contradiccion con el enunciado. Si hay un ciclo con peso positivo, implica que existe un camino que puede eliminar ese ciclo y tener un camino mas corto y con menor peso, significando que el camino encontrado no era el minimo posible. 
 Luego, en el peor caso, s pasa por todos los n nodos para llegar a alguno de sus caminos minimos y, en ese caso, conectar n nodos cuesta n-1 aristas
 
-# 14)
+# 14) a.
 ```
 Algoritmo caminoMinimoLim
-in: Digrafo G, nodos s,t, int k
+in: Digrafo G, nodos s,v, int k
 out: Camino de peso minimo de s a t que usa exact. k aristas si
-	existe, Null si no
+existe, Null si no
 	
+	nodos_desde_s <- BFS(G, s)
+	G_transp <- Transponer G
+	nodos_hasta_v <- BFS(G_transp, v)
 
-
+	nodos_deSaV <- nodos_desde_s inserseccion nodos_hasta_v
+	
+	G_SaV <- Grafo inducido por nodos_deSaV
+	
+	// Genero todos los caminos minimos con 
+	// inicio en s e inicio en v
+	total_cam_min_s: BellmanFord(G_SaV, s)
+	total_cam_min_v: BellmanFord(G_SaV, v)
+	
+	// Me qeudo
+	total_caminos_SaV <- total_cam_min_s inter total_cam_min_v
 
 ```
