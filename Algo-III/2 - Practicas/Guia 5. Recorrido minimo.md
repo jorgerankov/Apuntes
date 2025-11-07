@@ -176,7 +176,7 @@ out: True si es posible puntaje inf+, False sino
 	
 	Retornar False // No hay ciclo positivo
 ```
-# 12)
+# 12) a.
 ```
 Algoritmo DetectarCicloNegativo
 in: Grafo G con pesos
@@ -185,7 +185,7 @@ out: True si existe ciclo negativo, False si no
 	// Correr Bellman-Ford desde cualquier nodo
 	v_inicial <- cualquier nodo de G
 	
-	// Inicializo los 
+	// Inicializo las distancias
 	dist[v_inicial] <- 0
 	dist[v] <- inf+ para todo v != v_inicial
 	
