@@ -202,3 +202,4 @@ out: True si existe ciclo negativo, False si no
 			
 	Retornar False
 ```
+# b.
