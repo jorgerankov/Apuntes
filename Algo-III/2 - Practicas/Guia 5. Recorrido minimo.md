@@ -243,5 +243,10 @@ out: True si existe ciclo negativo, False si no
 ```
 # 13) a.
 Veamos que, dado un grafo G y un vertice origen s, podemos llegar mediante un camino minimo de s a n (siendo n cualquier nodo de G) pasando por a lo sumo k aristas (con peso w).
-<-) Si después de k iteraciones del algoritmo se ha calculado correctamente la distancia mínima desde s a todo vértice alcanzable, entonces fue realizado mediante un camino de a lo sumo k aristas.
-El algoritmo de Bellman-Ford obtiene siempre la arista de menor peso posible en cada una de esas iteraciones, comenzando desde el nodo origen s
+->) Si después de k iteraciones del algoritmo se ha calculado correctamente la distancia mínima desde s a todo vértice alcanzable, entonces fue realizado mediante un camino de a lo sumo k aristas.
+
+El algoritmo de Bellman-Ford obtiene siempre la arista de menor peso posible en cada una de esas iteraciones, comenzando desde el nodo origen s y llegando a cada uno de los nodos alcanzables por el mismo. Teniendo esto en cuenta, y sabiendo (por nuestra hipotesis inicial) que llegamos a calcular la distancia minima desde s a todo nodo en k iteraciones del algoritmo, significa que tuvimos que hacer, en k movimientos, k elecciones de aristas para llegar a todos los nodos que queríamos. Luego, si cada elección de una arista cuesta 1 movimiento, llegar a hacer k movimientos implicará hacer un camino de a lo sumo k aristas (en el peor caso), como queríamos probar.
+
+<-) Si tenemos un camino de a lo sumo k aristas, entonces se ha calculado correctamente la distancia mínima desde s a todo vértice alcanzable después de k iteraciones
+
+El algoritomo de Bellman-Ford recorrió k aristas para obtener los caminos posibles
