@@ -115,9 +115,28 @@ Sabiendo que siempre comenzamos desde la posición i y tenemos que llegar a j, y
 
 ```
 Algoritmo puntajesConBonificaciones
-in: DAG, vertices i, j
+in: DAG G, vertices i, j
 out: Puntaje maximo de los caminos de i a j
 
-	conjunto_caminos <- Orden Topologico de los caminos de i a j
+	// Busco los caminos alcanzables desde i, descarto los q no
+	alcanzan_i <- BFS/DFS desde i
 	
+	// Busco los caminos alcanzables desde j, descarto los q no
+	G_transp <- Transponer/invertir G
+	alcanzan_j <- BFS/DFS desde j
+	
+	// Subgrafo con los caminos de i a j
+	vertices_iguales <- alcanzan_i interseccion alcanzan_j 
+	
+	// Conjunto de caminos de i a j
+	orden_topo <- OrdenTopologico(subgrafo con vertices_iguales)
+	
+	// Aplico DP
+	puntaje[i] <- 0
+	Para cada vertice u en orden_topo:
+		Para cada arista u -> v:
+			puntaje[v] <- max(puntaje[v], puntaje[u] + 
+			peso(u->v))
+	
+	Retornar puntaje[j]
 ```
