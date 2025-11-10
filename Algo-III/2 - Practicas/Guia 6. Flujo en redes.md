@@ -24,3 +24,6 @@ Camino s -> t: flujo = 1
 Total: 4, que es par, tal que no existe un flujo maximo donde todas las aristas tengan flujo impar y el flujo total sea impar a la vez
 
 # e. V
+Iniciamos con f(e) siendo un numero racional para toda arista e. Cada iteracion encuentra un camino aumentante y, si aumentamos cada arista del camino por un valor racional, si f(e) era racional y sumamos un racional, el valor final de la misma también será racional. Mas aun, si las capacidades son números enteros, el flujo máximo también es entero, que pertenece al mundo de los racionales.
+
+# 2)
