@@ -33,4 +33,6 @@ Iniciamos con f(e) siendo un numero racional para toda arista e. Cada iteracion 
 (v -> t)  capacidad F
 (s -> v) capacidad F
 (u -> t) capacidad F
- 
+# 3)
+**a)** O(V * E$^2$) (cant. total de vertices * cant. total de aristas$^2$)
+**b)** 
