@@ -11,3 +11,9 @@ Camino 1 (s -> a -> t): flujo = 3
 Camino 2 (s -> b -> t): flujo = 3
 Flujo maximo: 6 (par)
 
+# d. F
+Contraejemplo: Red con 3 nodos: s, a, t
+s -> a con capacidad 3
+a -> t con capacidad 3
+s -> t con capacidad 3
+Flujo maximo: 4 (par)
