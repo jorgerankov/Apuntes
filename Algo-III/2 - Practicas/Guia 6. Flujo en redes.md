@@ -27,8 +27,10 @@ Total: 4, que es par, tal que no existe un flujo maximo donde todas las aristas 
 Iniciamos con f(e) siendo un numero racional para toda arista e. Cada iteracion encuentra un camino aumentante y, si aumentamos cada arista del camino por un valor racional, si f(e) era racional y sumamos un racional, el valor final de la misma también será racional. Mas aun, si las capacidades son números enteros, el flujo máximo también es entero, que pertenece al mundo de los racionales.
 
 # 2)
-(v1 -> v2) con capacidad natural     
-(v1 -> v3) con capacidad natural
-(v2 -> v4) con capacidad natural
-(v3 -> v4) con capacidad natural
-(v1 -> v4) con capacidad natural
+4 nodos y 5 aristas:
+(s -> u)  capacidad F     
+(u -> v)  capacidad F
+(v -> t)  capacidad F
+(s -> v) capacidad F
+(u -> t) capacidad F
+ 
