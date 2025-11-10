@@ -15,5 +15,12 @@ Flujo maximo: 6 (par)
 Contraejemplo: Red con 3 nodos: s, a, t
 s -> a con capacidad 3
 a -> t con capacidad 3
-s -> t con capacidad 3
+s -> t con capacidad 1
 Flujo maximo: 4 (par)
+
+Camino s -> a -> t: flujo = 3
+Camino s -> t: flujo = 1
+
+Total: 4, que es par, tal que no existe un flujo maximo donde todas las aristas tengan flujo impar y el flujo total sea impar a la vez
+
+# e. V
