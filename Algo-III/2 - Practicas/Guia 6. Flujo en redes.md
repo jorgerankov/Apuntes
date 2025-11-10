@@ -35,4 +35,5 @@ Iniciamos con f(e) siendo un numero racional para toda arista e. Cada iteracion 
 (u -> t) capacidad F
 # 3)
 **a)** O(V * E$^2$) (cant. total de vertices * cant. total de aristas$^2$)
-**b)** 
+**b)** Sabemos que q << n, y todo N tiene capacidad a lo sumo q, tomando que la complejidad habitual es de O(n), podriamos decir que q es de complejidad O(log n). Luego, como la complejidad original de Edmonds-Karp es O(V * E$^2$), la complejidad final es O(V * E$^2$ * log(n)) $\equiv$ O(n * n$^2$ * log(n)) $\equiv$ O(n$^3$ * log(n))
+**c)** 
