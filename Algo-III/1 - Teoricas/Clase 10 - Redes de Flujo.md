@@ -36,14 +36,14 @@ Es una partición de los vértices V en dos conjuntos disjuntos S y T:
 
 **Ejemplo**:
 ```
-Red: s --> u --> v --> t
-
+Red: s --> u --> t
+	 l----> v -->
+	
 Corte 1: S = {s}, T = {u,v,t}
 	Capacidad: c(s,u) + c(s,v)
 	
 Corte 2: S = {s,u,v}, T = {t}
-	Capacidad: 
-
+	Capacidad: c(u,t) + c(v,t)
 ```
 # Cuello de botella
 Es la **capacidad residual mínima** a lo largo de un camino aumentante
@@ -56,3 +56,19 @@ Cuello de botella = min(5, 2, 8) = 2
 ```
 
 Es el **máximo flujo** que podemos enviar por ese camino **sin violar capacidades**
+
+# Algoritmo de Ford-Fulkerson
+Tiene como objetivo encontrar el flujo máximo en una red
+- Siempre encuenta el flujo máximo
+- Puede tomar muchas iteraciones si elige caminos "malos"
+- **Complejidad**: O(E * |f*|), con |f*| el valor del flujo máximo
+- Si tiene máx. de capacidad F entera, **puede tardar F iteraciones**
+
+# Algoritmo de Edmonds-Karp
+Mejora de Ford-Fulkerson que garantiza complejidad polinomial
+- Elige el **camino más corto (BFS)**
+- Tiempo polinomial garantizado
+- Encuentra el flujo máximo eficientemente
+- **Complejidad**: O(V * E$^2$), V = $\#$vertices, E = $\#$aristas
+- Independiente del valor del flujo máximo
+- **Ventaja**: Evita el problema de FF con caminos "malos"
