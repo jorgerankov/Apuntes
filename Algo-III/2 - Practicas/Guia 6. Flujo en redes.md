@@ -43,5 +43,8 @@ Iniciamos con f(e) siendo un numero racional para toda arista e. Cada iteracion 
 **a)** Dado un digrafo G con 2 nodos s y t, y capacidades asignadas en todas sus aristas ((c(e) = 1), ejecuto Edmonds-Karp o FF en la red de flujo. Luego, el valor del flujo maximo es igual al numero maximo de caminos disjuntos en aristas de s a t.
 **d)** Edmonds-Karp toma O(V * E$^2$) al usarlo en este problema
 
-# 6) a)
-Para obtener la cantidad máxima de sabados, podría armar una red de flujo a partir del digrafo (con esquinas como nodos y calles como aristas que conectan las esquinas), ejecutar Edmonds-Karp sobre la red de flujo creada, tal que el algoritmo automáticamente obtiene la cantidad total de caminos posibles desde Ariana a Cynthia y, sabiendo que en cada arista la capacidad es de 1 (porque solo estamos pasando a una persona de un nodo a otro mediante una arista y, ademas, no queremos repetir calles), el valor del flujo maximo obtenido por el algoritmo es el equivalente al máximo de caminos que podemos armar sin repetir ninguna calle, que también es equivalente a la cantidad de sábados que Ariana puede viajar sin repetir calles.
+# 6)
+**a)** Para obtener la cantidad máxima de sabados, podría armar una red de flujo a partir del digrafo (con esquinas como nodos y calles como aristas que conectan las esquinas), ejecutar Edmonds-Karp sobre la red de flujo creada, tal que el algoritmo automáticamente obtiene la cantidad total de caminos posibles desde Ariana a Cynthia y, sabiendo que en cada arista la capacidad es de 1 (porque solo estamos pasando a una persona de un nodo a otro mediante una arista y, ademas, no queremos repetir calles), el valor del flujo maximo obtenido por el algoritmo es el equivalente al máximo de caminos que podemos armar sin repetir ninguna calle, que también es equivalente a la cantidad de sábados que Ariana puede viajar sin repetir calles.
+
+**b)** Podemos hacer un corte en el grafo para encontrar el nodo a llenar con fans mas eficiente, es decir, el que use la menor cantidad de fans. El flujo máximo será el número mínimo de intersecciones a bloquear.
+

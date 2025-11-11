@@ -35,8 +35,7 @@
               "title": "Clase 10 - Redes de Flujo"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -186,10 +185,10 @@
       "bases:Create new base": false
     }
   },
-  "active": "bdfe8a45605f928c",
+  "active": "97bea0b585ae9357",
   "lastOpenFiles": [
-    "Algo-III/2 - Practicas/Guia 6. Flujo en redes.md",
     "Algo-III/1 - Teoricas/Clase 10 - Redes de Flujo.md",
+    "Algo-III/2 - Practicas/Guia 6. Flujo en redes.md",
     "Algo-III/2 - Practicas/Representacion de Grafos.md",
     "Algo-III/1 - Teoricas/Clase 9 - Caminos Minimos.md",
     "Algo-III/2 - Practicas/Guia 5. Recorrido minimo.md",
