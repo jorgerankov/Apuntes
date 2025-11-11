@@ -48,3 +48,6 @@ Iniciamos con f(e) siendo un numero racional para toda arista e. Cada iteracion 
 
 **b)** Podemos hacer un corte en el grafo para encontrar el nodo a llenar con fans mas eficiente, es decir, el que use la menor cantidad de fans. El flujo máximo será el número mínimo de intersecciones a bloquear.
 
+# 7)
+**a)** El modelado se puede ver  como:
+`s → {Personas} → {Tareas} → t`, con capacidad 1 en cada arista (Hay una sola persona para cada tarea y solo puede ser realizada por esa persona), y esto evita que una persona se asigne a multiples tareas
