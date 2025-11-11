@@ -50,4 +50,4 @@ Iniciamos con f(e) siendo un numero racional para toda arista e. Cada iteracion 
 
 # 7)
 **a)** El modelado se puede ver  como:
-`s → {Personas} → {Tareas} → t`, con capacidad 1 en cada arista (Hay una sola persona para cada tarea y solo puede ser realizada por esa persona), y esto evita que una persona se asigne a multiples tareas
+`s → {Personas} → {Tareas} → t`, con capacidad 1 en cada arista (Hay una sola persona para cada tarea y solo puede ser realizada por esa persona), y esto evita que una persona se asigne a multiples tareas. Luego de armar la red de flujo, ejecutamos EK, donde va a permitirme encontrar el flujo maximo, que es equivalente a encontrar el matching maximo entre una unica persona y una unica tarea, y el poder "bloquear" ese camino entre ambos elementos para que no pueda asignarse esa tarea al resto de personas
