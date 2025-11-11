@@ -42,3 +42,6 @@ Iniciamos con f(e) siendo un numero racional para toda arista e. Cada iteracion 
 # 5) 
 **a)** Dado un digrafo G con 2 nodos s y t, y capacidades asignadas en todas sus aristas ((c(e) = 1), ejecuto Edmonds-Karp o FF en la red de flujo. Luego, el valor del flujo maximo es igual al numero maximo de caminos disjuntos en aristas de s a t.
 **d)** Edmonds-Karp toma O(V * E$^2$) al usarlo en este problema
+
+# 6) a)
+Para obtener la cantidad maxima de sabados, podria correr Edmonds-Kamp sobre la cantidad total de caminos posibles desde Ariana a Cynthia, tal que el algoritmo, sabiendo que en cada arista la capacidad es de 1 (porque solo estamos pasando a una persona de un nodo a otro mediante una arista), el valor del flujo maximo obtenido por el algoritmo es el equivalente al maximo de caminos que podemos armar sin repetir ninguna calle
