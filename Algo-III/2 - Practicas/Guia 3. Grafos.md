@@ -137,3 +137,16 @@ Mellizos: N[u] = N[v] == N(u) ∪ {u} = N(v) ∪ {v})
 
 Sea u, v en V(G) tal que d(u) = d(v) = k
 Queremos probar que u y v son mellizos o gemelos
+
+Dado que d(u) = d(v), entonces d(u) $\leq$ d(v)
+Por la propiedad de threshold:
+N(u) ⊆ N(v) O N[u] ⊆ N[v]
+
+Pero tambien, d(v) $\leq$ d(u), tal que:
+N(v) ⊆ N(u) O N[v] ⊆ N[u]
+
+Como N(u) ⊆ N(v) y N(v) ⊆ N(u), entonces N(u) = N(v)
+--> u y v son gemelos
+
+Y como N[u] ⊆ N[v] y N[v] ⊆ N[u], entonces N[u] = N[v]
+--> u y v son mellizos
