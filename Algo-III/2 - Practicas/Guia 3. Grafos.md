@@ -92,3 +92,6 @@ Puedo acceder a cada N(v) en O(1) = L de adyacencias
 	   - Complejidad total temporal = O(n) 
 7) _Remover una arista vw:_
 8) _Mantener un orden de N(v) de acuerdo a algún invariante que permita recorrer cada vecindario en un orden dado_
+
+# 17
+**a)** Tomemos el Digrafo D brindado. Sabemos que un Digrafo es aciclico cuando no existe mas de una manera de llegar a un mismo nodo y, a la vez, este nodo no tiene aristas salientes. Esto significa que no tiene ciclos. Teniendo esto en cuenta, si tomamos todos los vertices de D, vemos que tienen grado de salida mayor a 0. Esto implica que todos los nodos siempre van a conectados a otro nodo dentro de D mediante, como minimo, una arista. 
