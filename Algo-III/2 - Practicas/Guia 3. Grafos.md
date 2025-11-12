@@ -135,4 +135,5 @@ Si G es un grafo threshold, sabemos que cada par de vertices u, v en V(G), con d
 Gemelos: N(u) = N(v)
 Mellizos: N[u] = N[v] == N(u) ∪ {u} = N(v) ∪ {v})
 
-Sea u, v en V(G) tal que d(u) = 
+Sea u, v en V(G) tal que d(u) = d(v) = k
+Queremos probar que u y v son mellizos o gemelos
