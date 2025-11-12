@@ -152,4 +152,5 @@ Y como N[u] ⊆ N[v] y N[v] ⊆ N[u], entonces N[u] = N[v]
 --> u y v son mellizos
 
 **b)** Por propiedades del grafo threshold, sabemos que para cada par de vertices u, v en V(G), con d(u) $\leq$ d(v), N(u) ⊆ N(v) o N[u] ⊆ N[v]. Si tiene algun vertice j de grado 0, entonces ese nodo no tiene aristas incidentes en G, está desconectado de todos los otros nodos, d(j) = 0, y d(j) $\leq$ cualquier nodo k de G, tal que siempre se cumple N(j) ⊆ N(k) o N[j] ⊆ N[k]. 
-Luego, si G tiene un vertice h de grado n-1, significa que tiene n-1 aristas incidentes. Al ser G un grafo con n nodos, dicho vertice está conectado a todos los otros nodos mediante una arista. Como este nodo está conectado a todos los demás, y no existe una cantidad de conexiones mayor a n-1, podemos afirmar que d(cualquier nodo de G) $\leq$ d(h), tal que se va
+Luego, si G tiene un vertice h de grado n-1, significa que tiene n-1 aristas incidentes. Al ser G un grafo con n nodos, dicho vertice está conectado a todos los otros nodos mediante una arista. Como este nodo está conectado a todos los demás, y no existe una cantidad de conexiones mayor a n-1, podemos afirmar que d(cualquier nodo i de G) $\leq$ d(h), tal que se va a cumplir por propiedad que N(i) ⊆ N(h) o N[i] ⊆ N[h].
+
