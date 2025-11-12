@@ -223,10 +223,21 @@ out: Todos los ciclos dentro de D
 	
 	Para cada nodo v en D':
 		Si v no visitado:
-			visitados <- visitados U {v}
-			Avanzo hacia el nodo u (vecino de v)
-			ciclos.append((v -> u))
+			ciclo.append[v]
+			actual <- v
+			
+			Mientras True:
+				siguiente <- sucesor de actual (d_out = 1)
+			
+				Si siguiente == v:
+					visitados <- visitados U ciclo
+					ciclos.append(ciclo)
+					retornar ciclos
+				Si siguiente en visitados
+					retornar ciclos
+				
+				ciclo.append(siguiente)
+				actual <- siguiente
 	
-	Devolver cicloD
-  
+	retornar ciclos
 ```
