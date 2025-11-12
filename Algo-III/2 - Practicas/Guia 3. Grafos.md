@@ -141,3 +141,4 @@ Probemos el primer caso, donde tomo un k = u y otro k = v, con u $\neq$ v. Por p
 Si d(u) < d(v), significa que u tiene menos aristas incidentes que v, es decir, el vecindario de u tendrá menos elementos que el vecindario de v. Como esto ocurre para todo par de vertices u, v en V(G) y d(u) < d(v), entonces sucede que N(u) ⊆ N(v).
 Si d(u) = d(v), significa que u tiene la misma cantidad de aristas incidentes que v, dando a entender que, para todo par de vertices u, v en V(G), va a suceder que no solo u tiene a su vecindario, sino que tambien incluye a v dentro de ello, y viceversa para el caso de v.
 
+Ahora probemos el segundo caso, donde tomamos que los vértices de grado k son todos mellizos entre sí, o todos gemelos entre sí, para todo 0 ≤ k ≤ n − 1
