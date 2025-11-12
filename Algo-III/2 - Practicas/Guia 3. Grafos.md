@@ -102,5 +102,6 @@ algoritmo ciclosD
 in: Digrafo D con nodos y aristas
 out: booleano, True si hay ciclo, False si no
 
+para cada arista (a -> b) en D:
 
 ```
