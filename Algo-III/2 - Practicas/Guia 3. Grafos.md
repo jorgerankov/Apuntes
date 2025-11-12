@@ -181,3 +181,23 @@ Para cada arista (v,w) en C: // O(n) recorrer C
 		
 Retornar res // Complejidad total: O(n) + O(n) = O(n)
 ```
+**b)**
+```
+algoritmo repetidasDigrafo
+in: Conjunto C de aristas de un digrafo D
+out: Conjunto de aristas que no tienen su inversa en D
+
+// Guardo existencia de arista en un diccionario
+// Para poder obtener acceso en O(1)
+Para cada arista (v,w) en D: // O(n) recorrer D
+	Diccionario[(v, w)] <- True
+
+res = []
+
+Para cada arista (v,w) en D: // O(n) recorrer D
+	Si (w, v) not en diccionario: // O(1) busqueda
+		res.append((v,w)) // O(1) agregar a res
+		
+Retornar res // Complejidad total: O(n) + O(n) = O(n)
+
+```
