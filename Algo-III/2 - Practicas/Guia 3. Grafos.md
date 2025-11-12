@@ -94,4 +94,13 @@ Puedo acceder a cada N(v) en O(1) = L de adyacencias
 8) _Mantener un orden de N(v) de acuerdo a algún invariante que permita recorrer cada vecindario en un orden dado_
 
 # 17
-**a)** Tomemos el Digrafo D brindado. Sabemos que un Digrafo es aciclico cuando no existe mas de una manera de llegar a un mismo nodo y, a la vez, este nodo no tiene aristas salientes. Esto significa que no tiene ciclos. Teniendo esto en cuenta, si tomamos todos los vertices de D, vemos que tienen grado de salida mayor a 0. Esto implica que todos los nodos siempre van a conectados a otro nodo dentro de D mediante, como minimo, una arista. 
+**a)** Tomemos el Digrafo D brindado. Sabemos que un Digrafo es aciclico cuando no tiene ciclos, es decir, cuando no existe mas de un camino simple para cada par de nodos. Teniendo esto en cuenta, si tomamos todos los vertices de D, vemos que tienen grado de salida mayor a 0. Esto implica que todos los nodos siempre van a estar conectados a otro nodo dentro de D mediante, como minimo, una arista, tal que, si existió una forma de llegar de un nodo a otro, al tener aristas salientes en este último, va a llegar un punto donde va a haber forma de "volver atrás" en D mediante una arista saliente (ya que va a haber un último nodo donde su arista saliente no conecta con nuevos nodos, sino que con los ya existentes). Finalmente, D tiene un ciclo, demostrado por lo mencionado.
+
+**b)** 
+```
+algoritmo ciclosD
+in: Digrafo D con nodos y aristas
+out: booleano, True si hay ciclo, False si no
+
+
+```
