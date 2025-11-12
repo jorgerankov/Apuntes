@@ -132,13 +132,7 @@ N(u) <- Conjunto de vertices adyacentes a u <- N(u) **NO incluye a u**
 
 Si G es un grafo threshold, sabemos que cada par de vertices u, v en V(G), con d(u) $\leq$ d(v), N(u) ⊆ N(v) o N[u] ⊆ N[v]. Es decir:
 
-Todo el vecindario de u (sin incluir u) pertenece al vecindario de v (sin incluir v), y v puede tener vecinos adicionales que u no tiene; 
+Gemelos: N(u) = N(v)
+Mellizos: N[u] = N[v] == N(u) ∪ {u} = N(v) ∪ {v})
 
-O el otro caso, donde el vecindario de u (incluyendo u) pertenece al vecindario de v (incluyendo v). Esto ultimo no solo significa que u y v comparten conexion con los mismos nodos, sino que tambien u y v estan conectados entre si mediante una arista.
-
-**a)** Por prop. del grafo threshold, si un vertice tiene grado k, eso significa que va a tener k aristas incidentes. Si son mellizos entre si, significa que comparten parte (o la mitad) del vecindario, pero si son gemelos, comparten la totalidad del vecindario (Lease como N(k) ⊆ N(k) o N[k] ⊆ N[k]). 
-Probemos el primer caso, donde tomo un k = u y otro k = v, con u $\neq$ v. Por propiedades, d(u) $\leq$ d(v). 
-Si d(u) < d(v), significa que u tiene menos aristas incidentes que v, es decir, el vecindario de u tendrá menos elementos que el vecindario de v. Como esto ocurre para todo par de vertices u, v en V(G) y d(u) < d(v), entonces sucede que N(u) ⊆ N(v).
-Si d(u) = d(v), significa que u tiene la misma cantidad de aristas incidentes que v, dando a entender que, para todo par de vertices u, v en V(G), va a suceder que no solo u tiene a su vecindario, sino que tambien incluye a v dentro de ello, y viceversa para el caso de v.
-
-Ahora probemos el segundo caso, donde tomamos que los vértices de grado k son todos mellizos entre sí, o todos gemelos entre sí, para todo 0 ≤ k ≤ n − 1
+Sea u, v en V(G) tal que d(u) = 
