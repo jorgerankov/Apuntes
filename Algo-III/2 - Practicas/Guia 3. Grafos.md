@@ -115,4 +115,6 @@ Sino:
 	Devolver False
 ```
 
-**c)** El algoritmo ciclosD es implementado corriendo BFS 
+**c)** El algoritmo ciclosD es implementado corriendo BFS sobre todo el Digrafo. Como BFS recorre cada nodo y sus vecinos, y los marca dentro de una lista de booleanos si fueron visitados o no, se puede corroborar que, si un nodo aparece como visitado mientras que corre BFS, significa que ya fue visitado anteriormente. Esto, sumado a que en el enunciado se nos indica que cada nodo tiene grado de salida mayor a cero, denota que se llegó al mismo nodo de otra manera distinta a la primera, tal que existe un ciclo. Luego, el algoritmo me permite devolver True en caso de que exista un ciclo, o False si no. El algoritmo tiene complejidad O(n + m) en el peor caso. Si no tiene ciclos, BFS recorre todo el digrafo teniendo que pasar por todos los nodos (n) y aristas (m).  
+
+**d)** Si D tiene un solo nodo, es trivial, ya que un nodo solo no tiene aristas salientes ni entrantes y, por ende, no tiene ciclos, tal que es aciclico. 
