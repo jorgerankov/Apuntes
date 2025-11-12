@@ -206,3 +206,17 @@ Retornar res // Complejidad total: O(n) + O(n) = O(n)
 Un digrafo (con loops) tiene forma de ρ cuando todos sus vértices tienen grado de salida igual a 1.
 **a)** Por la propiedad mencionada, si el digrafo tiene forma de ρ, significa que todos sus nodos tienen grado de salida 1; ademas, si es conexo, sabemos que existe un camino entre todo par de nodos del digrafo. 
 Construyo el digrafo a partir de un vertice v arbitrario, y sigo las aristas a partir del mismo, que tiene como grado de salida 1, tal que solo apunta hacia un nodo. Como d_out = 1 siempre, hay un siguiente nodo a visitar en cada iteracion. A su vez, al haber n nodos finitos, eventualmente el nodo n va a querer apuntar a alguien (ya que tiene grado de salida 1) y, al no existir nodo n + 1, va a tener que apuntar a un nodo ya visitado, generando la revisita y formando un ciclo C en D. Luego, supongamos que existe otro ciclo C' adicional y distinto al encontrado, que comparte vertices con C. Si hubiera algun vertice en dos ciclos distintos, tendria grado de salida > 1, lo que seria una contradiccion de la propiedad dada.
+**b)**
+```
+algoritmo ciclosRho
+in: Digrafo D con nodos, aristas y ciclos
+out: Todos los ciclos dentro de D
+
+
+Para cada nodo v en D:
+	Si d_in(v) < 1:
+		Remover v de D
+		Remover aristas que tenian a v en D
+	
+  
+```
