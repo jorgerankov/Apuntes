@@ -211,14 +211,22 @@ Construyo el digrafo a partir de un vertice v arbitrario, y sigo las aristas a p
 algoritmo ciclosRho
 in: Digrafo D con nodos, aristas y ciclos
 out: Todos los ciclos dentro de D
-
-
-Para cada nodo v en D:
-	Si d_in(v) < 1:
-		Remover v de D
-		Remover aristas que tenian a v en D
-
-Para cada arista (u -> v) en D:
-
+	
+	Para cada nodo v en D:
+		Si d_in(v) < 1:
+			D' <- D con v removida
+			D' <- D con aristas que tenian a v removidas
+	
+	ciclos <- [] 
+	// Conjunto que almacena el seguimiendo del ciclo en D
+	visitados <- {}
+	
+	Para cada nodo v en D':
+		Si v no visitado:
+			visitados <- visitados U {v}
+			Avanzo hacia el nodo u (vecino de v)
+			ciclos.append((v -> u))
+	
+	Devolver cicloD
   
 ```
