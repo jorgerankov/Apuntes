@@ -132,7 +132,7 @@ N(u) <- Conjunto de vertices adyacentes a u <- N(u) **NO incluye a u**
 
 Si G es un grafo threshold, sabemos que cada par de vertices u, v en V(G), con d(u) $\leq$ d(v), N(u) ⊆ N(v) o N[u] ⊆ N[v]. Es decir:
 
-Gemelos: N(u) = N(v)
+**a)** Gemelos: N(u) = N(v)
 Mellizos: N[u] = N[v] == N(u) ∪ {u} = N(v) ∪ {v})
 
 Sea u, v en V(G) tal que d(u) = d(v) = k
@@ -150,3 +150,6 @@ Como N(u) ⊆ N(v) y N(v) ⊆ N(u), entonces N(u) = N(v)
 
 Y como N[u] ⊆ N[v] y N[v] ⊆ N[u], entonces N[u] = N[v]
 --> u y v son mellizos
+
+**b)** Por propiedades del grafo threshold, sabemos que para cada par de vertices u, v en V(G), con d(u) $\leq$ d(v), N(u) ⊆ N(v) o N[u] ⊆ N[v]. Si tiene algun vertice j de grado 0, entonces ese nodo no tiene aristas incidentes en G, está desconectado de todos los otros nodos, d(j) = 0, y d(j) $\leq$ cualquier nodo k de G, tal que siempre se cumple N(j) ⊆ N(k) o N[j] ⊆ N[k]. 
+Luego, si G tiene un vertice h de grado n-1, significa que tiene n-1 aristas incidentes. Al ser G un grafo con n nodos, dicho vertice está conectado a todos los otros nodos mediante una arista. Como este nodo está conectado a todos los demás, y no existe una cantidad de conexiones mayor a n-1, podemos afirmar que d(cualquier nodo de G) $\leq$ d(h), tal que se va
