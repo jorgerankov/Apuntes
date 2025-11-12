@@ -217,6 +217,8 @@ Para cada nodo v en D:
 	Si d_in(v) < 1:
 		Remover v de D
 		Remover aristas que tenian a v en D
-	
+
+Para cada arista (u -> v) en D:
+
   
 ```
