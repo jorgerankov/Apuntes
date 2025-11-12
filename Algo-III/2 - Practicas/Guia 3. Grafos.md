@@ -127,3 +127,5 @@ Recorro los nodos vecinos de v:
 **d)** Si D tiene un solo nodo, es trivial, ya que no tiene aristas salientes ni entrantes y, por ende, no tiene ciclos, tal que es aciclico. Ahora, tomemos D con un vertice con d_out{v} = 0 tal que D \ {v} es aciclico. Esto significa que v no tiene aristas salientes, tal que v no puede formar un ciclo de ninguna manera. Pero, mas aun, al removerlo de D, sigo sin ciclos, implicando que ningun nodo que quedó dentro de D tampoco forma ciclos
 
 # 19
+d(u) $\leq$ d(v) <- Grado de u es menor o igual que grado de v
+N(u) <- Conjunto de vertices adyacentes a u <- N(u) **NO incluye a u**
