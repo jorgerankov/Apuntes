@@ -159,3 +159,25 @@ Supongamos que G es un grafo threshold y que:
 Es decir, todos los vertices tienen grado [1, n-2]
 
 **c)** 
+
+
+# 20
+**a)** 
+```
+algoritmo aristasRepetidas
+in: Conjunto C de aristas de un multigrafo G
+out: Conjunto de aristas que no estan repetidas en G
+
+// Guardo existencia de arista en un diccionario
+// Para poder obtener acceso en O(1)
+Para cada arista (v,w) en C: // O(n) recorrer C
+	Diccionario[(v, w)] <- True
+
+res = []
+
+Para cada arista (v,w) en C: // O(n) recorrer C
+	Si (w, v) not en diccionario: // O(1) busqueda
+		res.append((v,w)) // O(1) agregar a res
+		
+Retornar res // Complejidad total: O(n) + O(n) = O(n)
+```
