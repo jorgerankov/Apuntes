@@ -157,3 +157,5 @@ Supongamos que G es un grafo threshold y que:
 - Todo vertice tiene grado $\geq$ 1 (no hay grado 0)
 - Todo vertice tiene grado $\leq$ n-2 (no hay grado n-1)
 Es decir, todos los vertices tienen grado [1, n-2]
+
+**c)** 
