@@ -102,6 +102,17 @@ algoritmo ciclosD
 in: Digrafo D con nodos y aristas
 out: booleano, True si hay ciclo, False si no
 
-para cada arista (a -> b) en D:
+// Hago un array de n nodos visitados de D 
+Visitados[n] <- False
 
+Para cada arista (u -> v) en D:
+	BFS(D, u) // Corre BFS a partir del nodo u
+	// BFS encuentra ciclos automaticamente a partir de
+	// su recorrido y guarda los visitados en Visitados
+Si BFS encontró ciclos:
+	Devolver True
+Sino:
+	Devolver False
 ```
+
+**c)** El algoritmo ciclosD es implementado corriendo BFS 
