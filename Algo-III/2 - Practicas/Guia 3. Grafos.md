@@ -136,4 +136,4 @@ Todo el vecindario de u (sin incluir u) pertenece al vecindario de v (sin inclui
 
 O el otro caso, donde el vecindario de u (incluyendo u) pertenece al vecindario de v (incluyendo v). Esto ultimo no solo significa que u y v comparten conexion con los mismos nodos, sino que tambien u y v estan conectados entre si mediante una arista.
 
-**a)** Por prop. del grafo threshold, todos los vertices de grado k, al ser d(k) $\leq$ d(k), N(k) ⊆ N(k) o N[k] ⊆ N[k], para 0 $\leq$ k $\leq$ n - 1
+**a)** Por prop. del grafo threshold, si un vertice tiene grado k, eso significa que va a tener k aristas incidentes. Si son mellizos entre si, significa que comparten parte (o la mitad) del vecindario, pero si son gemelos, comparten la totalidad del vecindario (Lease como N(k) ⊆ N(k) o N[k] ⊆ N[k]). Probemos el primer caso, donde tomo un k = u y otro k = v, con u $\neq$ v. Por propiedades, d(u) $\leq$ d(v). Si d(u) < d(v), significa que u tiene menos aristas incidentes que v, es decir, el vecindario de u tendrá menos elementos que el vecindario de v.
