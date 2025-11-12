@@ -201,3 +201,8 @@ Para cada arista (v,w) en D: // O(n) recorrer D
 Retornar res // Complejidad total: O(n) + O(n) = O(n)
 
 ```
+
+# 21)
+Un digrafo (con loops) tiene forma de ρ cuando todos sus vértices tienen grado de salida igual a 1.
+**a)** Por la propiedad mencionada, si el digrafo tiene forma de ρ, significa que todos sus nodos tienen grado de salida 1; ademas, si es conexo, sabemos que existe un camino entre todo par de nodos del digrafo. 
+Entiendo que no puede haber mas de un ciclo dirigido primero y principal porque ningun nodo puede tener mas de un grado de salida, dando a saber que no pueden formar mas de un ciclo debido a que no pueden apuntar a mas de un nodo a la vez. Esto implica que, para que haya mas de un ciclo y el grafo siga siendo conexo, uno de los nodos del ciclo debe apuntar tanto al nodo inicial de dicho ciclo (aquel que comenzó sin aristas entrantes) y, a su vez, apuntar hacia un nuevo nodo fuera del ciclo, tal que por ese nuevo camino también se forme otro ciclo 
