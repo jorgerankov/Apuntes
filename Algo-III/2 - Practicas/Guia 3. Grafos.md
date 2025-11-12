@@ -107,16 +107,19 @@ out: booleano, True si hay ciclo, False si no
 Tomo un nodo v <- cualquier nodo de D
 
 // Hago un array de n nodos visitados de D 
-Visitados <- False
+Camino <- [v] 
+Visitados <- {v}
 
-Para cada arista (u -> v) en D:
-	BFS(D, u) // Corre BFS a partir del nodo u
-	// BFS encuentra ciclos automaticamente a partir de
-	// su recorrido y guarda los visitados en Visitados
-Si BFS encontró ciclos:
-	Devolver True
-Sino:
-	Devolver False
+Recorro los nodos vecinos de v:
+	u <- ultimo vertice en camino (vecino de v)
+
+	Elijo una arista u -> w cualquiera
+	Si w esta en Visitados:
+		retornar True
+	Sino:
+		Camino <- Camino + [w]
+		Visitados <- Visitados U {w}
+
 ```
 
 **c)** El algoritmo ciclosD es implementado corriendo BFS sobre todo el Digrafo. Como BFS recorre cada nodo y sus vecinos, y los marca dentro de una lista de booleanos si fueron visitados o no, se puede corroborar que, si un nodo aparece como visitado mientras que corre BFS, significa que ya fue visitado anteriormente. Esto, sumado a que en el enunciado se nos indica que cada nodo tiene grado de salida mayor a cero, denota que se llegó al mismo nodo de otra manera distinta a la primera, tal que existe un ciclo. Luego, el algoritmo me permite devolver True en caso de que exista un ciclo, o False si no. El algoritmo tiene complejidad O(n + m) en el peor caso. Si no tiene ciclos, BFS recorre todo el digrafo teniendo que pasar por todos los nodos (n) y aristas (m).  
