@@ -94,16 +94,20 @@ Puedo acceder a cada N(v) en O(1) = L de adyacencias
 8) _Mantener un orden de N(v) de acuerdo a algún invariante que permita recorrer cada vecindario en un orden dado_
 
 # 17
-**a)** Tomemos el Digrafo D brindado. Sabemos que un Digrafo es aciclico cuando no tiene ciclos, es decir, cuando no existe mas de un camino simple para cada par de nodos. Teniendo esto en cuenta, si tomamos todos los vertices de D, vemos que tienen grado de salida mayor a 0. Esto implica que todos los nodos siempre van a estar conectados a otro nodo dentro de D mediante, como minimo, una arista, tal que, si existió una forma de llegar de un nodo a otro, al tener aristas salientes en este último, va a llegar un punto donde va a haber forma de "volver atrás" en D mediante una arista saliente (ya que va a haber un último nodo donde su arista saliente no conecta con nuevos nodos, sino que con los ya existentes). Finalmente, D tiene un ciclo, demostrado por lo mencionado.
+**a)** Si todos los vertices de un digrafo D tienen grado de salida > 0, entonces D tiene un ciclo.
+Tomamos un vertice arbitrario v0 en D. Como d_out(v0) > 0, existe una arista v0 -> v1. Entonces, agrego v0 a la secuencia. Como d_out(v1), existe una arista v1 -> v2. Entonces, agrego v1 a la secuencia. Sigo este proceso para los n nodos de D. Como no existen n + 1 nodos, el nodo n debe apuntar a alguno de los n-1 nodos restantes de D, demostrando que existe un ciclo en D.
+
 
 **b)** 
 ```
 algoritmo ciclosD
-in: Digrafo D con nodos y aristas
+in: Digrafo D con nodos con d_out > 0
 out: booleano, True si hay ciclo, False si no
 
+Tomo un nodo v <- cualquier nodo de D
+
 // Hago un array de n nodos visitados de D 
-Visitados[n] <- False
+Visitados <- False
 
 Para cada arista (u -> v) en D:
 	BFS(D, u) // Corre BFS a partir del nodo u
