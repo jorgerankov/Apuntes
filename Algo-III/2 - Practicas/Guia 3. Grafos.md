@@ -129,3 +129,5 @@ Recorro los nodos vecinos de v:
 # 19
 d(u) $\leq$ d(v) <- Grado de u es menor o igual que grado de v
 N(u) <- Conjunto de vertices adyacentes a u <- N(u) **NO incluye a u**
+
+**a)** Si G es un grafo threshold sabemos que cada par de vertices u, v en V(G)
