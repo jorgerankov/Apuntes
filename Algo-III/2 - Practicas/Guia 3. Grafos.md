@@ -130,4 +130,10 @@ Recorro los nodos vecinos de v:
 d(u) $\leq$ d(v) <- Grado de u es menor o igual que grado de v
 N(u) <- Conjunto de vertices adyacentes a u <- N(u) **NO incluye a u**
 
-**a)** Si G es un grafo threshold sabemos que cada par de vertices u, v en V(G)
+Si G es un grafo threshold, sabemos que cada par de vertices u, v en V(G), con d(u) $\leq$ d(v), N(u) ⊆ N(v) o N[u] ⊆ N[v]. Es decir:
+
+Todo el vecindario de u (sin incluir u) pertenece al vecindario de v (sin incluir v), y v puede tener vecinos adicionales que u no tiene; 
+
+O el otro caso, donde el vecindario de u (incluyendo u) pertenece al vecindario de v (incluyendo v). Esto ultimo no solo significa que u y v comparten conexion con los mismos nodos, sino que tambien u y v estan conectados entre si mediante una arista.
+
+**a)** Por prop. del grafo threshold, todos los vertices de grado k, al ser d(k) $\leq$ d(k), N(k) ⊆ N(k) o N[k] ⊆ N[k], para 0 $\leq$ k $\leq$ n - 1
