@@ -153,3 +153,10 @@ Ahora, observemos por contradicción que, dado un Grafo con n aristas, y siendo 
 
 Corriendo Kruskal en el grafo, asignemos primero qT(v)=0 y qT(w)=1, tal que, al momento de tener que elegir entre ambas aristas para generar el AGM, elijamos v, ya que tiene minima prioridad en comparacion a w. Esto nos devolverá un AGM, que lo denominaremos T, de peso mínimo posible con todas las aristas con pesos distintos.
 Ahora, corramos nuevamente Kruskal, pero asignando qT(w)=0 y qT(v)=1, tal que Kruskal seleccione a w al momento de armar el AGM, ya que w tiene minima prioridad en comparacion a v. Tambien obtenemos un AGM, que lo denominaremos T', de peso minimo posible con todas sus aristas con pesos distintos, y a su vez distinta a T. Luego, ambas tienen todas aristas de peso mínimo y peso distinto entre sí. Pero T != T', ya que un AGM contiene a v y otro a w, demostrando que G, al no tener todos pesos distintos, puedo obtener mas de un AGM. Luego, queda demostrado que para obtener un unico AGM, todos los pesos de G deben ser distintos entre si.
+
+# 18
+v <- Un vertice que alcanza todos los otros vertices de D
+T <- Un AG que se obtiene al correr DFS desde v
+Los vertices hermanos de T estan ordenados tal que u aparece antes que su hermano w <- u fue descubierto antes que w por DFS
+(El vecindario de u fue procesado antes que el de w)
+S <- Secuencia que se obtiene al revisar T en sentido postorder
