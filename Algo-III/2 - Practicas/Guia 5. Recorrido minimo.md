@@ -101,6 +101,11 @@ out: Aristas de E que mejoran d_G(s, t)
 	
 	Retornar aristas_mejoran	
 ```
+
+
+# 6
+
+
 # Algoritmo de Bellman-Ford y SRDs
 ### 8)
 Dado un DAG (Grafo dirigido aciclico), sabemos que el digrafo contiene todos nodos que tienen, como minimo, una arista saliente y que, ademas tienen, como mucho, una sola arista incidente (es decir, una arista de entrada), ya que no tiene ciclos, por propiedades del DAG.
