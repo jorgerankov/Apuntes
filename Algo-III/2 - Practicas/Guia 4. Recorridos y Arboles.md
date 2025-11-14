@@ -162,4 +162,6 @@ Los vertices hermanos de T estan ordenados tal que u aparece antes que su herman
 S <- Secuencia que se obtiene al revisar T en sentido postorder
 
 # 19
-Para determinar si existe un unico camino entre v y w, primero chequeo si el grafo G es un arbol directamente. En caso que lo sea, ya me aseguro que existe un unico camino entre v y w. Caso contrario, recorro G usando DFS, tal que me devuelva un arbol con un unico camino arbitrario entre v y w, pero ademas me devuelva los back e
+**a)** Para determinar si existe un unico camino entre v y w, primero chequeo si el grafo G es un arbol directamente. En caso que lo sea, ya me aseguro que existe un unico camino entre v y w. Caso contrario, recorro G ejecutando DFS desde v, tal que me devuelva un arbol con un unico camino arbitrario entre v y w, pero ademas me devuelva los back edges detectados en G. Luego, verifico si algun back edge (u, x) cumple que: u es descendiente de w y x es antepasado de w en el arbol DFS. Si encuentro uno, entonces hay multiples caminos de v a w. Sino, hay un unico camino de v a w.
+
+**b)** 
