@@ -172,9 +172,11 @@ c <- Funcion E(G) -> Reales, que le da peso a c/ arista de G
 vw es segura <- v y w pertenecen a arboles $\neq$ de F
 vw es candidata p/ un árbol T de F que contiene a v <- vw es segura y c(vw) $\leq$ c(xy) $\forall$ arista segura xy tq x $\in$ T
 
-De todas las aristas que salen de T hacia otros arboles, vw tiene peso minimo (c(vw) $\leq$ c(xy)). El algoritmo elige en cada iteración una arista candidata de algun árbol T. Múltiples árboles pueden tener candidatas simultáneamente, y el algoritmo elige de cualquiera de las posibles. Agregar esa arista minima me garantiza que esa arista candidata sigue siendo parte de algun AGM.
+**a)** De todas las aristas que salen de T hacia otros arboles, vw tiene peso minimo (c(vw) $\leq$ c(xy)). El algoritmo elige en cada iteración una arista candidata de algun árbol T. Múltiples árboles pueden tener candidatas simultáneamente, y el algoritmo elige de cualquiera de las posibles. Agregar esa arista minima me garantiza que esa arista candidata sigue siendo parte de algun AGM.
 
 Caso base: (i = 1), F = (V, $\emptyset$), trivialmente es subgrafo de algun AGM.
 
 Paso inductivo: Si F$_i$ es subgrafo del AGM y agregamos una 
 arista candidata e$_i$, entonces F$_{i + 1}$ sigue siendo subgrafo de algun AGM. Luego, despues de n-1 iteraciones, F es conexo y tiene n-1 aristas -> es AGM
+
+**b)** Com
