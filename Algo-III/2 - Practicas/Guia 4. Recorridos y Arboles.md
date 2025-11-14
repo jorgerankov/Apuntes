@@ -169,5 +169,5 @@ S <- Secuencia que se obtiene al revisar T en sentido postorder
 # 20
 F <- Bosque generador de un grafo G pesado
 c <- Funcion E(G) -> Reales, que le da peso a c/ arista de G
-vw es segura <- s y w pertenecen a arboles $\neq$ de F
+vw es segura <- v y w pertenecen a arboles $\neq$ de F
 vw es candidata p/ un árbol T de F que contiene a v <- vw es segura y c(vw) $\leq$ c(xy) $\forall$ arista segura xy tq x $\in$ T
