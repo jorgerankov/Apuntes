@@ -179,4 +179,7 @@ Caso base: (i = 1), F = (V, $\emptyset$), trivialmente es subgrafo de algun AGM.
 Paso inductivo: Si F$_i$ es subgrafo del AGM y agregamos una 
 arista candidata e$_i$, entonces F$_{i + 1}$ sigue siendo subgrafo de algun AGM. Luego, despues de n-1 iteraciones, F es conexo y tiene n-1 aristas -> es AGM
 
-**b)** Com
+**b)** Kruskal elige la arista candidata de menor peso entre todos los arboles de F, que es equivalente a decir que elige la arista segura globalmente minima. Por el algoritmo principal, esto asegura el AGM. 
+Luego, en el caso de Prim, se elige la arista candidata de menor peso del arbol T que contiene un vertice inicial fijo. T crece en cada iteracion absorviendo otros arboles y, por el algoritmo principal, esto garantiza el AGM. 
+Finalmente, ambos son casos particulares del algoritmo principal
+
