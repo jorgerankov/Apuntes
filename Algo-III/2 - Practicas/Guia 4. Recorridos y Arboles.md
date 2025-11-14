@@ -167,6 +167,7 @@ S <- Secuencia que se obtiene al revisar T en sentido postorder
 **b)** El algoritmo me permite procesar el grafo G con costo O(n + m). A medida que lo proceso, creo un diccionario de pares de nodos, donde la construccion del mismo es O(n + m), y guardo cada par de nodos dentro. Recorro cada arista una sola vez, y la consulta (if (u, v) in dict: ...) tiene costo O(1) tiempo.
 
 # 20
-F <- bosque generador
+F <- Bosque generador de un grafo G pesado
+c <- Funcion E(G) -> Reales, que le da peso a c/ arista de G
 vw es segura <- s y w pertenecen a arboles $\neq$ de F
-vw es candidata <- 
+vw es candidata p/ un árbol T de F que contiene a v <- vw es segura y c(vw) $\leq$ c(xy) $\forall$ arista segura xy tq x $\in$ T
