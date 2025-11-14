@@ -104,6 +104,9 @@ out: Aristas de E que mejoran d_G(s, t)
 
 
 # 6
+**Peso multiplicativo en un camino** <- multiplicatoria de los pesos de sus aristas
+- Se buscan cuando se quiere encontrar una sucesion de eventos con probabilidad max/min
+Modelar como un problema de camino minimo
 
 
 # Algoritmo de Bellman-Ford y SRDs
