@@ -160,3 +160,6 @@ T <- Un AG que se obtiene al correr DFS desde v
 Los vertices hermanos de T estan ordenados tal que u aparece antes que su hermano w <- u fue descubierto antes que w por DFS
 (El vecindario de u fue procesado antes que el de w)
 S <- Secuencia que se obtiene al revisar T en sentido postorder
+
+# 19
+Para determinar si existe un unico camino entre v y w, primero chequeo si el grafo G es un arbol directamente. En caso que lo sea, ya me aseguro que existe un unico camino entre v y w. Caso contrario, recorro G usando DFS, tal que me devuelva un arbol con un unico camino arbitrario entre v y w, pero ademas me devuelva los back e
