@@ -324,3 +324,7 @@ Sabemos que M es una matriz que se nos da como parametro, y debemos ver si es un
 - M[i][j] = M[j][i] (por M simetrica)
 - M[i][j] $\leq$ M[i][k] + M[k][j] para todo k
 Si M no cumple alguna de estas cosas, entonces M no es FW
+
+En caso que M no cumpla alguna de estas condiciones, la forma de evidenciarlo para probar su falsedad es retornando el valor de la matriz que hace que no se cumpla, donde la evidencia mas probable vendria de que no se cumpla la inecuacion, ya que los otros items se desarrollan en base al enunciado, y se pueden tomar como verdaderos.
+
+Luego, si M cumple las condiciones, armar un G minimal se puede hacer recorriendo M en base a cada k posicion de M (con k != i y k != j), donde si M[i][k] + M[k][j] == M[i][j], descarto M[i][j] ya que es redundante y no aporta valor a mi G minimal.
