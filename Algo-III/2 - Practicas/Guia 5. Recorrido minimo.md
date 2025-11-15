@@ -113,6 +113,8 @@ Pero el peso multiplicativo es mas complejo que encontrar la suma de pesos del c
 
 Por ende, procedo a transformar todos los pesos originales del grafo G en sus respectivos logaritmos, tal que si una arista del grafo G tiene peso X, ahora pasa a tener peso log(X), permitiendome realizar, por propiedad de logaritmos, cuentas del estilo: log(a) + log(b) = log(a * b), y generando asi la eleccion del minimo coste logaritmico que hay dentro de cada arista de G y, ademas, formando el camino de minimo coste logaritmico posible entre v_1 y v_k, asegurandome que la multiplicacion total de los valores va a ser log(c(e_1) * c(e_2) * ... * c(e_k)) y no existe menor valor multiplicativo que este, ya que es asegurado por la ejecucion del algoritmo de Dijkstra
 
+**Demostracion:** Busco demostrarlo por reduccion al absurdo. Supongo que existe un camino C' distinto al camino C retornado por el algoritmo de Dijkstra, donde C' tiene menor peso multiplicativo que C. Luego, comparo C y C' arista por arista. Sea (u, v) la primer arista donde difieren. En ese punto, Dijkstra no hubiera elegido la arista de C' porque la de C tiene menor peso logaritmico. Luego, por contradiccion, C' no puede ser mejor que C (es decir, no puede tener menor peso logaritmico) si Dijkstra eligió correctamente cada paso. Finalmente, C es la mejor elección del algoritmo de Dijkstra y no existe mejor elección que la dicha.
+
 # Algoritmo de Bellman-Ford y SRDs
 ### 8)
 Dado un DAG (Grafo dirigido aciclico), sabemos que el digrafo contiene todos nodos que tienen, como minimo, una arista saliente y que, ademas tienen, como mucho, una sola arista incidente (es decir, una arista de entrada), ya que no tiene ciclos, por propiedades del DAG.
