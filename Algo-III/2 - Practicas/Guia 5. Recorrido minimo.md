@@ -108,7 +108,8 @@ out: Aristas de E que mejoran d_G(s, t)
 - Se buscan cuando se quiere encontrar una sucesion de eventos con probabilidad max/min
 Modelar como un problema de camino minimo
 
-Comienzo partiendo desde el vertice v_1 y, mediante la ejecución del algoritmo de Dijkstra sobre el digrafo G, elijo como inicio del camino a v_1 e intento llegar a v_k, siendo este último el objetivo que quiero alcanzar. Como el algoritmo de Dijkstra me asegura que siempre va a encontrar el camino mínimo en cada iteración 
+Comienzo partiendo desde el vertice v_1 y, mediante la ejecución del algoritmo de Dijkstra sobre el digrafo G, elijo como inicio del camino a v_1 e intento llegar a v_k, siendo este último el objetivo que quiero alcanzar. Como el algoritmo de Dijkstra me asegura que siempre va a encontrar el camino de peso mínimo en cada iteración, la suma de pesos de este camino tambien va a ser la misma que se pueda encontrar. 
+Pero el peso multiplicativo es mas complejo que encontrar la suma de peso 
 
 # Algoritmo de Bellman-Ford y SRDs
 ### 8)
