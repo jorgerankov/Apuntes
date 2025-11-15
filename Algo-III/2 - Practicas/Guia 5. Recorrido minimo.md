@@ -303,3 +303,10 @@ existe, Null si no
 	Retornar max_peso
 	
 ```
+
+# 17
+n clientes {c1, c2, ..., cn} 
+A los que se les asigna una caja xi ( 1 $\leq$ xi $\leq$ n), 
+con un Kij > 0 arbitrario en caso de que peleen 
+y Lkm y Lmk $\geq$ 0 arbitrario en caso de que sean amigos
+
