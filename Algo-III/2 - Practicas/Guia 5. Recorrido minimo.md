@@ -310,8 +310,9 @@ A los que se les asigna una caja xi ( 1 $\leq$ xi $\leq$ n),
 con un Kij > 0 arbitrario en caso de que peleen 
 y Lkm y Lmk $\geq$ 0 arbitrario en caso de que sean amigos
 
-Veo las restricciones del problema (peleas y amistades)
-Construyo un digrafo D, donde los nodos son los clientes y las restricciones convertidas a inecuaciones son las aristas.
-Luego, ejecuto Bellman-Ford desde un nodo arbitrario
-Si el algoritmo detecta ciclos negativos significa que hay incompatibilidades entre las restricciones, tal que no hay solucion
-Sino, las distancias calculadas en las inecuaciones son 
+- Veo las restricciones del problema (peleas y amistades)
+- Construyo un digrafo D, donde los nodos son los clientes y las restricciones convertidas a inecuaciones son las aristas.
+- Luego, ejecuto Bellman-Ford desde un nodo arbitrario. En este caso, voy a usar un nodo fantasma que apunta mediante una arista con peso 0 a todos los clientes, ya que esto me garantiza que BF calcula distancias desde un punto de referenia y evita posibles problemas de componentes desconexas.
+- Si el algoritmo detecta ciclos negativos significa que hay incompatibilidades entre las restricciones, tal que no hay solucion
+- Sino, las distancias calculadas en las inecuaciones son las posiciones x_i de cada cliente.
+- No busco definir las aristas que no tengan peleas ni amistades ya que las mismas son aseguradas en caso de que se cumplan las restricciones dadas.
