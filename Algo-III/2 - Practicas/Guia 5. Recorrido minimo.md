@@ -318,8 +318,9 @@ y Lkm y Lmk $\geq$ 0 arbitrario en caso de que sean amigos
 - No busco definir las aristas que no tengan peleas ni amistades ya que las mismas son aseguradas en caso de que se cumplan las restricciones dadas.
 
 # 20
-Sabemos que M es una matriz que se nos da como parametro, y debemos ver si es una matriz FW, es decir que debe cumplir:
+Sabemos que M es una matriz que se nos da como parametro, y debemos ver si es una matriz FW, es decir que debe cumplir necesariamente:
 - M[i][i] = 0 (distancia a si mismo)
+- M[i][j] > 0 para todo i,j en M
 - M[i][j] = M[j][i] (por M simetrica)
 - M[i][j] $\leq$ M[i][k] + M[k][j] para todo k
 Si M no cumple alguna de estas cosas, entonces M no es FW
