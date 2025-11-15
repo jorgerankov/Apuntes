@@ -316,3 +316,6 @@ y Lkm y Lmk $\geq$ 0 arbitrario en caso de que sean amigos
 - Si el algoritmo detecta ciclos negativos significa que hay incompatibilidades entre las restricciones, tal que no hay solucion
 - Sino, las distancias calculadas en las inecuaciones son las posiciones x_i de cada cliente.
 - No busco definir las aristas que no tengan peleas ni amistades ya que las mismas son aseguradas en caso de que se cumplan las restricciones dadas.
+
+# 20
+Sabemos que M es una matriz que se nos da como parametro, y debemos ver si es una matriz FW
