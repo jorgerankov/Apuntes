@@ -11,14 +11,12 @@
             "id": "97bea0b585ae9357",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "Algo-III/Complejidades Algoritmos.md",
-                "mode": "source",
-                "source": false
+                "file": "AWS Developer/Pasted image 20251030150541.png"
               },
-              "icon": "lucide-file",
-              "title": "Complejidades Algoritmos"
+              "icon": "lucide-image",
+              "title": "Pasted image 20251030150541"
             }
           }
         ]
@@ -78,8 +76,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.5,
-    "collapsed": true
+    "width": 347.5
   },
   "right": {
     "id": "0c0f80407ec2ad3f",
@@ -171,8 +168,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "97bea0b585ae9357",
+  "active": "549f43bd902af441",
   "lastOpenFiles": [
+    "AWS Developer/Pasted image 20251030150557.png",
+    "AWS Developer/Pasted image 20251103225001.png",
+    "README.md",
+    "AWS Developer/Pasted image 20251030150541.png",
     "Algo-III/2 - Practicas/Guia 5. Recorrido minimo.md",
     "Algo-III/Complejidades Algoritmos.md",
     "Algo-III/2 - Practicas/Guia 4. Recorridos y Arboles.md",
@@ -184,12 +185,9 @@
     "PLP/Ejercicios_11_y_12.md",
     "Algo-III/2 - Practicas/Guia 1. Divide and Conquer.md",
     "AWS Developer/2. AWS Fargate.md",
-    "Pasted image 20251103225001.png",
     "AWS Developer/1. Containers.md",
     "PLP/Teoricas/Prolog.md",
     "PLP/Teoricas/7 - Resolución lógica.md",
-    "Pasted image 20251030150557.png",
-    "Pasted image 20251030150541.png",
     "AWS Developer",
     "PLP/Teoricas/Imagenes/Pasted image 20251028114411.png",
     "PLP/Teoricas/Imagenes/Pasted image 20251028134258.png",
@@ -210,8 +208,6 @@
     "Algo-III/2 - Practicas/Clase 1.md",
     "Algo-III/2 - Practicas/Guia 2. Backtracking.md",
     "PLP/Teoricas/2 - Curry, Listas, Recursion.md",
-    "PLP/Teoricas/0 - Intro Haskell.md",
-    "PLP/Teoricas/4 - Calculo Lambda.md",
     "PLP/Teoricas",
     "Algo-III/2 - Practicas",
     "Algo-III/1 - Teoricas",
