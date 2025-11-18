@@ -4,19 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "34b28398c1879e9a",
+        "id": "2e8101d67dfedbdb",
         "type": "tabs",
         "children": [
           {
-            "id": "97bea0b585ae9357",
+            "id": "e5dcf2aa4775fa03",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "AWS Developer/Pasted image 20251030150541.png"
+                "file": "Algo-III/1 - Teoricas/Clase 1 - Complejidad computacional.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "Pasted image 20251030150541"
+              "icon": "lucide-file",
+              "title": "Clase 1 - Complejidad computacional"
             }
           }
         ]
@@ -76,7 +78,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 347.5
+    "width": 347.5,
+    "collapsed": true
   },
   "right": {
     "id": "0c0f80407ec2ad3f",
@@ -168,12 +171,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "549f43bd902af441",
+  "active": "e5dcf2aa4775fa03",
   "lastOpenFiles": [
+    "AWS Developer/Pasted image 20251030150541.png",
     "AWS Developer/Pasted image 20251030150557.png",
     "AWS Developer/Pasted image 20251103225001.png",
     "README.md",
-    "AWS Developer/Pasted image 20251030150541.png",
     "Algo-III/2 - Practicas/Guia 5. Recorrido minimo.md",
     "Algo-III/Complejidades Algoritmos.md",
     "Algo-III/2 - Practicas/Guia 4. Recorridos y Arboles.md",
