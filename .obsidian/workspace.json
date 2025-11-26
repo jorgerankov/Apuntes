@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "AWS Developer/5. Serverless Apps.md",
+                "file": "AWS Developer/4. Amazon EKS Primer.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "5. Serverless Apps"
+              "title": "4. Amazon EKS Primer"
             }
           }
         ]
@@ -173,6 +173,8 @@
   },
   "active": "09b9748312d5c0bc",
   "lastOpenFiles": [
+    "AWS Developer/5. Serverless Apps.md",
+    "AWS Developer/4. Amazon EKS Primer.md",
     "Pasted image 20251126151142.png",
     "Pasted image 20251126150800.png",
     "Pasted image 20251126150428.png",
@@ -181,10 +183,8 @@
     "Pasted image 20251126150104.png",
     "Pasted image 20251126150056.png",
     "AWS Developer/IMG/Pasted image 20251124120738.png",
-    "AWS Developer/5. Serverless Apps.md",
     "AWS Developer/IMG/Pasted image 20251126145812.png",
     "AWS Developer/IMG/Pasted image 20251126145653.png",
-    "AWS Developer/IMG/Pasted image 20251126145511.png",
     "AWS Developer/3. Container Security.md",
     "AWS Developer/IMG",
     "AWS Developer/2. AWS Fargate.md",
