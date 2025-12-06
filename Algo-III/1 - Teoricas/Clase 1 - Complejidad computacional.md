@@ -36,14 +36,11 @@ Permite resolver relaciones de recurrencia de la forma ***T(n)***:
 	-  **O(n$^c$)** = costo de dividir y combinar (todo lo que no son llamados recursivos)
 * ***T(n) = 1*** si _n = 1_ (caso base)
 
-### Casos de log$_c$ (a)
+## Casos de log$_b$ (a)
 - Si log$_b$ a $>$ c $\rightarrow$ **T(n) = O(n$^{log_b \space a}$) (Primer caso)** 
 - Si log$_b$ a $=$ c  **T(n) = O(n$^c$ log(n)) (Segundo caso)**
 - Si log$_b$ a $<$ c $\rightarrow$ **T(n) = O(n$^c$) (Tercer caso)**
-## Casos de f(n)
-* Si f(n) = $O$(n$^{log_c \space a-\epsilon}$) para $\epsilon$ > 0 $\rightarrow$ ***T(n) = $\Theta$(n$^{log_c \space a}$)***
-* Si f(n) = $\Theta$(n$^{log_c \space a}$ log$^k$n) para algun k $\geq$ 0 $\rightarrow$ ***T(n) =  $\Theta$(n$^{log_c \space a}$ log n)***
-* Si f(n) = $\Omega$($^{log_c \space a+\epsilon}$) para $\epsilon$ > 0 y _af_(n/c) < _kf_(n) para k < 1 y _n_ suficientemente grandes $\rightarrow$ ***T(n) = $\Theta$(f(n))***
+
 # <u>Algoritmo de Karatsuba</u>(x,y)
 * Si _x_ e _y_ son suficientemente chicos, multiplico "a mano" y devuelvo
 * Sino,
