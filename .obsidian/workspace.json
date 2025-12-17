@@ -11,10 +11,14 @@
             "id": "cdf9b1613b682fcb",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "AWS Developer/6. Serverless Mindset.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "6. Serverless Mindset"
             }
           }
         ]
@@ -169,18 +173,20 @@
   },
   "active": "cdf9b1613b682fcb",
   "lastOpenFiles": [
+    "Pasted image 20251216214551.png",
+    "Pasted image 20251216214508.png",
+    "Pasted image 20251216214456.png",
+    "Pasted image 20251216214445.png",
+    "Pasted image 20251216214443.png",
+    "Pasted image 20251216214312.png",
+    "Pasted image 20251216214213.png",
+    "Pasted image 20251216214204.png",
+    "AWS Developer/IMG/Pasted image 20251208114940.png",
+    "AWS Developer/6. Serverless Mindset.md",
     "AWS Developer/4. Amazon EKS Primer.md",
-    "Pasted image 20251208115223.png",
-    "Pasted image 20251208114940.png",
+    "AWS Developer/IMG/Pasted image 20251208115223.png",
     "AWS Developer/IMG/Pasted image 20251207135519.png",
-    "AWS Developer/IMG/Pasted image 20251207172049.png",
-    "AWS Developer/IMG/Pasted image 20251207172020.png",
-    "AWS Developer/IMG/Pasted image 20251207170147.png",
-    "AWS Developer/IMG/Pasted image 20251207164052.png",
-    "AWS Developer/IMG/Pasted image 20251207163705.png",
-    "AWS Developer/IMG/Pasted image 20251207135626.png",
-    "AWS Developer/5. Serverless Apps.md",
-    "AWS Developer/IMG/Pasted image 20251206120440.png",
+    "AWS Developer/5. Serverless Development.md",
     "Algo-III/1 - Teoricas/Clase 1 - Complejidad computacional.md",
     "AWS Developer/3. Container Security.md",
     "AWS Developer/IMG",
@@ -207,7 +213,6 @@
     "PLP/Teoricas/Imagenes",
     "SQL/Proyectos.md",
     "Algo-III/1 - Teoricas/Clase 6 - Grafos.md",
-    "Algo-III/1 - Teoricas/Clase 7 - Arboles.md",
     "PLP/Teoricas",
     "Algo-III/2 - Practicas",
     "Algo-III/1 - Teoricas",
