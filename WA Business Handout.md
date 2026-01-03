@@ -1,8 +1,20 @@
 ## <u>Completar todas las Acciones requeridas</u> (!!!)
+
+## Cosas a crear antes de seguir los pasos
+- Crear **App** en [Apps de Meta Developers](https://developers.facebook.com/apps/) 
+- Crear **Portfolio Comercial** en [Facebook for Business](https://business.facebook.com/)
+- Asignar **Administrador en Portfolio** y darle **activos**
 ### <u>Obtener App_ID</u>
 - Ir a [Apps de Meta Developers](https://developers.facebook.com/apps/) 
 - Copiar Identificador de App 
 - ![[Pasted image 20260103123024.png|350]]
+### <u>Obtener WA Business ID</u>
+- Ir a [Facebook for Business](https://business.facebook.com/)
+- Seleccionar el Portfolio comercial creado
+- Ir a **Configuración** --> **Cuentas**--> **Cuentas de WhatsApp**
+- Obtener **Identificador**
+- ![[Pasted image 20260103125730.png]]
+
 ### <u>Obtener Clave Secreta de App</u>
 - Ir a [Apps de Meta Developers](https://developers.facebook.com/apps/) --> Seleccionar tu App
 - Ir a **Configuración de la app** --> **Básica**
@@ -16,10 +28,13 @@
 	- **whatsapp_business_management**,
 	- **whatsapp_business_manage_events**
 	- **public_profile**
-### <u>Obtener WA Business ID</u>
 
 ### <u>Obtener PHONE_NUMBER_ID</u>
-
+```
+curl -s "https://graph.facebook.com/v24.0/WABA_ID/phone_numbers?access_token=ACCESS_TOKEN"
+```
+- Reemplazar WABA_ID y ACCESS_TOKEN con los valores propios
+- De todo lo que devuelve, **"id" == PHONE_NUMBER_ID**
 ### 
 
 ### <u>Generar un Token permantente (ACCESS_TOKEN)</u>
