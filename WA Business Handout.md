@@ -19,7 +19,7 @@
 - Ir a [Apps de Meta Developers](https://developers.facebook.com/apps/) --> Seleccionar tu App
 - Ir a **Configuración de la app** --> **Básica**
 - Presionar el botón **Mostrar** en el recuadro **Clave secreta de la app** 
-### Suscribir Wpp a Permisos y funciones
+### <u>Suscribir Wpp a Permisos y funciones</u>
 - Ir a [Apps de Meta Developers](https://developers.facebook.com/apps/) --> Seleccionar tu App
 - Elegir solapa **Casos de Uso** --> **Permisos y funciones**
 - Suscribir app a:
@@ -33,16 +33,15 @@
 ```
 curl -s "https://graph.facebook.com/v24.0/WABA_ID/phone_numbers?access_token=ACCESS_TOKEN"
 ```
-- Reemplazar WABA_ID y ACCESS_TOKEN con los valores propios
+- Cambiar WABA_ID y ACCESS_TOKEN por los valores de App
 - De todo lo que devuelve, **"id" == PHONE_NUMBER_ID**
-### 
 
 ### <u>Generar un Token permantente (ACCESS_TOKEN)</u>
 - Ir a [Apps de Meta Developers](https://developers.facebook.com/apps/) --> Seleccionar tu App
 - Elegir solapa **Casos de Uso** --> **Configuración**
 - Seleccionar **Crea un token de acceso permanente**
 - Seguir los pasos en pantalla para asignar el token a la App, los permisos necesarios y el tiempo de vida del token
-### Crear una cuenta de WhatsApp Business
+### <u>Crear una cuenta de WhatsApp Business</u>
 - Ir a [Apps de Meta Developers](https://developers.facebook.com/apps/) --> Seleccionar tu App
 - Elegir solapa **Casos de Uso** --> **Configuración**
 - Seleccionar **Crea una cuenta de WhatsApp Business**
@@ -51,7 +50,7 @@ curl -s "https://graph.facebook.com/v24.0/WABA_ID/phone_numbers?access_token=ACC
 	- Hay que eliminar la cuenta existente y crearla de cero con este método (Revisar posibilidad de no hacerlo)
 		- O usar un número nuevo de WhatsApp
 
-### Suscribirse a Webhooks
+### <u>Suscribirse a Webhooks</u>
 - Ir a [Apps de Meta Developers](https://developers.facebook.com/apps/) --> Seleccionar tu App
 - Elegir solapa **Casos de Uso** --> **Configuración**
 - Buscar **Suscribirte a webhooks**
@@ -61,7 +60,7 @@ curl -s "https://graph.facebook.com/v24.0/WABA_ID/phone_numbers?access_token=ACC
 - Suscribir los Webhooks a **todos los Campos del webhook disponibles**
 	- Si alguno no nos deja, dejarlo así
 
-### Registrar PHONE_NUMBER_ID
+### <u>Registrar PHONE_NUMBER_ID</u>
 ```
 curl -X POST "https://graph.facebook.com/v21.0/PHONE_NUMBER_ID/register" \
   -H "Authorization: Bearer ACCESS_TOKEN" \
@@ -71,10 +70,19 @@ curl -X POST "https://graph.facebook.com/v21.0/PHONE_NUMBER_ID/register" \
     "pin": "000000"
   }'
 ```
+- Cambiar WABA_ID y ACCESS_TOKEN por los valores de App
+- Pueden poner el pin que quieran, "000000" es un default
+
 ### <u>Suscribir la app al WABA por API</u>
 ```
 curl -i -X POST "https://graph.facebook.com/v24.0/WABA_ID/subscribed_apps" \
   -H "Authorization: Bearer ACCESS_TOKEN"
 ```
+- Cambiar WABA_ID y ACCESS_TOKEN por los valores de App
 
 
+Luego, agregar todos los valores obtenidos a un .env dentro de la carpeta, usarlos en el `server.js` del repo, **asignarle un port** (en el repo está puesto el port 3000) y levantar el servidor con `node server.js`
+
+Correr ngrok con el comando `ngrok http XXXX`, donde XXXX es el puerto que levantamos en `server.js`
+
+Finalmente, enviar mensajes de prueba y ver si se muestra el METADATA en consola. Si se muestra, ya levantamos el bot y está funcionando correctamente.
